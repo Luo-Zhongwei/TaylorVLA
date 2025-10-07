@@ -4,8 +4,8 @@ export NCCL_SOCKET_IFNAME=bond0
 export NCCL_DEBUG=INFO
 export NCCL_NVLS_ENABLE=0
 
-export TEXT_ENCODER_NAME="google/t5-v1_1-xxl"
-export VISION_ENCODER_NAME="google/siglip-so400m-patch14-384"
+export TEXT_ENCODER_NAME="/root/autodl-tmp/ckpt/google/t5-v1_1-xxl"
+export VISION_ENCODER_NAME="/root/autodl-tmp/ckpt/google/siglip-so400m-patch14-384"
 export OUTPUT_DIR="./checkpoints/rdt-finetune-1b"
 export CFLAGS="-I/usr/include"
 export LDFLAGS="-L/usr/lib/x86_64-linux-gnu"
@@ -27,7 +27,7 @@ fi
 
 deepspeed --hostfile=hostfile.txt main.py \
     --deepspeed="./configs/zero2.json" \
-    --pretrained_model_name_or_path="robotics-diffusion-transformer/rdt-1b" \
+    --pretrained_model_name_or_path="/root/autodl-tmp/ckpt/pt_rdt" \
     --pretrained_text_encoder_name_or_path=$TEXT_ENCODER_NAME \
     --pretrained_vision_encoder_name_or_path=$VISION_ENCODER_NAME \
     --output_dir=$OUTPUT_DIR \

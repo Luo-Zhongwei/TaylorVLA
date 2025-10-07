@@ -1,0 +1,23 @@
+policy.keep_img_token_nums: 546
+policy.save_vis_doc_name: StackCube-v1PruningMode.RANDOM546_729 token
+policy.pruning_mode: PruningMode.RANDOM
+policy.alpha = 0.8 policy.temp = 0.056234132519034905
+原始数据列表 (rep_suc): [76.0, 72.0, 68.0, 68.0, 68.0]
+均值 (Mean): 70.40
+总体方差 (Population Variance): 10.24
+样本方差 (Sample Variance): 12.80
+标准差 (Standard Deviation): 3.20
+
+
+
+policy.keep_img_token_nums: 546
+policy.save_vis_doc_name: StackCube-v1PruningMode.SCORE546_729 token
+policy.pruning_mode: PruningMode.SCORE
+policy.alpha = 0.8policy.temp = 0.056234132519034905
+72.0
+rep Success rate: [72.0, 72.0, 72.0, 68.0, 72.0]%
+原始数据列表 (rep_suc): [72.0, 72.0, 72.0, 68.0, 72.0]
+均值 (Mean): 71.20
+总体方差 (Population Variance): 2.56
+样本方差 (Sample Variance): 3.20
+标准差 (Standard Deviation): 1.60

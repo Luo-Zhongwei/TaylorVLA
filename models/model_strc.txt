@@ -1,0 +1,59 @@
+RDT(
+  (t_embedder): TimestepEmbedder(
+    (mlp): Sequential(
+      (0): Linear(in_features=256, out_features=2048, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=2048, out_features=2048, bias=True)
+    )
+  )
+  (freq_embedder): TimestepEmbedder(
+    (mlp): Sequential(
+      (0): Linear(in_features=256, out_features=2048, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=2048, out_features=2048, bias=True)
+    )
+  )
+  (blocks): ModuleList(
+    (0-27): 28 x RDTBlock(
+      (norm1): RmsNorm()
+      (attn): Attention(
+        (qkv): Linear(in_features=2048, out_features=6144, bias=True)
+        (q_norm): RmsNorm()
+        (k_norm): RmsNorm()
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=2048, out_features=2048, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (cross_attn): CrossAttention(
+        (q): Linear(in_features=2048, out_features=2048, bias=True)
+        (kv): Linear(in_features=2048, out_features=4096, bias=True)
+        (q_norm): RmsNorm()
+        (k_norm): RmsNorm()
+        (attn_drop): Dropout(p=0, inplace=False)
+        (proj): Linear(in_features=2048, out_features=2048, bias=True)
+        (proj_drop): Dropout(p=0, inplace=False)
+      )
+      (norm2): RmsNorm()
+      (ffn): Mlp(
+        (fc1): Linear(in_features=2048, out_features=2048, bias=True)
+        (act): GELU(approximate='tanh')
+        (drop1): Dropout(p=0, inplace=False)
+        (norm): Identity()
+        (fc2): Linear(in_features=2048, out_features=2048, bias=True)
+        (drop2): Dropout(p=0, inplace=False)
+      )
+      (norm3): RmsNorm()
+    )
+  )
+  (final_layer): FinalLayer(
+    (norm_final): RmsNorm()
+    (ffn_final): Mlp(
+      (fc1): Linear(in_features=2048, out_features=2048, bias=True)
+      (act): GELU(approximate='tanh')
+      (drop1): Dropout(p=0, inplace=False)
+      (norm): Identity()
+      (fc2): Linear(in_features=2048, out_features=128, bias=True)
+      (drop2): Dropout(p=0, inplace=False)
+    )
+  )
+)

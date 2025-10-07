@@ -1,0 +1,137 @@
+nohup: ignoring input
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+using taylor
+RDT_taylor_img_p(
+  (t_embedder): TimestepEmbedder(
+    (mlp): Sequential(
+      (0): Linear(in_features=256, out_features=2048, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=2048, out_features=2048, bias=True)
+    )
+  )
+  (freq_embedder): TimestepEmbedder(
+    (mlp): Sequential(
+      (0): Linear(in_features=256, out_features=2048, bias=True)
+      (1): SiLU()
+      (2): Linear(in_features=2048, out_features=2048, bias=True)
+    )
+  )
+  (blocks): ModuleList(
+    (0-27): 28 x RDTBlock_taylor_img_p(
+      (norm1): RmsNorm()
+      (attn): TaylorAttention(
+        (qkv): Linear(in_features=2048, out_features=6144, bias=True)
+        (q_norm): RmsNorm()
+        (k_norm): RmsNorm()
+        (attn_drop): Dropout(p=0.0, inplace=False)
+        (proj): Linear(in_features=2048, out_features=2048, bias=True)
+        (proj_drop): Dropout(p=0.0, inplace=False)
+      )
+      (cross_attn): TaylorCrossAttention(
+        (q): Linear(in_features=2048, out_features=2048, bias=True)
+        (kv): Linear(in_features=2048, out_features=4096, bias=True)
+        (q_norm): RmsNorm()
+        (k_norm): RmsNorm()
+        (attn_drop): Dropout(p=0, inplace=False)
+        (proj): Linear(in_features=2048, out_features=2048, bias=True)
+        (proj_drop): Dropout(p=0, inplace=False)
+      )
+      (norm2): RmsNorm()
+      (ffn): WrappedTaylorMlp(
+        (fc1): Linear(in_features=2048, out_features=2048, bias=True)
+        (act): GELU(approximate='tanh')
+        (fc2): Linear(in_features=2048, out_features=2048, bias=True)
+      )
+      (norm3): RmsNorm()
+    )
+  )
+  (final_layer): FinalLayer(
+    (norm_final): RmsNorm()
+    (ffn_final): Mlp(
+      (fc1): Linear(in_features=2048, out_features=2048, bias=True)
+      (act): GELU(approximate='tanh')
+      (drop1): Dropout(p=0, inplace=False)
+      (norm): Identity()
+      (fc2): Linear(in_features=2048, out_features=128, bias=True)
+      (drop2): Dropout(p=0, inplace=False)
+    )
+  )
+)
+Diffusion params: 1.228320e+09
+class = RDTRunner_taylor_img_p
+module = models.rdt_runner_taylor_img_p
+source_file = /root/autodl-tmp/RoboticsDiffusionTransformer/models/rdt_runner_taylor_img_p.py
+Loading weights from /root/autodl-tmp/ckpt/rdt/maniskill-model/rdt/mp_rank_00_model_states.pt
+test inter text encode time
+0
+policy.encode_instruction GPU time: 161.208 ms
+1
+policy.encode_instruction GPU time: 17.783 ms
+2
+policy.encode_instruction GPU time: 17.396 ms
+3
+policy.encode_instruction GPU time: 17.532 ms
+4
+policy.encode_instruction GPU time: 17.120 ms
+5
+policy.encode_instruction GPU time: 17.474 ms
+6
+policy.encode_instruction GPU time: 17.148 ms
+7
+policy.encode_instruction GPU time: 21.726 ms
+8
+policy.encode_instruction GPU time: 17.216 ms
+9
+policy.encode_instruction GPU time: 17.186 ms
+10
+policy.encode_instruction GPU time: 17.112 ms
+11
+policy.encode_instruction GPU time: 18.504 ms
+12
+policy.encode_instruction GPU time: 17.287 ms
+13
+policy.encode_instruction GPU time: 17.105 ms
+14
+policy.encode_instruction GPU time: 17.485 ms
+15
+policy.encode_instruction GPU time: 17.217 ms
+16
+policy.encode_instruction GPU time: 17.121 ms
+17
+policy.encode_instruction GPU time: 17.139 ms
+18
+policy.encode_instruction GPU time: 20.879 ms
+19
+policy.encode_instruction GPU time: 17.068 ms
+20
+policy.encode_instruction GPU time: 17.013 ms
+21
+policy.encode_instruction GPU time: 16.906 ms
+22
+policy.encode_instruction GPU time: 16.959 ms
+23
+policy.encode_instruction GPU time: 17.232 ms
+24
+policy.encode_instruction GPU time: 17.328 ms
+25
+policy.encode_instruction GPU time: 17.543 ms
+26
+policy.encode_instruction GPU time: 21.391 ms
+27
+policy.encode_instruction GPU time: 17.632 ms
+28
+policy.encode_instruction GPU time: 16.996 ms
+29
+policy.encode_instruction GPU time: 17.456 ms
+[1.7782794100389228]
+  0%|          | 0/9 [00:00<?, ?it/s]
+  0%|          | 0/10 [00:00<?, ?it/s][A  0%|          | 0/10 [00:00<?, ?it/s]
+  0%|          | 0/9 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/rdt/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/root/miniconda3/envs/rdt/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/root/autodl-tmp/RoboticsDiffusionTransformer/eval_sim/eval_rdt_maniskill.py", line 207, in <module>
+    print(f"Running trial with alpha={a}, temp={b}. Re-seeding with {base_seed}.")
+NameError: name 'a' is not defined

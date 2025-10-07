@@ -1,0 +1,3042 @@
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Loading weights from /root/autodl-tmp/ckpt/rdt/maniskill-model/rdt/mp_rank_00_model_states.pt
+test inter text encode time
+0
+policy.encode_instruction GPU time: 246.149 ms
+1
+policy.encode_instruction GPU time: 15.538 ms
+2
+policy.encode_instruction GPU time: 17.273 ms
+3
+policy.encode_instruction GPU time: 15.054 ms
+4
+policy.encode_instruction GPU time: 15.031 ms
+5
+policy.encode_instruction GPU time: 15.043 ms
+6
+policy.encode_instruction GPU time: 19.403 ms
+7
+policy.encode_instruction GPU time: 14.969 ms
+8
+policy.encode_instruction GPU time: 16.897 ms
+9
+policy.encode_instruction GPU time: 15.443 ms
+10
+policy.encode_instruction GPU time: 15.035 ms
+11
+policy.encode_instruction GPU time: 14.987 ms
+12
+policy.encode_instruction GPU time: 15.018 ms
+13
+policy.encode_instruction GPU time: 14.773 ms
+14
+policy.encode_instruction GPU time: 15.013 ms
+15
+policy.encode_instruction GPU time: 17.050 ms
+16
+policy.encode_instruction GPU time: 14.839 ms
+17
+policy.encode_instruction GPU time: 15.026 ms
+18
+policy.encode_instruction GPU time: 14.799 ms
+19
+policy.encode_instruction GPU time: 19.057 ms
+20
+policy.encode_instruction GPU time: 14.804 ms
+21
+policy.encode_instruction GPU time: 16.890 ms
+22
+policy.encode_instruction GPU time: 14.815 ms
+23
+policy.encode_instruction GPU time: 14.862 ms
+24
+policy.encode_instruction GPU time: 14.809 ms
+25
+policy.encode_instruction GPU time: 14.889 ms
+26
+policy.encode_instruction GPU time: 19.556 ms
+27
+policy.encode_instruction GPU time: 30.947 ms
+28
+policy.encode_instruction GPU time: 15.124 ms
+29
+policy.encode_instruction GPU time: 14.934 ms
+[ 0.01        0.05623413  0.31622777  1.77827941 10.        ]
+grid search:   0%|          | 0/55 [00:00<?, ?it/s]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 66
+
+  4%|▍         | 1/25 [00:02<00:57,  2.38s/it]Trial 2 finished, success: tensor([True]), steps: 70
+
+  8%|▊         | 2/25 [00:05<00:58,  2.52s/it]Trial 3 finished, success: tensor([True]), steps: 80
+
+ 12%|█▏        | 3/25 [00:08<01:07,  3.06s/it]Trial 4 finished, success: tensor([True]), steps: 66
+
+ 16%|█▌        | 4/25 [00:11<00:57,  2.76s/it]Trial 5 finished, success: tensor([True]), steps: 60
+
+ 20%|██        | 5/25 [00:14<00:58,  2.94s/it]Trial 6 finished, success: tensor([True]), steps: 81
+
+ 24%|██▍       | 6/25 [00:16<00:54,  2.87s/it]Trial 7 finished, success: tensor([True]), steps: 72
+
+ 28%|██▊       | 7/25 [00:19<00:47,  2.65s/it]Trial 8 finished, success: tensor([True]), steps: 55
+
+ 32%|███▏      | 8/25 [00:20<00:40,  2.38s/it]Trial 9 finished, success: tensor([True]), steps: 73
+
+ 36%|███▌      | 9/25 [00:23<00:38,  2.41s/it]Trial 10 finished, success: tensor([True]), steps: 68
+
+ 40%|████      | 10/25 [00:25<00:35,  2.34s/it]Trial 11 finished, success: tensor([True]), steps: 74
+
+ 44%|████▍     | 11/25 [00:27<00:32,  2.31s/it]Trial 12 finished, success: tensor([True]), steps: 69
+
+ 48%|████▊     | 12/25 [00:30<00:30,  2.36s/it]Trial 13 finished, success: tensor([True]), steps: 66
+
+ 52%|█████▏    | 13/25 [00:32<00:27,  2.30s/it]Trial 14 finished, success: tensor([True]), steps: 65
+
+ 56%|█████▌    | 14/25 [00:34<00:24,  2.27s/it]Trial 15 finished, success: tensor([True]), steps: 64
+
+ 60%|██████    | 15/25 [00:36<00:21,  2.15s/it]Trial 16 finished, success: tensor([True]), steps: 63
+
+ 64%|██████▍   | 16/25 [00:38<00:18,  2.04s/it]Trial 17 finished, success: tensor([True]), steps: 65
+
+ 68%|██████▊   | 17/25 [00:40<00:16,  2.11s/it]Trial 18 finished, success: tensor([True]), steps: 67
+
+ 72%|███████▏  | 18/25 [00:42<00:14,  2.14s/it]Trial 19 finished, success: tensor([True]), steps: 64
+
+ 76%|███████▌  | 19/25 [00:47<00:17,  2.97s/it]Trial 20 finished, success: tensor([True]), steps: 65
+
+ 80%|████████  | 20/25 [00:50<00:15,  3.01s/it]Trial 21 finished, success: tensor([True]), steps: 65
+
+ 84%|████████▍ | 21/25 [00:53<00:11,  2.78s/it]Trial 22 finished, success: tensor([True]), steps: 77
+
+ 88%|████████▊ | 22/25 [00:56<00:08,  2.83s/it]Trial 23 finished, success: tensor([True]), steps: 67
+
+ 92%|█████████▏| 23/25 [00:58<00:05,  2.62s/it]Trial 24 finished, success: tensor([True]), steps: 75
+
+ 96%|█████████▌| 24/25 [01:00<00:02,  2.53s/it]Trial 25 finished, success: tensor([True]), steps: 71
+
+100%|██████████| 25/25 [01:02<00:00,  2.47s/it]100%|██████████| 25/25 [01:02<00:00,  2.51s/it]
+Success rate: 100.0%
+grid search:   2%|▏         | 1/55 [01:02<56:33, 62.84s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 67
+
+  4%|▍         | 1/25 [00:02<00:55,  2.32s/it]Trial 2 finished, success: tensor([True]), steps: 68
+
+  8%|▊         | 2/25 [00:05<01:07,  2.92s/it]Trial 3 finished, success: tensor([True]), steps: 70
+
+ 12%|█▏        | 3/25 [00:07<00:57,  2.63s/it]Trial 4 finished, success: tensor([True]), steps: 67
+
+ 16%|█▌        | 4/25 [00:10<00:51,  2.44s/it]Trial 5 finished, success: tensor([True]), steps: 57
+
+ 20%|██        | 5/25 [00:11<00:44,  2.20s/it]Trial 6 finished, success: tensor([True]), steps: 78
+
+ 24%|██▍       | 6/25 [00:14<00:41,  2.20s/it]Trial 7 finished, success: tensor([True]), steps: 71
+
+ 28%|██▊       | 7/25 [00:16<00:41,  2.30s/it]Trial 8 finished, success: tensor([True]), steps: 56
+
+ 32%|███▏      | 8/25 [00:18<00:37,  2.23s/it]Trial 9 finished, success: tensor([True]), steps: 73
+
+ 36%|███▌      | 9/25 [00:20<00:35,  2.22s/it]Trial 10 finished, success: tensor([True]), steps: 67
+
+ 40%|████      | 10/25 [00:23<00:34,  2.27s/it]Trial 11 finished, success: tensor([True]), steps: 74
+
+ 44%|████▍     | 11/25 [00:25<00:31,  2.27s/it]Trial 12 finished, success: tensor([True]), steps: 68
+
+ 48%|████▊     | 12/25 [00:28<00:32,  2.46s/it]Trial 13 finished, success: tensor([True]), steps: 63
+
+ 52%|█████▏    | 13/25 [00:30<00:27,  2.28s/it]Trial 14 finished, success: tensor([True]), steps: 65
+
+ 56%|█████▌    | 14/25 [00:33<00:27,  2.51s/it]Trial 15 finished, success: tensor([True]), steps: 68
+
+ 60%|██████    | 15/25 [00:35<00:24,  2.43s/it]Trial 16 finished, success: tensor([True]), steps: 62
+
+ 64%|██████▍   | 16/25 [00:37<00:20,  2.24s/it]Trial 17 finished, success: tensor([True]), steps: 80
+
+ 68%|██████▊   | 17/25 [00:39<00:18,  2.28s/it]Trial 18 finished, success: tensor([True]), steps: 66
+
+ 72%|███████▏  | 18/25 [00:42<00:16,  2.37s/it]Trial 19 finished, success: tensor([True]), steps: 65
+
+ 76%|███████▌  | 19/25 [00:46<00:17,  2.92s/it]Trial 20 finished, success: tensor([True]), steps: 64
+
+ 80%|████████  | 20/25 [00:48<00:12,  2.59s/it]Trial 21 finished, success: tensor([True]), steps: 63
+
+ 84%|████████▍ | 21/25 [00:50<00:09,  2.39s/it]Trial 22 finished, success: tensor([True]), steps: 79
+
+ 88%|████████▊ | 22/25 [00:53<00:08,  2.70s/it]Trial 23 finished, success: tensor([True]), steps: 71
+
+ 92%|█████████▏| 23/25 [00:55<00:05,  2.58s/it]Trial 24 finished, success: tensor([True]), steps: 72
+
+ 96%|█████████▌| 24/25 [00:58<00:02,  2.47s/it]Trial 25 finished, success: tensor([True]), steps: 68
+
+100%|██████████| 25/25 [01:00<00:00,  2.41s/it]100%|██████████| 25/25 [01:00<00:00,  2.42s/it]
+Success rate: 100.0%
+grid search:   4%|▎         | 2/55 [02:03<54:16, 61.44s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 66
+
+  4%|▍         | 1/25 [00:03<01:14,  3.12s/it]Trial 2 finished, success: tensor([True]), steps: 70
+
+  8%|▊         | 2/25 [00:05<01:08,  2.96s/it]Trial 3 finished, success: tensor([True]), steps: 71
+
+ 12%|█▏        | 3/25 [00:08<00:57,  2.60s/it]Trial 4 finished, success: tensor([True]), steps: 65
+
+ 16%|█▌        | 4/25 [00:10<00:52,  2.49s/it]Trial 5 finished, success: tensor([True]), steps: 61
+
+ 20%|██        | 5/25 [00:12<00:45,  2.30s/it]Trial 6 finished, success: tensor([True]), steps: 76
+
+ 24%|██▍       | 6/25 [00:14<00:45,  2.37s/it]Trial 7 finished, success: tensor([True]), steps: 67
+
+ 28%|██▊       | 7/25 [00:17<00:41,  2.31s/it]Trial 8 finished, success: tensor([True]), steps: 56
+
+ 32%|███▏      | 8/25 [00:19<00:39,  2.30s/it]Trial 9 finished, success: tensor([True]), steps: 75
+
+ 36%|███▌      | 9/25 [00:22<00:42,  2.67s/it]Trial 10 finished, success: tensor([True]), steps: 68
+
+ 40%|████      | 10/25 [00:25<00:37,  2.51s/it]Trial 11 finished, success: tensor([True]), steps: 73
+
+ 44%|████▍     | 11/25 [00:28<00:39,  2.83s/it]Trial 12 finished, success: tensor([True]), steps: 70
+
+ 48%|████▊     | 12/25 [00:30<00:34,  2.68s/it]Trial 13 finished, success: tensor([True]), steps: 65
+
+ 52%|█████▏    | 13/25 [00:33<00:33,  2.79s/it]Trial 14 finished, success: tensor([True]), steps: 66
+
+ 56%|█████▌    | 14/25 [00:37<00:34,  3.13s/it]Trial 15 finished, success: tensor([True]), steps: 64
+
+ 60%|██████    | 15/25 [00:39<00:27,  2.73s/it]Trial 16 finished, success: tensor([True]), steps: 64
+
+ 64%|██████▍   | 16/25 [00:41<00:21,  2.42s/it]Trial 17 finished, success: tensor([True]), steps: 75
+
+ 68%|██████▊   | 17/25 [00:43<00:19,  2.40s/it]Trial 18 finished, success: tensor([True]), steps: 64
+
+ 72%|███████▏  | 18/25 [00:45<00:15,  2.24s/it]Trial 19 finished, success: tensor([True]), steps: 65
+
+ 76%|███████▌  | 19/25 [00:48<00:14,  2.48s/it]Trial 20 finished, success: tensor([True]), steps: 65
+
+ 80%|████████  | 20/25 [00:50<00:12,  2.40s/it]Trial 21 finished, success: tensor([True]), steps: 67
+
+ 84%|████████▍ | 21/25 [00:53<00:09,  2.36s/it]Trial 22 finished, success: tensor([True]), steps: 79
+
+ 88%|████████▊ | 22/25 [00:55<00:07,  2.34s/it]Trial 23 finished, success: tensor([True]), steps: 70
+
+ 92%|█████████▏| 23/25 [00:58<00:04,  2.47s/it]Trial 24 finished, success: tensor([True]), steps: 74
+
+ 96%|█████████▌| 24/25 [01:00<00:02,  2.42s/it]Trial 25 finished, success: tensor([True]), steps: 73
+
+100%|██████████| 25/25 [01:02<00:00,  2.39s/it]100%|██████████| 25/25 [01:02<00:00,  2.51s/it]
+Success rate: 100.0%
+grid search:   5%|▌         | 3/55 [03:06<53:47, 62.07s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 67
+
+  4%|▍         | 1/25 [00:03<01:13,  3.05s/it]Trial 2 finished, success: tensor([True]), steps: 69
+
+  8%|▊         | 2/25 [00:05<01:03,  2.74s/it]Trial 3 finished, success: tensor([True]), steps: 70
+
+ 12%|█▏        | 3/25 [00:08<00:58,  2.67s/it]Trial 4 finished, success: tensor([True]), steps: 65
+
+ 16%|█▌        | 4/25 [00:11<00:59,  2.83s/it]Trial 5 finished, success: tensor([True]), steps: 58
+
+ 20%|██        | 5/25 [00:13<00:50,  2.54s/it]Trial 6 finished, success: tensor([True]), steps: 84
+
+ 24%|██▍       | 6/25 [00:16<00:49,  2.62s/it]Trial 7 finished, success: tensor([True]), steps: 67
+
+ 28%|██▊       | 7/25 [00:18<00:44,  2.49s/it]Trial 8 finished, success: tensor([True]), steps: 55
+
+ 32%|███▏      | 8/25 [00:20<00:38,  2.25s/it]Trial 9 finished, success: tensor([True]), steps: 74
+
+ 36%|███▌      | 9/25 [00:22<00:35,  2.22s/it]Trial 10 finished, success: tensor([True]), steps: 67
+
+ 40%|████      | 10/25 [00:24<00:35,  2.38s/it]Trial 11 finished, success: tensor([True]), steps: 67
+
+ 44%|████▍     | 11/25 [00:27<00:34,  2.47s/it]Trial 12 finished, success: tensor([True]), steps: 69
+
+ 48%|████▊     | 12/25 [00:29<00:31,  2.43s/it]Trial 13 finished, success: tensor([True]), steps: 66
+
+ 52%|█████▏    | 13/25 [00:32<00:28,  2.41s/it]Trial 14 finished, success: tensor([True]), steps: 65
+
+ 56%|█████▌    | 14/25 [00:34<00:25,  2.33s/it]Trial 15 finished, success: tensor([True]), steps: 63
+
+ 60%|██████    | 15/25 [00:36<00:22,  2.22s/it]Trial 16 finished, success: tensor([True]), steps: 63
+
+ 64%|██████▍   | 16/25 [00:39<00:21,  2.35s/it]Trial 17 finished, success: tensor([True]), steps: 65
+
+ 68%|██████▊   | 17/25 [00:41<00:18,  2.32s/it]Trial 18 finished, success: tensor([True]), steps: 68
+
+ 72%|███████▏  | 18/25 [00:44<00:17,  2.49s/it]Trial 19 finished, success: tensor([True]), steps: 64
+
+ 76%|███████▌  | 19/25 [00:46<00:13,  2.30s/it]Trial 20 finished, success: tensor([True]), steps: 65
+
+ 80%|████████  | 20/25 [00:49<00:12,  2.52s/it]Trial 21 finished, success: tensor([True]), steps: 63
+
+ 84%|████████▍ | 21/25 [00:51<00:09,  2.46s/it]Trial 22 finished, success: tensor([True]), steps: 76
+
+ 88%|████████▊ | 22/25 [00:54<00:07,  2.64s/it]Trial 23 finished, success: tensor([True]), steps: 67
+
+ 92%|█████████▏| 23/25 [00:56<00:05,  2.54s/it]Trial 24 finished, success: tensor([True]), steps: 79
+
+ 96%|█████████▌| 24/25 [01:00<00:02,  2.99s/it]Trial 25 finished, success: tensor([True]), steps: 69
+
+100%|██████████| 25/25 [01:03<00:00,  3.01s/it]100%|██████████| 25/25 [01:03<00:00,  2.55s/it]
+Success rate: 100.0%
+grid search:   7%|▋         | 4/55 [04:09<53:20, 62.76s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 67
+
+  4%|▍         | 1/25 [00:02<00:58,  2.45s/it]Trial 2 finished, success: tensor([True]), steps: 70
+
+  8%|▊         | 2/25 [00:04<00:55,  2.39s/it]Trial 3 finished, success: tensor([True]), steps: 70
+
+ 12%|█▏        | 3/25 [00:07<00:54,  2.47s/it]Trial 4 finished, success: tensor([True]), steps: 66
+
+ 16%|█▌        | 4/25 [00:09<00:49,  2.36s/it]Trial 5 finished, success: tensor([True]), steps: 59
+
+ 20%|██        | 5/25 [00:11<00:44,  2.21s/it]Trial 6 finished, success: tensor([True]), steps: 81
+
+ 24%|██▍       | 6/25 [00:15<00:55,  2.92s/it]Trial 7 finished, success: tensor([True]), steps: 71
+
+ 28%|██▊       | 7/25 [00:18<00:48,  2.70s/it]Trial 8 finished, success: tensor([True]), steps: 56
+
+ 32%|███▏      | 8/25 [00:19<00:40,  2.41s/it]Trial 9 finished, success: tensor([True]), steps: 74
+
+ 36%|███▌      | 9/25 [00:22<00:37,  2.35s/it]Trial 10 finished, success: tensor([True]), steps: 66
+
+ 40%|████      | 10/25 [00:25<00:39,  2.63s/it]Trial 11 finished, success: tensor([True]), steps: 73
+
+ 44%|████▍     | 11/25 [00:27<00:36,  2.58s/it]Trial 12 finished, success: tensor([True]), steps: 69
+
+ 48%|████▊     | 12/25 [00:29<00:32,  2.46s/it]Trial 13 finished, success: tensor([True]), steps: 63
+
+ 52%|█████▏    | 13/25 [00:33<00:32,  2.67s/it]Trial 14 finished, success: tensor([True]), steps: 67
+
+ 56%|█████▌    | 14/25 [00:35<00:27,  2.53s/it]Trial 15 finished, success: tensor([True]), steps: 62
+
+ 60%|██████    | 15/25 [00:37<00:23,  2.31s/it]Trial 16 finished, success: tensor([True]), steps: 63
+
+ 64%|██████▍   | 16/25 [00:38<00:19,  2.17s/it]Trial 17 finished, success: tensor([True]), steps: 65
+
+ 68%|██████▊   | 17/25 [00:41<00:18,  2.32s/it]Trial 18 finished, success: tensor([True]), steps: 69
+
+ 72%|███████▏  | 18/25 [00:43<00:16,  2.30s/it]Trial 19 finished, success: tensor([True]), steps: 65
+
+ 76%|███████▌  | 19/25 [00:45<00:13,  2.24s/it]Trial 20 finished, success: tensor([True]), steps: 64
+
+ 80%|████████  | 20/25 [00:48<00:11,  2.34s/it]Trial 21 finished, success: tensor([True]), steps: 64
+
+ 84%|████████▍ | 21/25 [00:50<00:08,  2.19s/it]Trial 22 finished, success: tensor([True]), steps: 81
+
+ 88%|████████▊ | 22/25 [00:53<00:07,  2.42s/it]Trial 23 finished, success: tensor([True]), steps: 68
+
+ 92%|█████████▏| 23/25 [00:56<00:05,  2.66s/it]Trial 24 finished, success: tensor([True]), steps: 74
+
+ 96%|█████████▌| 24/25 [00:59<00:02,  2.84s/it]Trial 25 finished, success: tensor([True]), steps: 68
+
+100%|██████████| 25/25 [01:02<00:00,  2.67s/it]100%|██████████| 25/25 [01:02<00:00,  2.48s/it]
+Success rate: 100.0%
+grid search:   9%|▉         | 5/55 [05:12<52:06, 62.53s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 66
+
+  4%|▍         | 1/25 [00:03<01:18,  3.27s/it]Trial 2 finished, success: tensor([True]), steps: 71
+
+  8%|▊         | 2/25 [00:05<01:02,  2.71s/it]Trial 3 finished, success: tensor([True]), steps: 69
+
+ 12%|█▏        | 3/25 [00:07<00:54,  2.49s/it]Trial 4 finished, success: tensor([True]), steps: 65
+
+ 16%|█▌        | 4/25 [00:10<00:50,  2.39s/it]Trial 5 finished, success: tensor([True]), steps: 58
+
+ 20%|██        | 5/25 [00:12<00:44,  2.23s/it]Trial 6 finished, success: tensor([True]), steps: 71
+
+ 24%|██▍       | 6/25 [00:14<00:42,  2.24s/it]Trial 7 finished, success: tensor([True]), steps: 71
+
+ 28%|██▊       | 7/25 [00:17<00:48,  2.71s/it]Trial 8 finished, success: tensor([True]), steps: 55
+
+ 32%|███▏      | 8/25 [00:19<00:41,  2.44s/it]Trial 9 finished, success: tensor([True]), steps: 75
+
+ 36%|███▌      | 9/25 [00:22<00:38,  2.41s/it]Trial 10 finished, success: tensor([True]), steps: 68
+
+ 40%|████      | 10/25 [00:25<00:40,  2.67s/it]Trial 11 finished, success: tensor([True]), steps: 72
+
+ 44%|████▍     | 11/25 [00:27<00:36,  2.61s/it]Trial 12 finished, success: tensor([True]), steps: 69
+
+ 48%|████▊     | 12/25 [00:30<00:32,  2.52s/it]Trial 13 finished, success: tensor([True]), steps: 67
+
+ 52%|█████▏    | 13/25 [00:33<00:31,  2.62s/it]Trial 14 finished, success: tensor([True]), steps: 66
+
+ 56%|█████▌    | 14/25 [00:35<00:27,  2.47s/it]Trial 15 finished, success: tensor([True]), steps: 62
+
+ 60%|██████    | 15/25 [00:37<00:23,  2.35s/it]Trial 16 finished, success: tensor([True]), steps: 64
+
+ 64%|██████▍   | 16/25 [00:39<00:19,  2.22s/it]Trial 17 finished, success: tensor([True]), steps: 65
+
+ 68%|██████▊   | 17/25 [00:41<00:17,  2.23s/it]Trial 18 finished, success: tensor([True]), steps: 67
+
+ 72%|███████▏  | 18/25 [00:43<00:15,  2.23s/it]Trial 19 finished, success: tensor([True]), steps: 64
+
+ 76%|███████▌  | 19/25 [00:45<00:12,  2.10s/it]Trial 20 finished, success: tensor([True]), steps: 66
+
+ 80%|████████  | 20/25 [00:47<00:10,  2.14s/it]Trial 21 finished, success: tensor([True]), steps: 64
+
+ 84%|████████▍ | 21/25 [00:49<00:08,  2.18s/it]Trial 22 finished, success: tensor([True]), steps: 79
+
+ 88%|████████▊ | 22/25 [00:52<00:07,  2.42s/it]Trial 23 finished, success: tensor([True]), steps: 66
+
+ 92%|█████████▏| 23/25 [00:55<00:04,  2.38s/it]Trial 24 finished, success: tensor([True]), steps: 73
+
+ 96%|█████████▌| 24/25 [00:58<00:02,  2.62s/it]Trial 25 finished, success: tensor([True]), steps: 74
+
+100%|██████████| 25/25 [01:00<00:00,  2.52s/it]100%|██████████| 25/25 [01:00<00:00,  2.43s/it]
+Success rate: 100.0%
+grid search:  11%|█         | 6/55 [06:12<50:32, 61.89s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 68
+
+  4%|▍         | 1/25 [00:02<00:59,  2.46s/it]Trial 2 finished, success: tensor([True]), steps: 69
+
+  8%|▊         | 2/25 [00:04<00:53,  2.33s/it]Trial 3 finished, success: tensor([True]), steps: 69
+
+ 12%|█▏        | 3/25 [00:06<00:50,  2.28s/it]Trial 4 finished, success: tensor([True]), steps: 69
+
+ 16%|█▌        | 4/25 [00:09<00:47,  2.28s/it]Trial 5 finished, success: tensor([True]), steps: 58
+
+ 20%|██        | 5/25 [00:11<00:47,  2.39s/it]Trial 6 finished, success: tensor([True]), steps: 79
+
+ 24%|██▍       | 6/25 [00:14<00:45,  2.42s/it]Trial 7 finished, success: tensor([True]), steps: 69
+
+ 28%|██▊       | 7/25 [00:17<00:50,  2.81s/it]Trial 8 finished, success: tensor([True]), steps: 55
+
+ 32%|███▏      | 8/25 [00:19<00:41,  2.46s/it]Trial 9 finished, success: tensor([True]), steps: 78
+
+ 36%|███▌      | 9/25 [00:22<00:39,  2.46s/it]Trial 10 finished, success: tensor([True]), steps: 68
+
+ 40%|████      | 10/25 [00:24<00:35,  2.40s/it]Trial 11 finished, success: tensor([True]), steps: 72
+
+ 44%|████▍     | 11/25 [00:27<00:35,  2.55s/it]Trial 12 finished, success: tensor([True]), steps: 68
+
+ 48%|████▊     | 12/25 [00:29<00:33,  2.54s/it]Trial 13 finished, success: tensor([True]), steps: 66
+
+ 52%|█████▏    | 13/25 [00:31<00:29,  2.43s/it]Trial 14 finished, success: tensor([True]), steps: 66
+
+ 56%|█████▌    | 14/25 [00:34<00:25,  2.34s/it]Trial 15 finished, success: tensor([True]), steps: 63
+
+ 60%|██████    | 15/25 [00:37<00:27,  2.71s/it]Trial 16 finished, success: tensor([True]), steps: 64
+
+ 64%|██████▍   | 16/25 [00:39<00:22,  2.49s/it]Trial 17 finished, success: tensor([True]), steps: 70
+
+ 68%|██████▊   | 17/25 [00:42<00:21,  2.69s/it]Trial 18 finished, success: tensor([True]), steps: 67
+
+ 72%|███████▏  | 18/25 [00:45<00:18,  2.60s/it]Trial 19 finished, success: tensor([True]), steps: 65
+
+ 76%|███████▌  | 19/25 [00:48<00:17,  2.83s/it]Trial 20 finished, success: tensor([True]), steps: 64
+
+ 80%|████████  | 20/25 [00:51<00:14,  2.84s/it]Trial 21 finished, success: tensor([True]), steps: 63
+
+ 84%|████████▍ | 21/25 [00:54<00:11,  2.87s/it]Trial 22 finished, success: tensor([True]), steps: 78
+
+ 88%|████████▊ | 22/25 [00:56<00:08,  2.68s/it]Trial 23 finished, success: tensor([True]), steps: 67
+
+ 92%|█████████▏| 23/25 [00:58<00:05,  2.53s/it]Trial 24 finished, success: tensor([True]), steps: 73
+
+ 96%|█████████▌| 24/25 [01:00<00:02,  2.44s/it]Trial 25 finished, success: tensor([True]), steps: 67
+
+100%|██████████| 25/25 [01:03<00:00,  2.40s/it]100%|██████████| 25/25 [01:03<00:00,  2.53s/it]
+Success rate: 100.0%
+grid search:  13%|█▎        | 7/55 [07:15<49:52, 62.33s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 73
+
+  4%|▍         | 1/25 [00:02<00:54,  2.28s/it]Trial 2 finished, success: tensor([True]), steps: 69
+
+  8%|▊         | 2/25 [00:04<00:54,  2.37s/it]Trial 3 finished, success: tensor([True]), steps: 72
+
+ 12%|█▏        | 3/25 [00:06<00:50,  2.30s/it]Trial 4 finished, success: tensor([True]), steps: 64
+
+ 16%|█▌        | 4/25 [00:08<00:45,  2.17s/it]Trial 5 finished, success: tensor([True]), steps: 57
+
+ 20%|██        | 5/25 [00:10<00:40,  2.04s/it]Trial 6 finished, success: tensor([True]), steps: 73
+
+ 24%|██▍       | 6/25 [00:13<00:41,  2.20s/it]Trial 7 finished, success: tensor([True]), steps: 67
+
+ 28%|██▊       | 7/25 [00:15<00:42,  2.37s/it]Trial 8 finished, success: tensor([True]), steps: 58
+
+ 32%|███▏      | 8/25 [00:17<00:37,  2.18s/it]Trial 9 finished, success: tensor([True]), steps: 75
+
+ 36%|███▌      | 9/25 [00:20<00:36,  2.28s/it]Trial 10 finished, success: tensor([True]), steps: 69
+
+ 40%|████      | 10/25 [00:22<00:33,  2.26s/it]Trial 11 finished, success: tensor([True]), steps: 72
+
+ 44%|████▍     | 11/25 [00:25<00:35,  2.53s/it]Trial 12 finished, success: tensor([True]), steps: 65
+
+ 48%|████▊     | 12/25 [00:27<00:31,  2.45s/it]Trial 13 finished, success: tensor([True]), steps: 66
+
+ 52%|█████▏    | 13/25 [00:30<00:28,  2.37s/it]Trial 14 finished, success: tensor([True]), steps: 66
+
+ 56%|█████▌    | 14/25 [00:32<00:25,  2.34s/it]Trial 15 finished, success: tensor([True]), steps: 62
+
+ 60%|██████    | 15/25 [00:34<00:22,  2.22s/it]Trial 16 finished, success: tensor([True]), steps: 64
+
+ 64%|██████▍   | 16/25 [00:36<00:18,  2.09s/it]Trial 17 finished, success: tensor([True]), steps: 65
+
+ 68%|██████▊   | 17/25 [00:39<00:19,  2.39s/it]Trial 18 finished, success: tensor([True]), steps: 71
+
+ 72%|███████▏  | 18/25 [00:41<00:16,  2.33s/it]Trial 19 finished, success: tensor([True]), steps: 65
+
+ 76%|███████▌  | 19/25 [00:43<00:13,  2.29s/it]Trial 20 finished, success: tensor([True]), steps: 64
+
+ 80%|████████  | 20/25 [00:45<00:10,  2.16s/it]Trial 21 finished, success: tensor([True]), steps: 63
+
+ 84%|████████▍ | 21/25 [00:47<00:08,  2.04s/it]Trial 22 finished, success: tensor([True]), steps: 81
+
+ 88%|████████▊ | 22/25 [00:49<00:06,  2.20s/it]Trial 23 finished, success: tensor([True]), steps: 66
+
+ 92%|█████████▏| 23/25 [00:51<00:04,  2.21s/it]Trial 24 finished, success: tensor([True]), steps: 69
+
+ 96%|█████████▌| 24/25 [00:54<00:02,  2.30s/it]Trial 25 finished, success: tensor([True]), steps: 70
+
+100%|██████████| 25/25 [00:56<00:00,  2.28s/it]100%|██████████| 25/25 [00:56<00:00,  2.27s/it]
+Success rate: 100.0%
+grid search:  15%|█▍        | 8/55 [08:12<47:25, 60.53s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 68
+
+  4%|▍         | 1/25 [00:02<01:06,  2.77s/it]Trial 2 finished, success: tensor([True]), steps: 71
+
+  8%|▊         | 2/25 [00:04<00:54,  2.36s/it]Trial 3 finished, success: tensor([True]), steps: 72
+
+ 12%|█▏        | 3/25 [00:07<00:56,  2.58s/it]Trial 4 finished, success: tensor([True]), steps: 67
+
+ 16%|█▌        | 4/25 [00:09<00:49,  2.38s/it]Trial 5 finished, success: tensor([True]), steps: 56
+
+ 20%|██        | 5/25 [00:12<00:50,  2.54s/it]Trial 6 finished, success: tensor([True]), steps: 64
+
+ 24%|██▍       | 6/25 [00:14<00:43,  2.28s/it]Trial 7 finished, success: tensor([True]), steps: 67
+
+ 28%|██▊       | 7/25 [00:16<00:40,  2.25s/it]Trial 8 finished, success: tensor([True]), steps: 57
+
+ 32%|███▏      | 8/25 [00:18<00:35,  2.08s/it]Trial 9 finished, success: tensor([True]), steps: 74
+
+ 36%|███▌      | 9/25 [00:20<00:33,  2.12s/it]Trial 10 finished, success: tensor([True]), steps: 69
+
+ 40%|████      | 10/25 [00:22<00:32,  2.15s/it]Trial 11 finished, success: tensor([True]), steps: 76
+
+ 44%|████▍     | 11/25 [00:24<00:30,  2.16s/it]Trial 12 finished, success: tensor([True]), steps: 65
+
+ 48%|████▊     | 12/25 [00:27<00:28,  2.18s/it]Trial 13 finished, success: tensor([True]), steps: 64
+
+ 52%|█████▏    | 13/25 [00:28<00:24,  2.03s/it]Trial 14 finished, success: tensor([True]), steps: 65
+
+ 56%|█████▌    | 14/25 [00:31<00:23,  2.11s/it]Trial 15 finished, success: tensor([True]), steps: 62
+
+ 60%|██████    | 15/25 [00:32<00:20,  2.02s/it]Trial 16 finished, success: tensor([True]), steps: 62
+
+ 64%|██████▍   | 16/25 [00:34<00:17,  1.94s/it]Trial 17 finished, success: tensor([True]), steps: 65
+
+ 68%|██████▊   | 17/25 [00:36<00:16,  2.01s/it]Trial 18 finished, success: tensor([True]), steps: 68
+
+ 72%|███████▏  | 18/25 [00:39<00:16,  2.32s/it]Trial 19 finished, success: tensor([True]), steps: 64
+
+ 76%|███████▌  | 19/25 [00:42<00:13,  2.30s/it]Trial 20 finished, success: tensor([True]), steps: 64
+
+ 80%|████████  | 20/25 [00:43<00:10,  2.12s/it]Trial 21 finished, success: tensor([True]), steps: 67
+
+ 84%|████████▍ | 21/25 [00:46<00:08,  2.14s/it]Trial 22 finished, success: tensor([True]), steps: 79
+
+ 88%|████████▊ | 22/25 [00:48<00:06,  2.18s/it]Trial 23 finished, success: tensor([True]), steps: 68
+
+ 92%|█████████▏| 23/25 [00:50<00:04,  2.19s/it]Trial 24 finished, success: tensor([True]), steps: 77
+
+ 96%|█████████▌| 24/25 [00:52<00:02,  2.19s/it]Trial 25 finished, success: tensor([True]), steps: 67
+
+100%|██████████| 25/25 [00:54<00:00,  2.21s/it]100%|██████████| 25/25 [00:54<00:00,  2.20s/it]
+Success rate: 100.0%
+grid search:  16%|█▋        | 9/55 [09:07<45:04, 58.79s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 69
+
+  4%|▍         | 1/25 [00:02<00:51,  2.15s/it]Trial 2 finished, success: tensor([True]), steps: 74
+
+  8%|▊         | 2/25 [00:04<00:50,  2.20s/it]Trial 3 finished, success: tensor([True]), steps: 70
+
+ 12%|█▏        | 3/25 [00:06<00:47,  2.17s/it]Trial 4 finished, success: tensor([True]), steps: 66
+
+ 16%|█▌        | 4/25 [00:08<00:45,  2.17s/it]Trial 5 finished, success: tensor([True]), steps: 61
+
+ 20%|██        | 5/25 [00:10<00:43,  2.19s/it]Trial 6 finished, success: tensor([True]), steps: 79
+
+ 24%|██▍       | 6/25 [00:13<00:41,  2.18s/it]Trial 7 finished, success: tensor([True]), steps: 68
+
+ 28%|██▊       | 7/25 [00:15<00:43,  2.40s/it]Trial 8 finished, success: tensor([True]), steps: 55
+
+ 32%|███▏      | 8/25 [00:17<00:36,  2.18s/it]Trial 9 finished, success: tensor([True]), steps: 76
+
+ 36%|███▌      | 9/25 [00:20<00:35,  2.25s/it]Trial 10 finished, success: tensor([True]), steps: 69
+
+ 40%|████      | 10/25 [00:22<00:33,  2.23s/it]Trial 11 finished, success: tensor([True]), steps: 71
+
+ 44%|████▍     | 11/25 [00:24<00:32,  2.31s/it]Trial 12 finished, success: tensor([True]), steps: 71
+
+ 48%|████▊     | 12/25 [00:26<00:29,  2.26s/it]Trial 13 finished, success: tensor([True]), steps: 64
+
+ 52%|█████▏    | 13/25 [00:28<00:25,  2.13s/it]Trial 14 finished, success: tensor([True]), steps: 65
+
+ 56%|█████▌    | 14/25 [00:30<00:23,  2.13s/it]Trial 15 finished, success: tensor([True]), steps: 62
+
+ 60%|██████    | 15/25 [00:32<00:21,  2.10s/it]Trial 16 finished, success: tensor([True]), steps: 63
+
+ 64%|██████▍   | 16/25 [00:34<00:18,  2.00s/it]Trial 17 finished, success: tensor([True]), steps: 64
+
+ 68%|██████▊   | 17/25 [00:36<00:15,  1.95s/it]Trial 18 finished, success: tensor([True]), steps: 64
+
+ 72%|███████▏  | 18/25 [00:38<00:13,  1.89s/it]Trial 19 finished, success: tensor([True]), steps: 65
+
+ 76%|███████▌  | 19/25 [00:40<00:12,  2.00s/it]Trial 20 finished, success: tensor([True]), steps: 63
+
+ 80%|████████  | 20/25 [00:42<00:09,  1.92s/it]Trial 21 finished, success: tensor([True]), steps: 63
+
+ 84%|████████▍ | 21/25 [00:43<00:07,  1.86s/it]Trial 22 finished, success: tensor([True]), steps: 72
+
+ 88%|████████▊ | 22/25 [00:46<00:05,  1.96s/it]Trial 23 finished, success: tensor([True]), steps: 70
+
+ 92%|█████████▏| 23/25 [00:48<00:03,  2.00s/it]Trial 24 finished, success: tensor([True]), steps: 72
+
+ 96%|█████████▌| 24/25 [00:50<00:02,  2.22s/it]Trial 25 finished, success: tensor([True]), steps: 73
+
+100%|██████████| 25/25 [00:53<00:00,  2.21s/it]100%|██████████| 25/25 [00:53<00:00,  2.13s/it]
+Success rate: 100.0%
+grid search:  18%|█▊        | 10/55 [10:00<42:46, 57.04s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 67
+
+  4%|▍         | 1/25 [00:02<00:51,  2.14s/it]Trial 2 finished, success: tensor([True]), steps: 70
+
+  8%|▊         | 2/25 [00:04<00:50,  2.20s/it]Trial 3 finished, success: tensor([True]), steps: 73
+
+ 12%|█▏        | 3/25 [00:06<00:50,  2.29s/it]Trial 4 finished, success: tensor([True]), steps: 68
+
+ 16%|█▌        | 4/25 [00:08<00:47,  2.24s/it]Trial 5 finished, success: tensor([True]), steps: 60
+
+ 20%|██        | 5/25 [00:10<00:41,  2.09s/it]Trial 6 finished, success: tensor([True]), steps: 80
+
+ 24%|██▍       | 6/25 [00:13<00:41,  2.16s/it]Trial 7 finished, success: tensor([True]), steps: 71
+
+ 28%|██▊       | 7/25 [00:15<00:40,  2.25s/it]Trial 8 finished, success: tensor([True]), steps: 56
+
+ 32%|███▏      | 8/25 [00:17<00:35,  2.10s/it]Trial 9 finished, success: tensor([True]), steps: 74
+
+ 36%|███▌      | 9/25 [00:19<00:34,  2.15s/it]Trial 10 finished, success: tensor([True]), steps: 67
+
+ 40%|████      | 10/25 [00:21<00:32,  2.15s/it]Trial 11 finished, success: tensor([True]), steps: 71
+
+ 44%|████▍     | 11/25 [00:24<00:32,  2.33s/it]Trial 12 finished, success: tensor([True]), steps: 69
+
+ 48%|████▊     | 12/25 [00:27<00:32,  2.52s/it]Trial 13 finished, success: tensor([True]), steps: 67
+
+ 52%|█████▏    | 13/25 [00:29<00:30,  2.51s/it]Trial 14 finished, success: tensor([True]), steps: 66
+
+ 56%|█████▌    | 14/25 [00:31<00:26,  2.38s/it]Trial 15 finished, success: tensor([True]), steps: 63
+
+ 60%|██████    | 15/25 [00:33<00:22,  2.21s/it]Trial 16 finished, success: tensor([True]), steps: 63
+
+ 64%|██████▍   | 16/25 [00:35<00:18,  2.08s/it]Trial 17 finished, success: tensor([True]), steps: 66
+
+ 68%|██████▊   | 17/25 [00:38<00:19,  2.38s/it]Trial 18 finished, success: tensor([True]), steps: 67
+
+ 72%|███████▏  | 18/25 [00:40<00:16,  2.30s/it]Trial 19 finished, success: tensor([True]), steps: 64
+
+ 76%|███████▌  | 19/25 [00:43<00:14,  2.43s/it]Trial 20 finished, success: tensor([True]), steps: 64
+
+ 80%|████████  | 20/25 [00:45<00:11,  2.32s/it]Trial 21 finished, success: tensor([True]), steps: 63
+
+ 84%|████████▍ | 21/25 [00:47<00:08,  2.15s/it]Trial 22 finished, success: tensor([True]), steps: 78
+
+ 88%|████████▊ | 22/25 [00:50<00:07,  2.45s/it]Trial 23 finished, success: tensor([True]), steps: 66
+
+ 92%|█████████▏| 23/25 [00:52<00:04,  2.38s/it]Trial 24 finished, success: tensor([True]), steps: 80
+
+ 96%|█████████▌| 24/25 [00:54<00:02,  2.34s/it]Trial 25 finished, success: tensor([True]), steps: 72
+
+100%|██████████| 25/25 [00:57<00:00,  2.53s/it]100%|██████████| 25/25 [00:57<00:00,  2.32s/it]
+Success rate: 100.0%
+grid search:  20%|██        | 11/55 [10:58<42:01, 57.30s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 67
+
+  4%|▍         | 1/25 [00:02<00:50,  2.12s/it]Trial 2 finished, success: tensor([True]), steps: 71
+
+  8%|▊         | 2/25 [00:04<00:48,  2.12s/it]Trial 3 finished, success: tensor([True]), steps: 70
+
+ 12%|█▏        | 3/25 [00:06<00:48,  2.23s/it]Trial 4 finished, success: tensor([True]), steps: 64
+
+ 16%|█▌        | 4/25 [00:08<00:43,  2.07s/it]Trial 5 finished, success: tensor([True]), steps: 58
+
+ 20%|██        | 5/25 [00:10<00:38,  1.95s/it]Trial 6 finished, success: tensor([True]), steps: 78
+
+ 24%|██▍       | 6/25 [00:12<00:42,  2.22s/it]Trial 7 finished, success: tensor([True]), steps: 72
+
+ 28%|██▊       | 7/25 [00:15<00:40,  2.23s/it]Trial 8 finished, success: tensor([True]), steps: 56
+
+ 32%|███▏      | 8/25 [00:17<00:38,  2.24s/it]Trial 9 finished, success: tensor([True]), steps: 76
+
+ 36%|███▌      | 9/25 [00:19<00:35,  2.24s/it]Trial 10 finished, success: tensor([True]), steps: 67
+
+ 40%|████      | 10/25 [00:21<00:33,  2.21s/it]Trial 11 finished, success: tensor([True]), steps: 70
+
+ 44%|████▍     | 11/25 [00:24<00:33,  2.40s/it]Trial 12 finished, success: tensor([True]), steps: 66
+
+ 48%|████▊     | 12/25 [00:26<00:29,  2.30s/it]Trial 13 finished, success: tensor([True]), steps: 63
+
+ 52%|█████▏    | 13/25 [00:28<00:25,  2.14s/it]Trial 14 finished, success: tensor([True]), steps: 65
+
+ 56%|█████▌    | 14/25 [00:30<00:23,  2.11s/it]Trial 15 finished, success: tensor([True]), steps: 66
+
+ 60%|██████    | 15/25 [00:32<00:21,  2.12s/it]Trial 16 finished, success: tensor([True]), steps: 63
+
+ 64%|██████▍   | 16/25 [00:34<00:18,  2.05s/it]Trial 17 finished, success: tensor([True]), steps: 65
+
+ 68%|██████▊   | 17/25 [00:36<00:16,  2.11s/it]Trial 18 finished, success: tensor([True]), steps: 65
+
+ 72%|███████▏  | 18/25 [00:38<00:14,  2.11s/it]Trial 19 finished, success: tensor([True]), steps: 64
+
+ 76%|███████▌  | 19/25 [00:40<00:12,  2.01s/it]Trial 20 finished, success: tensor([True]), steps: 65
+
+ 80%|████████  | 20/25 [00:42<00:10,  2.07s/it]Trial 21 finished, success: tensor([True]), steps: 63
+
+ 84%|████████▍ | 21/25 [00:44<00:07,  1.97s/it]Trial 22 finished, success: tensor([True]), steps: 82
+
+ 88%|████████▊ | 22/25 [00:47<00:06,  2.15s/it]Trial 23 finished, success: tensor([True]), steps: 69
+
+ 92%|█████████▏| 23/25 [00:49<00:04,  2.15s/it]Trial 24 finished, success: tensor([True]), steps: 72
+
+ 96%|█████████▌| 24/25 [00:51<00:02,  2.15s/it]Trial 25 finished, success: tensor([True]), steps: 72
+
+100%|██████████| 25/25 [00:53<00:00,  2.18s/it]100%|██████████| 25/25 [00:53<00:00,  2.15s/it]
+Success rate: 100.0%
+grid search:  22%|██▏       | 12/55 [11:52<40:17, 56.21s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 80
+
+  4%|▍         | 1/25 [00:02<00:52,  2.19s/it]Trial 2 finished, success: tensor([True]), steps: 72
+
+  8%|▊         | 2/25 [00:04<00:49,  2.16s/it]Trial 3 finished, success: tensor([True]), steps: 85
+
+ 12%|█▏        | 3/25 [00:07<00:53,  2.42s/it]Trial 4 finished, success: tensor([True]), steps: 74
+
+ 16%|█▌        | 4/25 [00:09<00:50,  2.43s/it]Trial 5 finished, success: tensor([True]), steps: 59
+
+ 20%|██        | 5/25 [00:11<00:43,  2.18s/it]Trial 6 finished, success: tensor([True]), steps: 75
+
+ 24%|██▍       | 6/25 [00:13<00:40,  2.15s/it]Trial 7 finished, success: tensor([True]), steps: 77
+
+ 28%|██▊       | 7/25 [00:16<00:42,  2.38s/it]Trial 8 finished, success: tensor([True]), steps: 57
+
+ 32%|███▏      | 8/25 [00:17<00:37,  2.19s/it]Trial 9 finished, success: tensor([True]), steps: 85
+
+ 36%|███▌      | 9/25 [00:20<00:37,  2.32s/it]Trial 10 finished, success: tensor([True]), steps: 70
+
+ 40%|████      | 10/25 [00:22<00:34,  2.33s/it]Trial 11 finished, success: tensor([True]), steps: 79
+
+ 44%|████▍     | 11/25 [00:25<00:32,  2.31s/it]Trial 12 finished, success: tensor([True]), steps: 74
+
+ 48%|████▊     | 12/25 [00:27<00:29,  2.28s/it]Trial 13 finished, success: tensor([True]), steps: 66
+
+ 52%|█████▏    | 13/25 [00:29<00:27,  2.25s/it]Trial 14 finished, success: tensor([True]), steps: 75
+
+ 56%|█████▌    | 14/25 [00:32<00:26,  2.39s/it]Trial 15 finished, success: tensor([True]), steps: 68
+
+ 60%|██████    | 15/25 [00:34<00:24,  2.46s/it]Trial 16 finished, success: tensor([True]), steps: 64
+
+ 64%|██████▍   | 16/25 [00:36<00:20,  2.27s/it]Trial 17 finished, success: tensor([True]), steps: 66
+
+ 68%|██████▊   | 17/25 [00:38<00:17,  2.21s/it]Trial 18 finished, success: tensor([True]), steps: 75
+
+ 72%|███████▏  | 18/25 [00:41<00:16,  2.29s/it]Trial 19 finished, success: tensor([True]), steps: 66
+
+ 76%|███████▌  | 19/25 [00:43<00:13,  2.26s/it]Trial 20 finished, success: tensor([True]), steps: 65
+
+ 80%|████████  | 20/25 [00:45<00:11,  2.21s/it]Trial 21 finished, success: tensor([True]), steps: 74
+
+ 84%|████████▍ | 21/25 [00:47<00:08,  2.22s/it]Trial 22 finished, success: tensor([True]), steps: 83
+
+ 88%|████████▊ | 22/25 [00:50<00:06,  2.30s/it]Trial 23 finished, success: tensor([True]), steps: 69
+
+ 92%|█████████▏| 23/25 [00:52<00:04,  2.27s/it]Trial 24 finished, success: tensor([True]), steps: 96
+
+ 96%|█████████▌| 24/25 [00:55<00:02,  2.41s/it]Trial 25 finished, success: tensor([True]), steps: 70
+
+100%|██████████| 25/25 [00:57<00:00,  2.32s/it]100%|██████████| 25/25 [00:57<00:00,  2.29s/it]
+Success rate: 100.0%
+grid search:  24%|██▎       | 13/55 [12:49<39:35, 56.56s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 76
+
+  4%|▍         | 1/25 [00:02<00:52,  2.17s/it]Trial 2 finished, success: tensor([True]), steps: 71
+
+  8%|▊         | 2/25 [00:05<01:01,  2.69s/it]Trial 3 finished, success: tensor([True]), steps: 71
+
+ 12%|█▏        | 3/25 [00:07<00:53,  2.44s/it]Trial 4 finished, success: tensor([True]), steps: 75
+
+ 16%|█▌        | 4/25 [00:09<00:49,  2.34s/it]Trial 5 finished, success: tensor([True]), steps: 56
+
+ 20%|██        | 5/25 [00:11<00:42,  2.12s/it]Trial 6 finished, success: tensor([True]), steps: 75
+
+ 24%|██▍       | 6/25 [00:13<00:41,  2.18s/it]Trial 7 finished, success: tensor([True]), steps: 72
+
+ 28%|██▊       | 7/25 [00:15<00:39,  2.22s/it]Trial 8 finished, success: tensor([True]), steps: 56
+
+ 32%|███▏      | 8/25 [00:18<00:37,  2.23s/it]Trial 9 finished, success: tensor([True]), steps: 82
+
+ 36%|███▌      | 9/25 [00:20<00:38,  2.39s/it]Trial 10 finished, success: tensor([True]), steps: 70
+
+ 40%|████      | 10/25 [00:23<00:34,  2.32s/it]Trial 11 finished, success: tensor([True]), steps: 76
+
+ 44%|████▍     | 11/25 [00:25<00:32,  2.35s/it]Trial 12 finished, success: tensor([True]), steps: 67
+
+ 48%|████▊     | 12/25 [00:28<00:32,  2.47s/it]Trial 13 finished, success: tensor([True]), steps: 66
+
+ 52%|█████▏    | 13/25 [00:30<00:28,  2.36s/it]Trial 14 finished, success: tensor([True]), steps: 71
+
+ 56%|█████▌    | 14/25 [00:32<00:25,  2.30s/it]Trial 15 finished, success: tensor([True]), steps: 64
+
+ 60%|██████    | 15/25 [00:34<00:21,  2.12s/it]Trial 16 finished, success: tensor([True]), steps: 66
+
+ 64%|██████▍   | 16/25 [00:36<00:19,  2.15s/it]Trial 17 finished, success: tensor([True]), steps: 66
+
+ 68%|██████▊   | 17/25 [00:38<00:17,  2.15s/it]Trial 18 finished, success: tensor([True]), steps: 75
+
+ 72%|███████▏  | 18/25 [00:40<00:15,  2.14s/it]Trial 19 finished, success: tensor([True]), steps: 65
+
+ 76%|███████▌  | 19/25 [00:42<00:12,  2.13s/it]Trial 20 finished, success: tensor([True]), steps: 65
+
+ 80%|████████  | 20/25 [00:45<00:10,  2.17s/it]Trial 21 finished, success: tensor([True]), steps: 75
+
+ 84%|████████▍ | 21/25 [00:47<00:08,  2.17s/it]Trial 22 finished, success: tensor([True]), steps: 80
+
+ 88%|████████▊ | 22/25 [00:49<00:06,  2.19s/it]Trial 23 finished, success: tensor([True]), steps: 71
+
+ 92%|█████████▏| 23/25 [00:51<00:04,  2.18s/it]Trial 24 finished, success: tensor([True]), steps: 88
+
+ 96%|█████████▌| 24/25 [00:54<00:02,  2.32s/it]Trial 25 finished, success: tensor([True]), steps: 72
+
+100%|██████████| 25/25 [00:56<00:00,  2.27s/it]100%|██████████| 25/25 [00:56<00:00,  2.26s/it]
+Success rate: 100.0%
+grid search:  25%|██▌       | 14/55 [13:46<38:37, 56.52s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 66
+
+  4%|▍         | 1/25 [00:02<00:52,  2.18s/it]Trial 2 finished, success: tensor([True]), steps: 70
+
+  8%|▊         | 2/25 [00:04<00:48,  2.12s/it]Trial 3 finished, success: tensor([True]), steps: 70
+
+ 12%|█▏        | 3/25 [00:06<00:48,  2.21s/it]Trial 4 finished, success: tensor([True]), steps: 66
+
+ 16%|█▌        | 4/25 [00:08<00:45,  2.18s/it]Trial 5 finished, success: tensor([True]), steps: 57
+
+ 20%|██        | 5/25 [00:10<00:39,  2.00s/it]Trial 6 finished, success: tensor([True]), steps: 67
+
+ 24%|██▍       | 6/25 [00:12<00:39,  2.07s/it]Trial 7 finished, success: tensor([True]), steps: 72
+
+ 28%|██▊       | 7/25 [00:14<00:37,  2.07s/it]Trial 8 finished, success: tensor([True]), steps: 55
+
+ 32%|███▏      | 8/25 [00:16<00:33,  1.95s/it]Trial 9 finished, success: tensor([True]), steps: 76
+
+ 36%|███▌      | 9/25 [00:18<00:32,  2.04s/it]Trial 10 finished, success: tensor([True]), steps: 68
+
+ 40%|████      | 10/25 [00:20<00:30,  2.06s/it]Trial 11 finished, success: tensor([True]), steps: 76
+
+ 44%|████▍     | 11/25 [00:22<00:29,  2.11s/it]Trial 12 finished, success: tensor([True]), steps: 70
+
+ 48%|████▊     | 12/25 [00:25<00:27,  2.14s/it]Trial 13 finished, success: tensor([True]), steps: 66
+
+ 52%|█████▏    | 13/25 [00:27<00:25,  2.15s/it]Trial 14 finished, success: tensor([True]), steps: 65
+
+ 56%|█████▌    | 14/25 [00:29<00:23,  2.14s/it]Trial 15 finished, success: tensor([True]), steps: 62
+
+ 60%|██████    | 15/25 [00:31<00:21,  2.19s/it]Trial 16 finished, success: tensor([True]), steps: 64
+
+ 64%|██████▍   | 16/25 [00:33<00:19,  2.13s/it]Trial 17 finished, success: tensor([True]), steps: 64
+
+ 68%|██████▊   | 17/25 [00:35<00:16,  2.01s/it]Trial 18 finished, success: tensor([True]), steps: 68
+
+ 72%|███████▏  | 18/25 [00:37<00:14,  2.05s/it]Trial 19 finished, success: tensor([True]), steps: 64
+
+ 76%|███████▌  | 19/25 [00:39<00:11,  1.96s/it]Trial 20 finished, success: tensor([True]), steps: 64
+
+ 80%|████████  | 20/25 [00:41<00:09,  1.91s/it]Trial 21 finished, success: tensor([True]), steps: 62
+
+ 84%|████████▍ | 21/25 [00:43<00:07,  1.96s/it]Trial 22 finished, success: tensor([True]), steps: 79
+
+ 88%|████████▊ | 22/25 [00:45<00:06,  2.05s/it]Trial 23 finished, success: tensor([True]), steps: 71
+
+ 92%|█████████▏| 23/25 [00:47<00:04,  2.19s/it]Trial 24 finished, success: tensor([True]), steps: 71
+
+ 96%|█████████▌| 24/25 [00:50<00:02,  2.18s/it]Trial 25 finished, success: tensor([True]), steps: 71
+
+100%|██████████| 25/25 [00:52<00:00,  2.17s/it]100%|██████████| 25/25 [00:52<00:00,  2.09s/it]
+Success rate: 100.0%
+grid search:  27%|██▋       | 15/55 [14:38<36:49, 55.24s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 66
+
+  4%|▍         | 1/25 [00:02<00:55,  2.31s/it]Trial 2 finished, success: tensor([True]), steps: 69
+
+  8%|▊         | 2/25 [00:04<00:50,  2.21s/it]Trial 3 finished, success: tensor([True]), steps: 68
+
+ 12%|█▏        | 3/25 [00:06<00:49,  2.26s/it]Trial 4 finished, success: tensor([True]), steps: 66
+
+ 16%|█▌        | 4/25 [00:08<00:45,  2.19s/it]Trial 5 finished, success: tensor([True]), steps: 60
+
+ 20%|██        | 5/25 [00:10<00:40,  2.02s/it]Trial 6 finished, success: tensor([True]), steps: 79
+
+ 24%|██▍       | 6/25 [00:12<00:40,  2.11s/it]Trial 7 finished, success: tensor([True]), steps: 67
+
+ 28%|██▊       | 7/25 [00:15<00:41,  2.31s/it]Trial 8 finished, success: tensor([True]), steps: 55
+
+ 32%|███▏      | 8/25 [00:17<00:36,  2.16s/it]Trial 9 finished, success: tensor([True]), steps: 75
+
+ 36%|███▌      | 9/25 [00:19<00:34,  2.18s/it]Trial 10 finished, success: tensor([True]), steps: 67
+
+ 40%|████      | 10/25 [00:22<00:34,  2.32s/it]Trial 11 finished, success: tensor([True]), steps: 73
+
+ 44%|████▍     | 11/25 [00:24<00:31,  2.27s/it]Trial 12 finished, success: tensor([True]), steps: 71
+
+ 48%|████▊     | 12/25 [00:26<00:29,  2.24s/it]Trial 13 finished, success: tensor([True]), steps: 65
+
+ 52%|█████▏    | 13/25 [00:28<00:26,  2.22s/it]Trial 14 finished, success: tensor([True]), steps: 65
+
+ 56%|█████▌    | 14/25 [00:30<00:24,  2.20s/it]Trial 15 finished, success: tensor([True]), steps: 62
+
+ 60%|██████    | 15/25 [00:32<00:21,  2.14s/it]Trial 16 finished, success: tensor([True]), steps: 63
+
+ 64%|██████▍   | 16/25 [00:34<00:18,  2.00s/it]Trial 17 finished, success: tensor([True]), steps: 65
+
+ 68%|██████▊   | 17/25 [00:36<00:16,  2.04s/it]Trial 18 finished, success: tensor([True]), steps: 66
+
+ 72%|███████▏  | 18/25 [00:39<00:14,  2.12s/it]Trial 19 finished, success: tensor([True]), steps: 65
+
+ 76%|███████▌  | 19/25 [00:41<00:12,  2.14s/it]Trial 20 finished, success: tensor([True]), steps: 64
+
+ 80%|████████  | 20/25 [00:42<00:10,  2.02s/it]Trial 21 finished, success: tensor([True]), steps: 63
+
+ 84%|████████▍ | 21/25 [00:44<00:08,  2.01s/it]Trial 22 finished, success: tensor([True]), steps: 78
+
+ 88%|████████▊ | 22/25 [00:47<00:06,  2.07s/it]Trial 23 finished, success: tensor([True]), steps: 69
+
+ 92%|█████████▏| 23/25 [00:49<00:04,  2.10s/it]Trial 24 finished, success: tensor([True]), steps: 73
+
+ 96%|█████████▌| 24/25 [00:51<00:02,  2.11s/it]Trial 25 finished, success: tensor([True]), steps: 73
+
+100%|██████████| 25/25 [00:53<00:00,  2.19s/it]100%|██████████| 25/25 [00:53<00:00,  2.15s/it]
+Success rate: 100.0%
+grid search:  29%|██▉       | 16/55 [15:32<35:37, 54.82s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 67
+
+  4%|▍         | 1/25 [00:02<00:49,  2.05s/it]Trial 2 finished, success: tensor([True]), steps: 70
+
+  8%|▊         | 2/25 [00:04<00:59,  2.57s/it]Trial 3 finished, success: tensor([True]), steps: 70
+
+ 12%|█▏        | 3/25 [00:07<00:53,  2.41s/it]Trial 4 finished, success: tensor([True]), steps: 65
+
+ 16%|█▌        | 4/25 [00:09<00:48,  2.29s/it]Trial 5 finished, success: tensor([True]), steps: 59
+
+ 20%|██        | 5/25 [00:11<00:42,  2.12s/it]Trial 6 finished, success: tensor([True]), steps: 78
+
+ 24%|██▍       | 6/25 [00:13<00:42,  2.23s/it]Trial 7 finished, success: tensor([True]), steps: 70
+
+ 28%|██▊       | 7/25 [00:15<00:40,  2.23s/it]Trial 8 finished, success: tensor([True]), steps: 56
+
+ 32%|███▏      | 8/25 [00:17<00:35,  2.08s/it]Trial 9 finished, success: tensor([True]), steps: 73
+
+ 36%|███▌      | 9/25 [00:19<00:34,  2.15s/it]Trial 10 finished, success: tensor([True]), steps: 66
+
+ 40%|████      | 10/25 [00:21<00:32,  2.13s/it]Trial 11 finished, success: tensor([True]), steps: 70
+
+ 44%|████▍     | 11/25 [00:24<00:31,  2.22s/it]Trial 12 finished, success: tensor([True]), steps: 69
+
+ 48%|████▊     | 12/25 [00:26<00:28,  2.20s/it]Trial 13 finished, success: tensor([True]), steps: 64
+
+ 52%|█████▏    | 13/25 [00:28<00:24,  2.06s/it]Trial 14 finished, success: tensor([True]), steps: 66
+
+ 56%|█████▌    | 14/25 [00:30<00:23,  2.10s/it]Trial 15 finished, success: tensor([True]), steps: 62
+
+ 60%|██████    | 15/25 [00:32<00:19,  2.00s/it]Trial 16 finished, success: tensor([True]), steps: 62
+
+ 64%|██████▍   | 16/25 [00:34<00:17,  1.95s/it]Trial 17 finished, success: tensor([True]), steps: 65
+
+ 68%|██████▊   | 17/25 [00:36<00:15,  1.98s/it]Trial 18 finished, success: tensor([True]), steps: 61
+
+ 72%|███████▏  | 18/25 [00:38<00:15,  2.18s/it]Trial 19 finished, success: tensor([True]), steps: 65
+
+ 76%|███████▌  | 19/25 [00:40<00:12,  2.15s/it]Trial 20 finished, success: tensor([True]), steps: 64
+
+ 80%|████████  | 20/25 [00:42<00:10,  2.06s/it]Trial 21 finished, success: tensor([True]), steps: 62
+
+ 84%|████████▍ | 21/25 [00:44<00:08,  2.01s/it]Trial 22 finished, success: tensor([True]), steps: 80
+
+ 88%|████████▊ | 22/25 [00:46<00:06,  2.03s/it]Trial 23 finished, success: tensor([True]), steps: 67
+
+ 92%|█████████▏| 23/25 [00:48<00:04,  2.07s/it]Trial 24 finished, success: tensor([True]), steps: 82
+
+ 96%|█████████▌| 24/25 [00:51<00:02,  2.22s/it]Trial 25 finished, success: tensor([True]), steps: 70
+
+100%|██████████| 25/25 [00:53<00:00,  2.21s/it]100%|██████████| 25/25 [00:53<00:00,  2.14s/it]
+Success rate: 100.0%
+grid search:  31%|███       | 17/55 [16:25<34:29, 54.45s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 75
+
+  4%|▍         | 1/25 [00:02<00:51,  2.17s/it]Trial 2 finished, success: tensor([True]), steps: 81
+
+  8%|▊         | 2/25 [00:04<00:56,  2.47s/it]Trial 3 finished, success: tensor([True]), steps: 77
+
+ 12%|█▏        | 3/25 [00:07<00:52,  2.38s/it]Trial 4 finished, success: tensor([True]), steps: 69
+
+ 16%|█▌        | 4/25 [00:09<00:48,  2.30s/it]Trial 5 finished, success: tensor([True]), steps: 53
+
+ 20%|██        | 5/25 [00:11<00:45,  2.26s/it]Trial 6 finished, success: tensor([True]), steps: 69
+
+ 24%|██▍       | 6/25 [00:13<00:42,  2.21s/it]Trial 7 finished, success: tensor([True]), steps: 72
+
+ 28%|██▊       | 7/25 [00:15<00:39,  2.20s/it]Trial 8 finished, success: tensor([True]), steps: 58
+
+ 32%|███▏      | 8/25 [00:17<00:35,  2.06s/it]Trial 9 finished, success: tensor([True]), steps: 95
+
+ 36%|███▌      | 9/25 [00:20<00:36,  2.28s/it]Trial 10 finished, success: tensor([True]), steps: 69
+
+ 40%|████      | 10/25 [00:22<00:33,  2.21s/it]Trial 11 finished, success: tensor([True]), steps: 78
+
+ 44%|████▍     | 11/25 [00:24<00:30,  2.20s/it]Trial 12 finished, success: tensor([True]), steps: 75
+
+ 48%|████▊     | 12/25 [00:26<00:28,  2.18s/it]Trial 13 finished, success: tensor([True]), steps: 67
+
+ 52%|█████▏    | 13/25 [00:28<00:26,  2.18s/it]Trial 14 finished, success: tensor([True]), steps: 72
+
+ 56%|█████▌    | 14/25 [00:31<00:23,  2.18s/it]Trial 15 finished, success: tensor([True]), steps: 68
+
+ 60%|██████    | 15/25 [00:33<00:21,  2.17s/it]Trial 16 finished, success: tensor([True]), steps: 64
+
+ 64%|██████▍   | 16/25 [00:34<00:18,  2.03s/it]Trial 17 finished, success: tensor([True]), steps: 74
+
+ 68%|██████▊   | 17/25 [00:37<00:17,  2.23s/it]Trial 18 finished, success: tensor([True]), steps: 75
+
+ 72%|███████▏  | 18/25 [00:40<00:16,  2.29s/it]Trial 19 finished, success: tensor([True]), steps: 66
+
+ 76%|███████▌  | 19/25 [00:42<00:13,  2.27s/it]Trial 20 finished, success: tensor([True]), steps: 66
+
+ 80%|████████  | 20/25 [00:44<00:11,  2.24s/it]Trial 21 finished, success: tensor([True]), steps: 77
+
+ 84%|████████▍ | 21/25 [00:46<00:08,  2.23s/it]Trial 22 finished, success: tensor([True]), steps: 79
+
+ 88%|████████▊ | 22/25 [00:48<00:06,  2.25s/it]Trial 23 finished, success: tensor([True]), steps: 82
+
+ 92%|█████████▏| 23/25 [00:51<00:04,  2.41s/it]Trial 24 finished, success: tensor([True]), steps: 79
+
+ 96%|█████████▌| 24/25 [00:53<00:02,  2.37s/it]Trial 25 finished, success: tensor([True]), steps: 81
+
+100%|██████████| 25/25 [00:56<00:00,  2.57s/it]100%|██████████| 25/25 [00:56<00:00,  2.28s/it]
+Success rate: 100.0%
+grid search:  33%|███▎      | 18/55 [17:22<34:03, 55.22s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 79
+
+  4%|▍         | 1/25 [00:02<01:03,  2.63s/it]Trial 2 finished, success: tensor([True]), steps: 70
+
+  8%|▊         | 2/25 [00:04<00:54,  2.36s/it]Trial 3 finished, success: tensor([True]), steps: 81
+
+ 12%|█▏        | 3/25 [00:07<00:54,  2.46s/it]Trial 4 finished, success: tensor([True]), steps: 73
+
+ 16%|█▌        | 4/25 [00:09<00:49,  2.36s/it]Trial 5 finished, success: tensor([True]), steps: 54
+
+ 20%|██        | 5/25 [00:12<00:47,  2.39s/it]Trial 6 finished, success: tensor([True]), steps: 77
+
+ 24%|██▍       | 6/25 [00:14<00:44,  2.33s/it]Trial 7 finished, success: tensor([True]), steps: 76
+
+ 28%|██▊       | 7/25 [00:16<00:41,  2.29s/it]Trial 8 finished, success: tensor([True]), steps: 56
+
+ 32%|███▏      | 8/25 [00:18<00:36,  2.13s/it]Trial 9 finished, success: tensor([True]), steps: 90
+
+ 36%|███▌      | 9/25 [00:20<00:36,  2.30s/it]Trial 10 finished, success: tensor([True]), steps: 72
+
+ 40%|████      | 10/25 [00:23<00:33,  2.24s/it]Trial 11 finished, success: tensor([True]), steps: 80
+
+ 44%|████▍     | 11/25 [00:25<00:31,  2.23s/it]Trial 12 finished, success: tensor([True]), steps: 74
+
+ 48%|████▊     | 12/25 [00:27<00:29,  2.25s/it]Trial 13 finished, success: tensor([True]), steps: 67
+
+ 52%|█████▏    | 13/25 [00:29<00:26,  2.24s/it]Trial 14 finished, success: tensor([True]), steps: 68
+
+ 56%|█████▌    | 14/25 [00:31<00:24,  2.21s/it]Trial 15 finished, success: tensor([True]), steps: 66
+
+ 60%|██████    | 15/25 [00:34<00:21,  2.19s/it]Trial 16 finished, success: tensor([True]), steps: 65
+
+ 64%|██████▍   | 16/25 [00:36<00:19,  2.17s/it]Trial 17 finished, success: tensor([True]), steps: 74
+
+ 68%|██████▊   | 17/25 [00:38<00:17,  2.19s/it]Trial 18 finished, success: tensor([True]), steps: 81
+
+ 72%|███████▏  | 18/25 [00:41<00:16,  2.32s/it]Trial 19 finished, success: tensor([True]), steps: 61
+
+ 76%|███████▌  | 19/25 [00:42<00:13,  2.17s/it]Trial 20 finished, success: tensor([True]), steps: 66
+
+ 80%|████████  | 20/25 [00:45<00:10,  2.18s/it]Trial 21 finished, success: tensor([True]), steps: 82
+
+ 84%|████████▍ | 21/25 [00:48<00:10,  2.62s/it]Trial 22 finished, success: tensor([True]), steps: 75
+
+ 88%|████████▊ | 22/25 [00:50<00:07,  2.46s/it]Trial 23 finished, success: tensor([True]), steps: 81
+
+ 92%|█████████▏| 23/25 [00:53<00:04,  2.49s/it]Trial 24 finished, success: tensor([True]), steps: 95
+
+ 96%|█████████▌| 24/25 [00:56<00:02,  2.80s/it]Trial 25 finished, success: tensor([True]), steps: 70
+
+100%|██████████| 25/25 [00:59<00:00,  2.63s/it]100%|██████████| 25/25 [00:59<00:00,  2.36s/it]
+Success rate: 100.0%
+grid search:  35%|███▍      | 19/55 [18:21<33:49, 56.38s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 68
+
+  4%|▍         | 1/25 [00:02<00:50,  2.10s/it]Trial 2 finished, success: tensor([True]), steps: 69
+
+  8%|▊         | 2/25 [00:04<00:49,  2.16s/it]Trial 3 finished, success: tensor([True]), steps: 73
+
+ 12%|█▏        | 3/25 [00:06<00:47,  2.18s/it]Trial 4 finished, success: tensor([True]), steps: 72
+
+ 16%|█▌        | 4/25 [00:08<00:44,  2.14s/it]Trial 5 finished, success: tensor([True]), steps: 59
+
+ 20%|██        | 5/25 [00:10<00:39,  1.98s/it]Trial 6 finished, success: tensor([True]), steps: 81
+
+ 24%|██▍       | 6/25 [00:12<00:41,  2.19s/it]Trial 7 finished, success: tensor([True]), steps: 66
+
+ 28%|██▊       | 7/25 [00:15<00:39,  2.18s/it]Trial 8 finished, success: tensor([True]), steps: 55
+
+ 32%|███▏      | 8/25 [00:17<00:36,  2.15s/it]Trial 9 finished, success: tensor([True]), steps: 76
+
+ 36%|███▌      | 9/25 [00:19<00:35,  2.21s/it]Trial 10 finished, success: tensor([True]), steps: 72
+
+ 40%|████      | 10/25 [00:22<00:34,  2.32s/it]Trial 11 finished, success: tensor([True]), steps: 76
+
+ 44%|████▍     | 11/25 [00:24<00:32,  2.32s/it]Trial 12 finished, success: tensor([True]), steps: 68
+
+ 48%|████▊     | 12/25 [00:26<00:29,  2.26s/it]Trial 13 finished, success: tensor([True]), steps: 63
+
+ 52%|█████▏    | 13/25 [00:28<00:25,  2.09s/it]Trial 14 finished, success: tensor([True]), steps: 67
+
+ 56%|█████▌    | 14/25 [00:30<00:24,  2.21s/it]Trial 15 finished, success: tensor([True]), steps: 58
+
+ 60%|██████    | 15/25 [00:32<00:20,  2.04s/it]Trial 16 finished, success: tensor([True]), steps: 64
+
+ 64%|██████▍   | 16/25 [00:34<00:17,  2.00s/it]Trial 17 finished, success: tensor([True]), steps: 66
+
+ 68%|██████▊   | 17/25 [00:36<00:17,  2.16s/it]Trial 18 finished, success: tensor([True]), steps: 75
+
+ 72%|███████▏  | 18/25 [00:38<00:15,  2.16s/it]Trial 19 finished, success: tensor([True]), steps: 66
+
+ 76%|███████▌  | 19/25 [00:41<00:12,  2.15s/it]Trial 20 finished, success: tensor([True]), steps: 64
+
+ 80%|████████  | 20/25 [00:43<00:11,  2.28s/it]Trial 21 finished, success: tensor([True]), steps: 64
+
+ 84%|████████▍ | 21/25 [00:45<00:08,  2.12s/it]Trial 22 finished, success: tensor([True]), steps: 81
+
+ 88%|████████▊ | 22/25 [00:48<00:07,  2.36s/it]Trial 23 finished, success: tensor([True]), steps: 68
+
+ 92%|█████████▏| 23/25 [00:50<00:04,  2.32s/it]Trial 24 finished, success: tensor([True]), steps: 79
+
+ 96%|█████████▌| 24/25 [00:52<00:02,  2.28s/it]Trial 25 finished, success: tensor([True]), steps: 70
+
+100%|██████████| 25/25 [00:54<00:00,  2.24s/it]100%|██████████| 25/25 [00:54<00:00,  2.19s/it]
+Success rate: 100.0%
+grid search:  36%|███▋      | 20/55 [19:16<32:37, 55.92s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 67
+
+  4%|▍         | 1/25 [00:02<00:56,  2.34s/it]Trial 2 finished, success: tensor([True]), steps: 70
+
+  8%|▊         | 2/25 [00:04<00:51,  2.23s/it]Trial 3 finished, success: tensor([True]), steps: 67
+
+ 12%|█▏        | 3/25 [00:06<00:48,  2.20s/it]Trial 4 finished, success: tensor([True]), steps: 66
+
+ 16%|█▌        | 4/25 [00:08<00:45,  2.16s/it]Trial 5 finished, success: tensor([True]), steps: 59
+
+ 20%|██        | 5/25 [00:11<00:45,  2.29s/it]Trial 6 finished, success: tensor([True]), steps: 76
+
+ 24%|██▍       | 6/25 [00:13<00:43,  2.28s/it]Trial 7 finished, success: tensor([True]), steps: 70
+
+ 28%|██▊       | 7/25 [00:16<00:46,  2.58s/it]Trial 8 finished, success: tensor([True]), steps: 56
+
+ 32%|███▏      | 8/25 [00:18<00:38,  2.29s/it]Trial 9 finished, success: tensor([True]), steps: 75
+
+ 36%|███▌      | 9/25 [00:20<00:37,  2.32s/it]Trial 10 finished, success: tensor([True]), steps: 67
+
+ 40%|████      | 10/25 [00:22<00:34,  2.28s/it]Trial 11 finished, success: tensor([True]), steps: 71
+
+ 44%|████▍     | 11/25 [00:25<00:31,  2.25s/it]Trial 12 finished, success: tensor([True]), steps: 64
+
+ 48%|████▊     | 12/25 [00:26<00:27,  2.09s/it]Trial 13 finished, success: tensor([True]), steps: 65
+
+ 52%|█████▏    | 13/25 [00:29<00:25,  2.14s/it]Trial 14 finished, success: tensor([True]), steps: 65
+
+ 56%|█████▌    | 14/25 [00:31<00:23,  2.14s/it]Trial 15 finished, success: tensor([True]), steps: 63
+
+ 60%|██████    | 15/25 [00:33<00:20,  2.07s/it]Trial 16 finished, success: tensor([True]), steps: 63
+
+ 64%|██████▍   | 16/25 [00:34<00:17,  1.97s/it]Trial 17 finished, success: tensor([True]), steps: 70
+
+ 68%|██████▊   | 17/25 [00:37<00:16,  2.08s/it]Trial 18 finished, success: tensor([True]), steps: 63
+
+ 72%|███████▏  | 18/25 [00:39<00:14,  2.01s/it]Trial 19 finished, success: tensor([True]), steps: 65
+
+ 76%|███████▌  | 19/25 [00:41<00:12,  2.05s/it]Trial 20 finished, success: tensor([True]), steps: 65
+
+ 80%|████████  | 20/25 [00:43<00:10,  2.09s/it]Trial 21 finished, success: tensor([True]), steps: 63
+
+ 84%|████████▍ | 21/25 [00:45<00:07,  2.00s/it]Trial 22 finished, success: tensor([True]), steps: 81
+
+ 88%|████████▊ | 22/25 [00:47<00:06,  2.21s/it]Trial 23 finished, success: tensor([True]), steps: 71
+
+ 92%|█████████▏| 23/25 [00:50<00:04,  2.27s/it]Trial 24 finished, success: tensor([True]), steps: 73
+
+ 96%|█████████▌| 24/25 [00:52<00:02,  2.27s/it]Trial 25 finished, success: tensor([True]), steps: 73
+
+100%|██████████| 25/25 [00:54<00:00,  2.26s/it]100%|██████████| 25/25 [00:54<00:00,  2.19s/it]
+Success rate: 100.0%
+grid search:  38%|███▊      | 21/55 [20:11<31:30, 55.59s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 64
+
+  4%|▍         | 1/25 [00:01<00:44,  1.87s/it]Trial 2 finished, success: tensor([True]), steps: 70
+
+  8%|▊         | 2/25 [00:04<00:53,  2.33s/it]Trial 3 finished, success: tensor([True]), steps: 72
+
+ 12%|█▏        | 3/25 [00:06<00:49,  2.25s/it]Trial 4 finished, success: tensor([True]), steps: 65
+
+ 16%|█▌        | 4/25 [00:08<00:46,  2.23s/it]Trial 5 finished, success: tensor([True]), steps: 59
+
+ 20%|██        | 5/25 [00:10<00:41,  2.06s/it]Trial 6 finished, success: tensor([True]), steps: 78
+
+ 24%|██▍       | 6/25 [00:12<00:40,  2.12s/it]Trial 7 finished, success: tensor([True]), steps: 73
+
+ 28%|██▊       | 7/25 [00:15<00:38,  2.14s/it]Trial 8 finished, success: tensor([True]), steps: 56
+
+ 32%|███▏      | 8/25 [00:16<00:34,  2.01s/it]Trial 9 finished, success: tensor([True]), steps: 74
+
+ 36%|███▌      | 9/25 [00:18<00:33,  2.06s/it]Trial 10 finished, success: tensor([True]), steps: 67
+
+ 40%|████      | 10/25 [00:21<00:31,  2.08s/it]Trial 11 finished, success: tensor([True]), steps: 73
+
+ 44%|████▍     | 11/25 [00:23<00:29,  2.11s/it]Trial 12 finished, success: tensor([True]), steps: 69
+
+ 48%|████▊     | 12/25 [00:25<00:27,  2.11s/it]Trial 13 finished, success: tensor([True]), steps: 64
+
+ 52%|█████▏    | 13/25 [00:27<00:24,  2.01s/it]Trial 14 finished, success: tensor([True]), steps: 67
+
+ 56%|█████▌    | 14/25 [00:29<00:22,  2.05s/it]Trial 15 finished, success: tensor([True]), steps: 63
+
+ 60%|██████    | 15/25 [00:31<00:19,  1.96s/it]Trial 16 finished, success: tensor([True]), steps: 63
+
+ 64%|██████▍   | 16/25 [00:32<00:17,  1.91s/it]Trial 17 finished, success: tensor([True]), steps: 65
+
+ 68%|██████▊   | 17/25 [00:35<00:16,  2.00s/it]Trial 18 finished, success: tensor([True]), steps: 64
+
+ 72%|███████▏  | 18/25 [00:36<00:13,  1.93s/it]Trial 19 finished, success: tensor([True]), steps: 63
+
+ 76%|███████▌  | 19/25 [00:38<00:11,  1.90s/it]Trial 20 finished, success: tensor([True]), steps: 64
+
+ 80%|████████  | 20/25 [00:41<00:10,  2.15s/it]Trial 21 finished, success: tensor([True]), steps: 63
+
+ 84%|████████▍ | 21/25 [00:43<00:08,  2.03s/it]Trial 22 finished, success: tensor([True]), steps: 81
+
+ 88%|████████▊ | 22/25 [00:45<00:06,  2.23s/it]Trial 23 finished, success: tensor([True]), steps: 67
+
+ 92%|█████████▏| 23/25 [00:47<00:04,  2.20s/it]Trial 24 finished, success: tensor([True]), steps: 70
+
+ 96%|█████████▌| 24/25 [00:50<00:02,  2.20s/it]Trial 25 finished, success: tensor([True]), steps: 69
+
+100%|██████████| 25/25 [00:52<00:00,  2.16s/it]100%|██████████| 25/25 [00:52<00:00,  2.09s/it]
+Success rate: 100.0%
+grid search:  40%|████      | 22/55 [21:03<30:01, 54.59s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 78
+
+  4%|▍         | 1/25 [00:02<00:51,  2.15s/it]Trial 2 finished, success: tensor([True]), steps: 72
+
+  8%|▊         | 2/25 [00:04<00:48,  2.11s/it]Trial 3 finished, success: tensor([True]), steps: 73
+
+ 12%|█▏        | 3/25 [00:06<00:46,  2.11s/it]Trial 4 finished, success: tensor([True]), steps: 75
+
+ 16%|█▌        | 4/25 [00:08<00:44,  2.12s/it]Trial 5 finished, success: tensor([True]), steps: 55
+
+ 20%|██        | 5/25 [00:10<00:39,  1.97s/it]Trial 6 finished, success: tensor([True]), steps: 75
+
+ 24%|██▍       | 6/25 [00:12<00:38,  2.03s/it]Trial 7 finished, success: tensor([True]), steps: 77
+
+ 28%|██▊       | 7/25 [00:14<00:37,  2.07s/it]Trial 8 finished, success: tensor([True]), steps: 55
+
+ 32%|███▏      | 8/25 [00:16<00:33,  1.98s/it]Trial 9 finished, success: tensor([True]), steps: 94
+
+ 36%|███▌      | 9/25 [00:18<00:35,  2.19s/it]Trial 10 finished, success: tensor([True]), steps: 75
+
+ 40%|████      | 10/25 [00:21<00:33,  2.22s/it]Trial 11 finished, success: tensor([True]), steps: 77
+
+ 44%|████▍     | 11/25 [00:23<00:30,  2.19s/it]Trial 12 finished, success: tensor([True]), steps: 77
+
+ 48%|████▊     | 12/25 [00:25<00:28,  2.18s/it]Trial 13 finished, success: tensor([True]), steps: 67
+
+ 52%|█████▏    | 13/25 [00:27<00:26,  2.18s/it]Trial 14 finished, success: tensor([True]), steps: 74
+
+ 56%|█████▌    | 14/25 [00:30<00:26,  2.44s/it]Trial 15 finished, success: tensor([True]), steps: 66
+
+ 60%|██████    | 15/25 [00:32<00:23,  2.33s/it]Trial 16 finished, success: tensor([True]), steps: 63
+
+ 64%|██████▍   | 16/25 [00:34<00:19,  2.17s/it]Trial 17 finished, success: tensor([True]), steps: 76
+
+ 68%|██████▊   | 17/25 [00:37<00:18,  2.29s/it]Trial 18 finished, success: tensor([True]), steps: 74
+
+ 72%|███████▏  | 18/25 [00:39<00:15,  2.25s/it]Trial 19 finished, success: tensor([True]), steps: 62
+
+ 76%|███████▌  | 19/25 [00:41<00:13,  2.29s/it]Trial 20 finished, success: tensor([True]), steps: 65
+
+ 80%|████████  | 20/25 [00:43<00:11,  2.23s/it]Trial 21 finished, success: tensor([True]), steps: 75
+
+ 84%|████████▍ | 21/25 [00:46<00:09,  2.32s/it]Trial 22 finished, success: tensor([True]), steps: 82
+
+ 88%|████████▊ | 22/25 [00:48<00:07,  2.40s/it]Trial 23 finished, success: tensor([True]), steps: 72
+
+ 92%|█████████▏| 23/25 [00:51<00:04,  2.31s/it]Trial 24 finished, success: tensor([True]), steps: 87
+
+ 96%|█████████▌| 24/25 [00:53<00:02,  2.40s/it]Trial 25 finished, success: tensor([True]), steps: 71
+
+100%|██████████| 25/25 [00:55<00:00,  2.33s/it]100%|██████████| 25/25 [00:55<00:00,  2.23s/it]
+Success rate: 100.0%
+grid search:  42%|████▏     | 23/55 [21:59<29:18, 54.95s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 81
+
+  4%|▍         | 1/25 [00:02<01:02,  2.59s/it]Trial 2 finished, success: tensor([True]), steps: 73
+
+  8%|▊         | 2/25 [00:04<00:54,  2.36s/it]Trial 3 finished, success: tensor([True]), steps: 75
+
+ 12%|█▏        | 3/25 [00:07<00:51,  2.36s/it]Trial 4 finished, success: tensor([True]), steps: 74
+
+ 16%|█▌        | 4/25 [00:09<00:50,  2.39s/it]Trial 5 finished, success: tensor([True]), steps: 54
+
+ 20%|██        | 5/25 [00:11<00:43,  2.15s/it]Trial 6 finished, success: tensor([True]), steps: 78
+
+ 24%|██▍       | 6/25 [00:13<00:42,  2.26s/it]Trial 7 finished, success: tensor([True]), steps: 78
+
+ 28%|██▊       | 7/25 [00:16<00:43,  2.42s/it]Trial 8 finished, success: tensor([True]), steps: 55
+
+ 32%|███▏      | 8/25 [00:18<00:38,  2.24s/it]Trial 9 finished, success: tensor([True]), steps: 84
+
+ 36%|███▌      | 9/25 [00:21<00:37,  2.36s/it]Trial 10 finished, success: tensor([True]), steps: 70
+
+ 40%|████      | 10/25 [00:23<00:35,  2.37s/it]Trial 11 finished, success: tensor([True]), steps: 78
+
+ 44%|████▍     | 11/25 [00:25<00:32,  2.32s/it]Trial 12 finished, success: tensor([True]), steps: 74
+
+ 48%|████▊     | 12/25 [00:27<00:29,  2.28s/it]Trial 13 finished, success: tensor([True]), steps: 66
+
+ 52%|█████▏    | 13/25 [00:29<00:27,  2.25s/it]Trial 14 finished, success: tensor([True]), steps: 73
+
+ 56%|█████▌    | 14/25 [00:32<00:24,  2.26s/it]Trial 15 finished, success: tensor([True]), steps: 69
+
+ 60%|██████    | 15/25 [00:34<00:22,  2.22s/it]Trial 16 finished, success: tensor([True]), steps: 64
+
+ 64%|██████▍   | 16/25 [00:36<00:18,  2.09s/it]Trial 17 finished, success: tensor([True]), steps: 75
+
+ 68%|██████▊   | 17/25 [00:38<00:17,  2.15s/it]Trial 18 finished, success: tensor([True]), steps: 76
+
+ 72%|███████▏  | 18/25 [00:40<00:14,  2.14s/it]Trial 19 finished, success: tensor([True]), steps: 68
+
+ 76%|███████▌  | 19/25 [00:42<00:12,  2.14s/it]Trial 20 finished, success: tensor([True]), steps: 67
+
+ 80%|████████  | 20/25 [00:44<00:10,  2.15s/it]Trial 21 finished, success: tensor([True]), steps: 74
+
+ 84%|████████▍ | 21/25 [00:47<00:08,  2.17s/it]Trial 22 finished, success: tensor([True]), steps: 83
+
+ 88%|████████▊ | 22/25 [00:50<00:07,  2.47s/it]Trial 23 finished, success: tensor([True]), steps: 80
+
+ 92%|█████████▏| 23/25 [00:52<00:04,  2.42s/it]Trial 24 finished, success: tensor([True]), steps: 80
+
+ 96%|█████████▌| 24/25 [00:54<00:02,  2.38s/it]Trial 25 finished, success: tensor([True]), steps: 97
+
+100%|██████████| 25/25 [00:58<00:00,  2.83s/it]100%|██████████| 25/25 [00:58<00:00,  2.35s/it]
+Success rate: 100.0%
+grid search:  44%|████▎     | 24/55 [22:58<28:58, 56.09s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 69
+
+  4%|▍         | 1/25 [00:02<00:50,  2.11s/it]Trial 2 finished, success: tensor([True]), steps: 69
+
+  8%|▊         | 2/25 [00:04<00:49,  2.13s/it]Trial 3 finished, success: tensor([True]), steps: 79
+
+ 12%|█▏        | 3/25 [00:06<00:47,  2.14s/it]Trial 4 finished, success: tensor([True]), steps: 73
+
+ 16%|█▌        | 4/25 [00:08<00:45,  2.14s/it]Trial 5 finished, success: tensor([True]), steps: 56
+
+ 20%|██        | 5/25 [00:11<00:45,  2.28s/it]Trial 6 finished, success: tensor([True]), steps: 81
+
+ 24%|██▍       | 6/25 [00:13<00:45,  2.38s/it]Trial 7 finished, success: tensor([True]), steps: 71
+
+ 28%|██▊       | 7/25 [00:15<00:41,  2.33s/it]Trial 8 finished, success: tensor([True]), steps: 56
+
+ 32%|███▏      | 8/25 [00:17<00:36,  2.12s/it]Trial 9 finished, success: tensor([True]), steps: 80
+
+ 36%|███▌      | 9/25 [00:19<00:34,  2.13s/it]Trial 10 finished, success: tensor([True]), steps: 69
+
+ 40%|████      | 10/25 [00:21<00:32,  2.16s/it]Trial 11 finished, success: tensor([True]), steps: 76
+
+ 44%|████▍     | 11/25 [00:24<00:30,  2.21s/it]Trial 12 finished, success: tensor([True]), steps: 75
+
+ 48%|████▊     | 12/25 [00:27<00:32,  2.54s/it]Trial 13 finished, success: tensor([True]), steps: 65
+
+ 52%|█████▏    | 13/25 [00:29<00:28,  2.41s/it]Trial 14 finished, success: tensor([True]), steps: 67
+
+ 56%|█████▌    | 14/25 [00:32<00:27,  2.46s/it]Trial 15 finished, success: tensor([True]), steps: 55
+
+ 60%|██████    | 15/25 [00:33<00:22,  2.23s/it]Trial 16 finished, success: tensor([True]), steps: 63
+
+ 64%|██████▍   | 16/25 [00:35<00:18,  2.08s/it]Trial 17 finished, success: tensor([True]), steps: 66
+
+ 68%|██████▊   | 17/25 [00:37<00:16,  2.11s/it]Trial 18 finished, success: tensor([True]), steps: 74
+
+ 72%|███████▏  | 18/25 [00:40<00:15,  2.16s/it]Trial 19 finished, success: tensor([True]), steps: 66
+
+ 76%|███████▌  | 19/25 [00:42<00:13,  2.22s/it]Trial 20 finished, success: tensor([True]), steps: 66
+
+ 80%|████████  | 20/25 [00:44<00:11,  2.21s/it]Trial 21 finished, success: tensor([True]), steps: 75
+
+ 84%|████████▍ | 21/25 [00:47<00:09,  2.38s/it]Trial 22 finished, success: tensor([True]), steps: 78
+
+ 88%|████████▊ | 22/25 [00:49<00:06,  2.32s/it]Trial 23 finished, success: tensor([True]), steps: 66
+
+ 92%|█████████▏| 23/25 [00:51<00:04,  2.27s/it]Trial 24 finished, success: tensor([True]), steps: 99
+
+ 96%|█████████▌| 24/25 [00:55<00:02,  2.77s/it]Trial 25 finished, success: tensor([True]), steps: 73
+
+100%|██████████| 25/25 [00:57<00:00,  2.63s/it]100%|██████████| 25/25 [00:57<00:00,  2.32s/it]
+Success rate: 100.0%
+grid search:  45%|████▌     | 25/55 [23:56<28:19, 56.66s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 68
+
+  4%|▍         | 1/25 [00:02<00:50,  2.11s/it]Trial 2 finished, success: tensor([True]), steps: 68
+
+  8%|▊         | 2/25 [00:04<00:50,  2.18s/it]Trial 3 finished, success: tensor([True]), steps: 68
+
+ 12%|█▏        | 3/25 [00:07<00:56,  2.56s/it]Trial 4 finished, success: tensor([True]), steps: 65
+
+ 16%|█▌        | 4/25 [00:09<00:51,  2.44s/it]Trial 5 finished, success: tensor([True]), steps: 58
+
+ 20%|██        | 5/25 [00:11<00:44,  2.22s/it]Trial 6 finished, success: tensor([True]), steps: 77
+
+ 24%|██▍       | 6/25 [00:13<00:41,  2.20s/it]Trial 7 finished, success: tensor([True]), steps: 72
+
+ 28%|██▊       | 7/25 [00:17<00:48,  2.68s/it]Trial 8 finished, success: tensor([True]), steps: 56
+
+ 32%|███▏      | 8/25 [00:19<00:40,  2.39s/it]Trial 9 finished, success: tensor([True]), steps: 72
+
+ 36%|███▌      | 9/25 [00:21<00:38,  2.38s/it]Trial 10 finished, success: tensor([True]), steps: 66
+
+ 40%|████      | 10/25 [00:23<00:36,  2.45s/it]Trial 11 finished, success: tensor([True]), steps: 74
+
+ 44%|████▍     | 11/25 [00:26<00:33,  2.37s/it]Trial 12 finished, success: tensor([True]), steps: 68
+
+ 48%|████▊     | 12/25 [00:28<00:29,  2.30s/it]Trial 13 finished, success: tensor([True]), steps: 65
+
+ 52%|█████▏    | 13/25 [00:30<00:26,  2.24s/it]Trial 14 finished, success: tensor([True]), steps: 66
+
+ 56%|█████▌    | 14/25 [00:32<00:24,  2.21s/it]Trial 15 finished, success: tensor([True]), steps: 68
+
+ 60%|██████    | 15/25 [00:34<00:21,  2.18s/it]Trial 16 finished, success: tensor([True]), steps: 63
+
+ 64%|██████▍   | 16/25 [00:36<00:18,  2.07s/it]Trial 17 finished, success: tensor([True]), steps: 66
+
+ 68%|██████▊   | 17/25 [00:38<00:16,  2.12s/it]Trial 18 finished, success: tensor([True]), steps: 68
+
+ 72%|███████▏  | 18/25 [00:40<00:14,  2.13s/it]Trial 19 finished, success: tensor([True]), steps: 64
+
+ 76%|███████▌  | 19/25 [00:43<00:13,  2.24s/it]Trial 20 finished, success: tensor([True]), steps: 64
+
+ 80%|████████  | 20/25 [00:45<00:10,  2.10s/it]Trial 21 finished, success: tensor([True]), steps: 62
+
+ 84%|████████▍ | 21/25 [00:46<00:07,  1.99s/it]Trial 22 finished, success: tensor([True]), steps: 78
+
+ 88%|████████▊ | 22/25 [00:49<00:06,  2.13s/it]Trial 23 finished, success: tensor([True]), steps: 73
+
+ 92%|█████████▏| 23/25 [00:52<00:04,  2.35s/it]Trial 24 finished, success: tensor([True]), steps: 69
+
+ 96%|█████████▌| 24/25 [00:54<00:02,  2.29s/it]Trial 25 finished, success: tensor([True]), steps: 70
+
+100%|██████████| 25/25 [00:56<00:00,  2.29s/it]100%|██████████| 25/25 [00:56<00:00,  2.27s/it]
+Success rate: 100.0%
+grid search:  47%|████▋     | 26/55 [24:52<27:22, 56.65s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 67
+
+  4%|▍         | 1/25 [00:02<00:49,  2.08s/it]Trial 2 finished, success: tensor([True]), steps: 70
+
+  8%|▊         | 2/25 [00:05<01:01,  2.69s/it]Trial 3 finished, success: tensor([True]), steps: 79
+
+ 12%|█▏        | 3/25 [00:07<00:54,  2.50s/it]Trial 4 finished, success: tensor([True]), steps: 65
+
+ 16%|█▌        | 4/25 [00:09<00:49,  2.37s/it]Trial 5 finished, success: tensor([True]), steps: 60
+
+ 20%|██        | 5/25 [00:11<00:42,  2.15s/it]Trial 6 finished, success: tensor([True]), steps: 80
+
+ 24%|██▍       | 6/25 [00:13<00:41,  2.19s/it]Trial 7 finished, success: tensor([True]), steps: 67
+
+ 28%|██▊       | 7/25 [00:15<00:39,  2.21s/it]Trial 8 finished, success: tensor([True]), steps: 56
+
+ 32%|███▏      | 8/25 [00:17<00:35,  2.07s/it]Trial 9 finished, success: tensor([True]), steps: 74
+
+ 36%|███▌      | 9/25 [00:19<00:33,  2.09s/it]Trial 10 finished, success: tensor([True]), steps: 75
+
+ 40%|████      | 10/25 [00:22<00:31,  2.13s/it]Trial 11 finished, success: tensor([True]), steps: 71
+
+ 44%|████▍     | 11/25 [00:24<00:30,  2.15s/it]Trial 12 finished, success: tensor([True]), steps: 69
+
+ 48%|████▊     | 12/25 [00:26<00:30,  2.33s/it]Trial 13 finished, success: tensor([True]), steps: 63
+
+ 52%|█████▏    | 13/25 [00:28<00:25,  2.14s/it]Trial 14 finished, success: tensor([True]), steps: 65
+
+ 56%|█████▌    | 14/25 [00:30<00:23,  2.12s/it]Trial 15 finished, success: tensor([True]), steps: 67
+
+ 60%|██████    | 15/25 [00:32<00:21,  2.15s/it]Trial 16 finished, success: tensor([True]), steps: 64
+
+ 64%|██████▍   | 16/25 [00:34<00:18,  2.02s/it]Trial 17 finished, success: tensor([True]), steps: 65
+
+ 68%|██████▊   | 17/25 [00:36<00:16,  2.06s/it]Trial 18 finished, success: tensor([True]), steps: 63
+
+ 72%|███████▏  | 18/25 [00:38<00:14,  2.01s/it]Trial 19 finished, success: tensor([True]), steps: 68
+
+ 76%|███████▌  | 19/25 [00:40<00:12,  2.07s/it]Trial 20 finished, success: tensor([True]), steps: 64
+
+ 80%|████████  | 20/25 [00:42<00:10,  2.01s/it]Trial 21 finished, success: tensor([True]), steps: 66
+
+ 84%|████████▍ | 21/25 [00:44<00:08,  2.03s/it]Trial 22 finished, success: tensor([True]), steps: 81
+
+ 88%|████████▊ | 22/25 [00:47<00:06,  2.19s/it]Trial 23 finished, success: tensor([True]), steps: 68
+
+ 92%|█████████▏| 23/25 [00:49<00:04,  2.23s/it]Trial 24 finished, success: tensor([True]), steps: 73
+
+ 96%|█████████▌| 24/25 [00:51<00:02,  2.22s/it]Trial 25 finished, success: tensor([True]), steps: 73
+
+100%|██████████| 25/25 [00:54<00:00,  2.22s/it]100%|██████████| 25/25 [00:54<00:00,  2.17s/it]
+Success rate: 100.0%
+grid search:  49%|████▉     | 27/55 [25:47<26:05, 55.93s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 76
+
+  4%|▍         | 1/25 [00:02<00:54,  2.28s/it]Trial 2 finished, success: tensor([True]), steps: 72
+
+  8%|▊         | 2/25 [00:04<00:50,  2.18s/it]Trial 3 finished, success: tensor([True]), steps: 79
+
+ 12%|█▏        | 3/25 [00:06<00:47,  2.18s/it]Trial 4 finished, success: tensor([True]), steps: 71
+
+ 16%|█▌        | 4/25 [00:08<00:45,  2.19s/it]Trial 5 finished, success: tensor([True]), steps: 55
+
+ 20%|██        | 5/25 [00:10<00:39,  2.00s/it]Trial 6 finished, success: tensor([True]), steps: 75
+
+ 24%|██▍       | 6/25 [00:12<00:38,  2.04s/it]Trial 7 finished, success: tensor([True]), steps: 73
+
+ 28%|██▊       | 7/25 [00:14<00:37,  2.07s/it]Trial 8 finished, success: tensor([True]), steps: 55
+
+ 32%|███▏      | 8/25 [00:16<00:34,  2.01s/it]Trial 9 finished, success: tensor([True]), steps: 89
+
+ 36%|███▌      | 9/25 [00:19<00:35,  2.20s/it]Trial 10 finished, success: tensor([True]), steps: 71
+
+ 40%|████      | 10/25 [00:22<00:36,  2.46s/it]Trial 11 finished, success: tensor([True]), steps: 81
+
+ 44%|████▍     | 11/25 [00:24<00:34,  2.47s/it]Trial 12 finished, success: tensor([True]), steps: 77
+
+ 48%|████▊     | 12/25 [00:26<00:30,  2.37s/it]Trial 13 finished, success: tensor([True]), steps: 67
+
+ 52%|█████▏    | 13/25 [00:30<00:32,  2.69s/it]Trial 14 finished, success: tensor([True]), steps: 72
+
+ 56%|█████▌    | 14/25 [00:32<00:27,  2.50s/it]Trial 15 finished, success: tensor([True]), steps: 68
+
+ 60%|██████    | 15/25 [00:34<00:24,  2.42s/it]Trial 16 finished, success: tensor([True]), steps: 63
+
+ 64%|██████▍   | 16/25 [00:36<00:20,  2.23s/it]Trial 17 finished, success: tensor([True]), steps: 75
+
+ 68%|██████▊   | 17/25 [00:38<00:17,  2.22s/it]Trial 18 finished, success: tensor([True]), steps: 77
+
+ 72%|███████▏  | 18/25 [00:40<00:15,  2.18s/it]Trial 19 finished, success: tensor([False]), steps: 400
+
+ 76%|███████▌  | 19/25 [00:52<00:30,  5.00s/it]Trial 20 finished, success: tensor([True]), steps: 66
+
+ 80%|████████  | 20/25 [00:55<00:21,  4.38s/it]Trial 21 finished, success: tensor([True]), steps: 74
+
+ 84%|████████▍ | 21/25 [00:57<00:14,  3.73s/it]Trial 22 finished, success: tensor([True]), steps: 78
+
+ 88%|████████▊ | 22/25 [00:59<00:09,  3.30s/it]Trial 23 finished, success: tensor([True]), steps: 75
+
+ 92%|█████████▏| 23/25 [01:02<00:06,  3.12s/it]Trial 24 finished, success: tensor([True]), steps: 82
+
+ 96%|█████████▌| 24/25 [01:04<00:02,  2.96s/it]Trial 25 finished, success: tensor([True]), steps: 81
+
+100%|██████████| 25/25 [01:08<00:00,  3.03s/it]100%|██████████| 25/25 [01:08<00:00,  2.73s/it]
+Success rate: 96.0%
+grid search:  51%|█████     | 28/55 [26:55<26:49, 59.60s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 82
+
+  4%|▍         | 1/25 [00:02<01:00,  2.53s/it]Trial 2 finished, success: tensor([True]), steps: 73
+
+  8%|▊         | 2/25 [00:04<00:54,  2.36s/it]Trial 3 finished, success: tensor([True]), steps: 68
+
+ 12%|█▏        | 3/25 [00:06<00:50,  2.28s/it]Trial 4 finished, success: tensor([True]), steps: 75
+
+ 16%|█▌        | 4/25 [00:09<00:47,  2.27s/it]Trial 5 finished, success: tensor([True]), steps: 54
+
+ 20%|██        | 5/25 [00:10<00:41,  2.08s/it]Trial 6 finished, success: tensor([True]), steps: 76
+
+ 24%|██▍       | 6/25 [00:13<00:40,  2.11s/it]Trial 7 finished, success: tensor([True]), steps: 80
+
+ 28%|██▊       | 7/25 [00:15<00:41,  2.32s/it]Trial 8 finished, success: tensor([True]), steps: 58
+
+ 32%|███▏      | 8/25 [00:17<00:36,  2.12s/it]Trial 9 finished, success: tensor([True]), steps: 87
+
+ 36%|███▌      | 9/25 [00:20<00:36,  2.27s/it]Trial 10 finished, success: tensor([True]), steps: 73
+
+ 40%|████      | 10/25 [00:22<00:33,  2.22s/it]Trial 11 finished, success: tensor([True]), steps: 80
+
+ 44%|████▍     | 11/25 [00:24<00:30,  2.20s/it]Trial 12 finished, success: tensor([True]), steps: 69
+
+ 48%|████▊     | 12/25 [00:26<00:28,  2.16s/it]Trial 13 finished, success: tensor([True]), steps: 66
+
+ 52%|█████▏    | 13/25 [00:28<00:26,  2.18s/it]Trial 14 finished, success: tensor([True]), steps: 73
+
+ 56%|█████▌    | 14/25 [00:30<00:23,  2.16s/it]Trial 15 finished, success: tensor([True]), steps: 66
+
+ 60%|██████    | 15/25 [00:32<00:21,  2.16s/it]Trial 16 finished, success: tensor([True]), steps: 68
+
+ 64%|██████▍   | 16/25 [00:35<00:19,  2.18s/it]Trial 17 finished, success: tensor([True]), steps: 75
+
+ 68%|██████▊   | 17/25 [00:37<00:17,  2.20s/it]Trial 18 finished, success: tensor([True]), steps: 76
+
+ 72%|███████▏  | 18/25 [00:39<00:15,  2.19s/it]Trial 19 finished, success: tensor([True]), steps: 63
+
+ 76%|███████▌  | 19/25 [00:41<00:12,  2.04s/it]Trial 20 finished, success: tensor([True]), steps: 66
+
+ 80%|████████  | 20/25 [00:43<00:10,  2.05s/it]Trial 21 finished, success: tensor([True]), steps: 75
+
+ 84%|████████▍ | 21/25 [00:45<00:08,  2.07s/it]Trial 22 finished, success: tensor([True]), steps: 80
+
+ 88%|████████▊ | 22/25 [00:48<00:06,  2.28s/it]Trial 23 finished, success: tensor([True]), steps: 77
+
+ 92%|█████████▏| 23/25 [00:50<00:04,  2.26s/it]Trial 24 finished, success: tensor([True]), steps: 95
+
+ 96%|█████████▌| 24/25 [00:53<00:02,  2.37s/it]Trial 25 finished, success: tensor([True]), steps: 72
+
+100%|██████████| 25/25 [00:55<00:00,  2.29s/it]100%|██████████| 25/25 [00:55<00:00,  2.21s/it]
+Success rate: 100.0%
+grid search:  53%|█████▎    | 29/55 [27:50<25:15, 58.29s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 77
+
+  4%|▍         | 1/25 [00:02<00:55,  2.32s/it]Trial 2 finished, success: tensor([True]), steps: 70
+
+  8%|▊         | 2/25 [00:04<00:51,  2.23s/it]Trial 3 finished, success: tensor([True]), steps: 78
+
+ 12%|█▏        | 3/25 [00:06<00:48,  2.22s/it]Trial 4 finished, success: tensor([True]), steps: 71
+
+ 16%|█▌        | 4/25 [00:08<00:45,  2.19s/it]Trial 5 finished, success: tensor([True]), steps: 53
+
+ 20%|██        | 5/25 [00:10<00:40,  2.03s/it]Trial 6 finished, success: tensor([True]), steps: 83
+
+ 24%|██▍       | 6/25 [00:13<00:41,  2.21s/it]Trial 7 finished, success: tensor([True]), steps: 76
+
+ 28%|██▊       | 7/25 [00:15<00:40,  2.24s/it]Trial 8 finished, success: tensor([True]), steps: 56
+
+ 32%|███▏      | 8/25 [00:17<00:35,  2.07s/it]Trial 9 finished, success: tensor([True]), steps: 83
+
+ 36%|███▌      | 9/25 [00:19<00:36,  2.26s/it]Trial 10 finished, success: tensor([True]), steps: 70
+
+ 40%|████      | 10/25 [00:21<00:33,  2.21s/it]Trial 11 finished, success: tensor([True]), steps: 77
+
+ 44%|████▍     | 11/25 [00:24<00:31,  2.28s/it]Trial 12 finished, success: tensor([True]), steps: 69
+
+ 48%|████▊     | 12/25 [00:26<00:28,  2.22s/it]Trial 13 finished, success: tensor([True]), steps: 65
+
+ 52%|█████▏    | 13/25 [00:28<00:26,  2.23s/it]Trial 14 finished, success: tensor([True]), steps: 67
+
+ 56%|█████▌    | 14/25 [00:30<00:24,  2.21s/it]Trial 15 finished, success: tensor([True]), steps: 66
+
+ 60%|██████    | 15/25 [00:33<00:22,  2.22s/it]Trial 16 finished, success: tensor([True]), steps: 64
+
+ 64%|██████▍   | 16/25 [00:34<00:18,  2.08s/it]Trial 17 finished, success: tensor([True]), steps: 65
+
+ 68%|██████▊   | 17/25 [00:36<00:16,  2.09s/it]Trial 18 finished, success: tensor([True]), steps: 84
+
+ 72%|███████▏  | 18/25 [00:39<00:15,  2.21s/it]Trial 19 finished, success: tensor([True]), steps: 64
+
+ 76%|███████▌  | 19/25 [00:41<00:12,  2.06s/it]Trial 20 finished, success: tensor([True]), steps: 66
+
+ 80%|████████  | 20/25 [00:43<00:10,  2.06s/it]Trial 21 finished, success: tensor([True]), steps: 79
+
+ 84%|████████▍ | 21/25 [00:45<00:08,  2.10s/it]Trial 22 finished, success: tensor([True]), steps: 80
+
+ 88%|████████▊ | 22/25 [00:47<00:06,  2.16s/it]Trial 23 finished, success: tensor([True]), steps: 68
+
+ 92%|█████████▏| 23/25 [00:49<00:04,  2.12s/it]Trial 24 finished, success: tensor([True]), steps: 87
+
+ 96%|█████████▌| 24/25 [00:52<00:02,  2.44s/it]Trial 25 finished, success: tensor([True]), steps: 76
+
+100%|██████████| 25/25 [00:55<00:00,  2.40s/it]100%|██████████| 25/25 [00:55<00:00,  2.21s/it]
+Success rate: 100.0%
+grid search:  55%|█████▍    | 30/55 [28:45<23:54, 57.37s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 68
+
+  4%|▍         | 1/25 [00:02<00:52,  2.18s/it]Trial 2 finished, success: tensor([True]), steps: 70
+
+  8%|▊         | 2/25 [00:04<00:51,  2.23s/it]Trial 3 finished, success: tensor([True]), steps: 78
+
+ 12%|█▏        | 3/25 [00:06<00:48,  2.20s/it]Trial 4 finished, success: tensor([True]), steps: 68
+
+ 16%|█▌        | 4/25 [00:08<00:47,  2.24s/it]Trial 5 finished, success: tensor([True]), steps: 66
+
+ 20%|██        | 5/25 [00:11<00:44,  2.21s/it]Trial 6 finished, success: tensor([True]), steps: 80
+
+ 24%|██▍       | 6/25 [00:13<00:42,  2.22s/it]Trial 7 finished, success: tensor([True]), steps: 73
+
+ 28%|██▊       | 7/25 [00:15<00:39,  2.21s/it]Trial 8 finished, success: tensor([True]), steps: 58
+
+ 32%|███▏      | 8/25 [00:17<00:35,  2.07s/it]Trial 9 finished, success: tensor([True]), steps: 75
+
+ 36%|███▌      | 9/25 [00:19<00:34,  2.13s/it]Trial 10 finished, success: tensor([True]), steps: 67
+
+ 40%|████      | 10/25 [00:21<00:32,  2.15s/it]Trial 11 finished, success: tensor([True]), steps: 76
+
+ 44%|████▍     | 11/25 [00:24<00:33,  2.40s/it]Trial 12 finished, success: tensor([True]), steps: 68
+
+ 48%|████▊     | 12/25 [00:26<00:29,  2.31s/it]Trial 13 finished, success: tensor([True]), steps: 63
+
+ 52%|█████▏    | 13/25 [00:28<00:26,  2.23s/it]Trial 14 finished, success: tensor([True]), steps: 68
+
+ 56%|█████▌    | 14/25 [00:31<00:25,  2.35s/it]Trial 15 finished, success: tensor([True]), steps: 69
+
+ 60%|██████    | 15/25 [00:33<00:22,  2.29s/it]Trial 16 finished, success: tensor([True]), steps: 63
+
+ 64%|██████▍   | 16/25 [00:35<00:19,  2.15s/it]Trial 17 finished, success: tensor([True]), steps: 64
+
+ 68%|██████▊   | 17/25 [00:37<00:16,  2.04s/it]Trial 18 finished, success: tensor([True]), steps: 69
+
+ 72%|███████▏  | 18/25 [00:39<00:14,  2.08s/it]Trial 19 finished, success: tensor([True]), steps: 66
+
+ 76%|███████▌  | 19/25 [00:41<00:12,  2.10s/it]Trial 20 finished, success: tensor([True]), steps: 66
+
+ 80%|████████  | 20/25 [00:43<00:10,  2.11s/it]Trial 21 finished, success: tensor([True]), steps: 64
+
+ 84%|████████▍ | 21/25 [00:45<00:08,  2.07s/it]Trial 22 finished, success: tensor([True]), steps: 79
+
+ 88%|████████▊ | 22/25 [00:47<00:06,  2.10s/it]Trial 23 finished, success: tensor([True]), steps: 69
+
+ 92%|█████████▏| 23/25 [00:49<00:04,  2.10s/it]Trial 24 finished, success: tensor([True]), steps: 77
+
+ 96%|█████████▌| 24/25 [00:52<00:02,  2.37s/it]Trial 25 finished, success: tensor([True]), steps: 72
+
+100%|██████████| 25/25 [00:55<00:00,  2.30s/it]100%|██████████| 25/25 [00:55<00:00,  2.20s/it]
+Success rate: 100.0%
+grid search:  56%|█████▋    | 31/55 [29:40<22:40, 56.68s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 67
+
+  4%|▍         | 1/25 [00:02<00:51,  2.15s/it]Trial 2 finished, success: tensor([True]), steps: 71
+
+  8%|▊         | 2/25 [00:04<00:49,  2.15s/it]Trial 3 finished, success: tensor([True]), steps: 71
+
+ 12%|█▏        | 3/25 [00:06<00:49,  2.25s/it]Trial 4 finished, success: tensor([True]), steps: 65
+
+ 16%|█▌        | 4/25 [00:08<00:45,  2.18s/it]Trial 5 finished, success: tensor([True]), steps: 56
+
+ 20%|██        | 5/25 [00:10<00:40,  2.01s/it]Trial 6 finished, success: tensor([True]), steps: 77
+
+ 24%|██▍       | 6/25 [00:12<00:39,  2.09s/it]Trial 7 finished, success: tensor([True]), steps: 68
+
+ 28%|██▊       | 7/25 [00:14<00:38,  2.12s/it]Trial 8 finished, success: tensor([True]), steps: 54
+
+ 32%|███▏      | 8/25 [00:16<00:34,  2.03s/it]Trial 9 finished, success: tensor([True]), steps: 73
+
+ 36%|███▌      | 9/25 [00:18<00:33,  2.09s/it]Trial 10 finished, success: tensor([True]), steps: 68
+
+ 40%|████      | 10/25 [00:21<00:32,  2.17s/it]Trial 11 finished, success: tensor([True]), steps: 74
+
+ 44%|████▍     | 11/25 [00:23<00:30,  2.15s/it]Trial 12 finished, success: tensor([True]), steps: 69
+
+ 48%|████▊     | 12/25 [00:25<00:27,  2.15s/it]Trial 13 finished, success: tensor([True]), steps: 65
+
+ 52%|█████▏    | 13/25 [00:27<00:25,  2.13s/it]Trial 14 finished, success: tensor([True]), steps: 65
+
+ 56%|█████▌    | 14/25 [00:29<00:23,  2.11s/it]Trial 15 finished, success: tensor([True]), steps: 62
+
+ 60%|██████    | 15/25 [00:31<00:20,  2.06s/it]Trial 16 finished, success: tensor([True]), steps: 64
+
+ 64%|██████▍   | 16/25 [00:33<00:17,  1.98s/it]Trial 17 finished, success: tensor([True]), steps: 65
+
+ 68%|██████▊   | 17/25 [00:35<00:16,  2.03s/it]Trial 18 finished, success: tensor([True]), steps: 69
+
+ 72%|███████▏  | 18/25 [00:37<00:14,  2.05s/it]Trial 19 finished, success: tensor([True]), steps: 65
+
+ 76%|███████▌  | 19/25 [00:39<00:12,  2.10s/it]Trial 20 finished, success: tensor([True]), steps: 63
+
+ 80%|████████  | 20/25 [00:41<00:10,  2.03s/it]Trial 21 finished, success: tensor([True]), steps: 67
+
+ 84%|████████▍ | 21/25 [00:44<00:08,  2.25s/it]Trial 22 finished, success: tensor([True]), steps: 77
+
+ 88%|████████▊ | 22/25 [00:46<00:06,  2.25s/it]Trial 23 finished, success: tensor([True]), steps: 67
+
+ 92%|█████████▏| 23/25 [00:49<00:04,  2.34s/it]Trial 24 finished, success: tensor([True]), steps: 74
+
+ 96%|█████████▌| 24/25 [00:51<00:02,  2.31s/it]Trial 25 finished, success: tensor([True]), steps: 68
+
+100%|██████████| 25/25 [00:53<00:00,  2.26s/it]100%|██████████| 25/25 [00:53<00:00,  2.15s/it]
+Success rate: 100.0%
+grid search:  58%|█████▊    | 32/55 [30:34<21:22, 55.78s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 81
+
+  4%|▍         | 1/25 [00:02<01:01,  2.57s/it]Trial 2 finished, success: tensor([True]), steps: 72
+
+  8%|▊         | 2/25 [00:04<00:52,  2.30s/it]Trial 3 finished, success: tensor([True]), steps: 72
+
+ 12%|█▏        | 3/25 [00:07<00:56,  2.55s/it]Trial 4 finished, success: tensor([True]), steps: 73
+
+ 16%|█▌        | 4/25 [00:10<01:00,  2.89s/it]Trial 5 finished, success: tensor([True]), steps: 55
+
+ 20%|██        | 5/25 [00:12<00:49,  2.46s/it]Trial 6 finished, success: tensor([True]), steps: 67
+
+ 24%|██▍       | 6/25 [00:14<00:44,  2.33s/it]Trial 7 finished, success: tensor([True]), steps: 72
+
+ 28%|██▊       | 7/25 [00:17<00:44,  2.46s/it]Trial 8 finished, success: tensor([True]), steps: 58
+
+ 32%|███▏      | 8/25 [00:19<00:37,  2.21s/it]Trial 9 finished, success: tensor([True]), steps: 87
+
+ 36%|███▌      | 9/25 [00:21<00:38,  2.40s/it]Trial 10 finished, success: tensor([True]), steps: 70
+
+ 40%|████      | 10/25 [00:24<00:35,  2.34s/it]Trial 11 finished, success: tensor([True]), steps: 82
+
+ 44%|████▍     | 11/25 [00:26<00:34,  2.43s/it]Trial 12 finished, success: tensor([True]), steps: 79
+
+ 48%|████▊     | 12/25 [00:28<00:30,  2.35s/it]Trial 13 finished, success: tensor([True]), steps: 67
+
+ 52%|█████▏    | 13/25 [00:31<00:28,  2.34s/it]Trial 14 finished, success: tensor([True]), steps: 73
+
+ 56%|█████▌    | 14/25 [00:33<00:25,  2.30s/it]Trial 15 finished, success: tensor([True]), steps: 67
+
+ 60%|██████    | 15/25 [00:36<00:25,  2.55s/it]Trial 16 finished, success: tensor([True]), steps: 66
+
+ 64%|██████▍   | 16/25 [00:38<00:21,  2.41s/it]Trial 17 finished, success: tensor([True]), steps: 67
+
+ 68%|██████▊   | 17/25 [00:40<00:18,  2.31s/it]Trial 18 finished, success: tensor([True]), steps: 82
+
+ 72%|███████▏  | 18/25 [00:43<00:16,  2.37s/it]Trial 19 finished, success: tensor([True]), steps: 64
+
+ 76%|███████▌  | 19/25 [00:45<00:13,  2.22s/it]Trial 20 finished, success: tensor([True]), steps: 71
+
+ 80%|████████  | 20/25 [00:47<00:10,  2.20s/it]Trial 21 finished, success: tensor([True]), steps: 82
+
+ 84%|████████▍ | 21/25 [00:50<00:09,  2.36s/it]Trial 22 finished, success: tensor([True]), steps: 76
+
+ 88%|████████▊ | 22/25 [00:52<00:06,  2.31s/it]Trial 23 finished, success: tensor([True]), steps: 77
+
+ 92%|█████████▏| 23/25 [00:54<00:04,  2.27s/it]Trial 24 finished, success: tensor([True]), steps: 83
+
+ 96%|█████████▌| 24/25 [00:56<00:02,  2.35s/it]Trial 25 finished, success: tensor([True]), steps: 74
+
+100%|██████████| 25/25 [00:59<00:00,  2.31s/it]100%|██████████| 25/25 [00:59<00:00,  2.37s/it]
+Success rate: 100.0%
+grid search:  60%|██████    | 33/55 [31:33<20:49, 56.79s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 77
+
+  4%|▍         | 1/25 [00:02<00:54,  2.25s/it]Trial 2 finished, success: tensor([True]), steps: 72
+
+  8%|▊         | 2/25 [00:04<00:52,  2.26s/it]Trial 3 finished, success: tensor([True]), steps: 81
+
+ 12%|█▏        | 3/25 [00:07<00:52,  2.38s/it]Trial 4 finished, success: tensor([True]), steps: 75
+
+ 16%|█▌        | 4/25 [00:09<00:47,  2.28s/it]Trial 5 finished, success: tensor([True]), steps: 55
+
+ 20%|██        | 5/25 [00:10<00:41,  2.09s/it]Trial 6 finished, success: tensor([True]), steps: 69
+
+ 24%|██▍       | 6/25 [00:13<00:40,  2.15s/it]Trial 7 finished, success: tensor([True]), steps: 75
+
+ 28%|██▊       | 7/25 [00:15<00:38,  2.14s/it]Trial 8 finished, success: tensor([True]), steps: 59
+
+ 32%|███▏      | 8/25 [00:17<00:34,  2.02s/it]Trial 9 finished, success: tensor([True]), steps: 97
+
+ 36%|███▌      | 9/25 [00:20<00:40,  2.50s/it]Trial 10 finished, success: tensor([True]), steps: 76
+
+ 40%|████      | 10/25 [00:22<00:35,  2.40s/it]Trial 11 finished, success: tensor([True]), steps: 82
+
+ 44%|████▍     | 11/25 [00:25<00:34,  2.48s/it]Trial 12 finished, success: tensor([True]), steps: 76
+
+ 48%|████▊     | 12/25 [00:27<00:31,  2.38s/it]Trial 13 finished, success: tensor([True]), steps: 67
+
+ 52%|█████▏    | 13/25 [00:29<00:28,  2.35s/it]Trial 14 finished, success: tensor([True]), steps: 77
+
+ 56%|█████▌    | 14/25 [00:32<00:25,  2.29s/it]Trial 15 finished, success: tensor([True]), steps: 69
+
+ 60%|██████    | 15/25 [00:34<00:22,  2.28s/it]Trial 16 finished, success: tensor([True]), steps: 68
+
+ 64%|██████▍   | 16/25 [00:37<00:24,  2.70s/it]Trial 17 finished, success: tensor([True]), steps: 78
+
+ 68%|██████▊   | 17/25 [00:40<00:21,  2.71s/it]Trial 18 finished, success: tensor([True]), steps: 75
+
+ 72%|███████▏  | 18/25 [00:43<00:18,  2.59s/it]Trial 19 finished, success: tensor([True]), steps: 66
+
+ 76%|███████▌  | 19/25 [00:45<00:14,  2.47s/it]Trial 20 finished, success: tensor([True]), steps: 69
+
+ 80%|████████  | 20/25 [00:47<00:11,  2.38s/it]Trial 21 finished, success: tensor([True]), steps: 77
+
+ 84%|████████▍ | 21/25 [00:49<00:09,  2.37s/it]Trial 22 finished, success: tensor([True]), steps: 74
+
+ 88%|████████▊ | 22/25 [00:51<00:06,  2.29s/it]Trial 23 finished, success: tensor([True]), steps: 76
+
+ 92%|█████████▏| 23/25 [00:54<00:04,  2.26s/it]Trial 24 finished, success: tensor([True]), steps: 87
+
+ 96%|█████████▌| 24/25 [00:56<00:02,  2.34s/it]Trial 25 finished, success: tensor([True]), steps: 65
+
+100%|██████████| 25/25 [00:58<00:00,  2.28s/it]100%|██████████| 25/25 [00:58<00:00,  2.35s/it]
+Success rate: 100.0%
+grid search:  62%|██████▏   | 34/55 [32:32<20:04, 57.36s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 76
+
+  4%|▍         | 1/25 [00:03<01:30,  3.77s/it]Trial 2 finished, success: tensor([True]), steps: 71
+
+  8%|▊         | 2/25 [00:05<01:05,  2.84s/it]Trial 3 finished, success: tensor([True]), steps: 79
+
+ 12%|█▏        | 3/25 [00:08<00:57,  2.59s/it]Trial 4 finished, success: tensor([True]), steps: 74
+
+ 16%|█▌        | 4/25 [00:10<00:50,  2.41s/it]Trial 5 finished, success: tensor([True]), steps: 56
+
+ 20%|██        | 5/25 [00:12<00:43,  2.16s/it]Trial 6 finished, success: tensor([True]), steps: 67
+
+ 24%|██▍       | 6/25 [00:14<00:41,  2.18s/it]Trial 7 finished, success: tensor([True]), steps: 77
+
+ 28%|██▊       | 7/25 [00:16<00:39,  2.19s/it]Trial 8 finished, success: tensor([True]), steps: 57
+
+ 32%|███▏      | 8/25 [00:18<00:35,  2.07s/it]Trial 9 finished, success: tensor([True]), steps: 87
+
+ 36%|███▌      | 9/25 [00:20<00:35,  2.20s/it]Trial 10 finished, success: tensor([True]), steps: 74
+
+ 40%|████      | 10/25 [00:24<00:38,  2.55s/it]Trial 11 finished, success: tensor([True]), steps: 77
+
+ 44%|████▍     | 11/25 [00:26<00:34,  2.43s/it]Trial 12 finished, success: tensor([True]), steps: 75
+
+ 48%|████▊     | 12/25 [00:28<00:30,  2.38s/it]Trial 13 finished, success: tensor([True]), steps: 65
+
+ 52%|█████▏    | 13/25 [00:30<00:27,  2.32s/it]Trial 14 finished, success: tensor([True]), steps: 70
+
+ 56%|█████▌    | 14/25 [00:33<00:26,  2.37s/it]Trial 15 finished, success: tensor([True]), steps: 67
+
+ 60%|██████    | 15/25 [00:35<00:23,  2.33s/it]Trial 16 finished, success: tensor([True]), steps: 63
+
+ 64%|██████▍   | 16/25 [00:37<00:19,  2.17s/it]Trial 17 finished, success: tensor([True]), steps: 75
+
+ 68%|██████▊   | 17/25 [00:39<00:17,  2.17s/it]Trial 18 finished, success: tensor([True]), steps: 76
+
+ 72%|███████▏  | 18/25 [00:41<00:15,  2.19s/it]Trial 19 finished, success: tensor([True]), steps: 59
+
+ 76%|███████▌  | 19/25 [00:43<00:12,  2.05s/it]Trial 20 finished, success: tensor([True]), steps: 66
+
+ 80%|████████  | 20/25 [00:45<00:10,  2.07s/it]Trial 21 finished, success: tensor([True]), steps: 78
+
+ 84%|████████▍ | 21/25 [00:47<00:08,  2.19s/it]Trial 22 finished, success: tensor([True]), steps: 79
+
+ 88%|████████▊ | 22/25 [00:50<00:06,  2.20s/it]Trial 23 finished, success: tensor([True]), steps: 80
+
+ 92%|█████████▏| 23/25 [00:52<00:04,  2.25s/it]Trial 24 finished, success: tensor([True]), steps: 92
+
+ 96%|█████████▌| 24/25 [00:55<00:02,  2.35s/it]Trial 25 finished, success: tensor([True]), steps: 73
+
+100%|██████████| 25/25 [00:57<00:00,  2.32s/it]100%|██████████| 25/25 [00:57<00:00,  2.30s/it]
+Success rate: 100.0%
+grid search:  64%|██████▎   | 35/55 [33:29<19:07, 57.39s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 66
+
+  4%|▍         | 1/25 [00:02<00:51,  2.14s/it]Trial 2 finished, success: tensor([True]), steps: 69
+
+  8%|▊         | 2/25 [00:04<00:53,  2.34s/it]Trial 3 finished, success: tensor([True]), steps: 69
+
+ 12%|█▏        | 3/25 [00:06<00:49,  2.26s/it]Trial 4 finished, success: tensor([True]), steps: 70
+
+ 16%|█▌        | 4/25 [00:08<00:46,  2.23s/it]Trial 5 finished, success: tensor([True]), steps: 60
+
+ 20%|██        | 5/25 [00:10<00:41,  2.05s/it]Trial 6 finished, success: tensor([True]), steps: 77
+
+ 24%|██▍       | 6/25 [00:14<00:47,  2.51s/it]Trial 7 finished, success: tensor([True]), steps: 72
+
+ 28%|██▊       | 7/25 [00:16<00:45,  2.53s/it]Trial 8 finished, success: tensor([True]), steps: 55
+
+ 32%|███▏      | 8/25 [00:18<00:38,  2.26s/it]Trial 9 finished, success: tensor([True]), steps: 74
+
+ 36%|███▌      | 9/25 [00:21<00:38,  2.40s/it]Trial 10 finished, success: tensor([True]), steps: 68
+
+ 40%|████      | 10/25 [00:23<00:34,  2.33s/it]Trial 11 finished, success: tensor([True]), steps: 70
+
+ 44%|████▍     | 11/25 [00:25<00:31,  2.26s/it]Trial 12 finished, success: tensor([True]), steps: 69
+
+ 48%|████▊     | 12/25 [00:27<00:28,  2.19s/it]Trial 13 finished, success: tensor([True]), steps: 67
+
+ 52%|█████▏    | 13/25 [00:29<00:25,  2.16s/it]Trial 14 finished, success: tensor([True]), steps: 66
+
+ 56%|█████▌    | 14/25 [00:32<00:25,  2.35s/it]Trial 15 finished, success: tensor([True]), steps: 62
+
+ 60%|██████    | 15/25 [00:34<00:21,  2.19s/it]Trial 16 finished, success: tensor([True]), steps: 62
+
+ 64%|██████▍   | 16/25 [00:35<00:18,  2.04s/it]Trial 17 finished, success: tensor([True]), steps: 64
+
+ 68%|██████▊   | 17/25 [00:37<00:15,  1.98s/it]Trial 18 finished, success: tensor([True]), steps: 67
+
+ 72%|███████▏  | 18/25 [00:40<00:15,  2.23s/it]Trial 19 finished, success: tensor([True]), steps: 65
+
+ 76%|███████▌  | 19/25 [00:42<00:13,  2.19s/it]Trial 20 finished, success: tensor([True]), steps: 65
+
+ 80%|████████  | 20/25 [00:45<00:11,  2.33s/it]Trial 21 finished, success: tensor([True]), steps: 63
+
+ 84%|████████▍ | 21/25 [00:46<00:08,  2.16s/it]Trial 22 finished, success: tensor([True]), steps: 82
+
+ 88%|████████▊ | 22/25 [00:49<00:07,  2.35s/it]Trial 23 finished, success: tensor([True]), steps: 68
+
+ 92%|█████████▏| 23/25 [00:51<00:04,  2.30s/it]Trial 24 finished, success: tensor([True]), steps: 69
+
+ 96%|█████████▌| 24/25 [00:53<00:02,  2.24s/it]Trial 25 finished, success: tensor([True]), steps: 68
+
+100%|██████████| 25/25 [00:57<00:00,  2.56s/it]100%|██████████| 25/25 [00:57<00:00,  2.29s/it]
+Success rate: 100.0%
+grid search:  65%|██████▌   | 36/55 [34:27<18:09, 57.36s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 68
+
+  4%|▍         | 1/25 [00:02<00:51,  2.13s/it]Trial 2 finished, success: tensor([True]), steps: 70
+
+  8%|▊         | 2/25 [00:04<00:50,  2.18s/it]Trial 3 finished, success: tensor([True]), steps: 69
+
+ 12%|█▏        | 3/25 [00:06<00:48,  2.21s/it]Trial 4 finished, success: tensor([True]), steps: 69
+
+ 16%|█▌        | 4/25 [00:08<00:45,  2.19s/it]Trial 5 finished, success: tensor([True]), steps: 61
+
+ 20%|██        | 5/25 [00:10<00:40,  2.04s/it]Trial 6 finished, success: tensor([True]), steps: 78
+
+ 24%|██▍       | 6/25 [00:12<00:39,  2.10s/it]Trial 7 finished, success: tensor([True]), steps: 72
+
+ 28%|██▊       | 7/25 [00:14<00:38,  2.13s/it]Trial 8 finished, success: tensor([True]), steps: 55
+
+ 32%|███▏      | 8/25 [00:17<00:37,  2.23s/it]Trial 9 finished, success: tensor([True]), steps: 72
+
+ 36%|███▌      | 9/25 [00:19<00:35,  2.21s/it]Trial 10 finished, success: tensor([True]), steps: 66
+
+ 40%|████      | 10/25 [00:21<00:33,  2.22s/it]Trial 11 finished, success: tensor([True]), steps: 72
+
+ 44%|████▍     | 11/25 [00:23<00:30,  2.20s/it]Trial 12 finished, success: tensor([True]), steps: 68
+
+ 48%|████▊     | 12/25 [00:26<00:30,  2.33s/it]Trial 13 finished, success: tensor([True]), steps: 66
+
+ 52%|█████▏    | 13/25 [00:28<00:27,  2.27s/it]Trial 14 finished, success: tensor([True]), steps: 66
+
+ 56%|█████▌    | 14/25 [00:30<00:24,  2.25s/it]Trial 15 finished, success: tensor([True]), steps: 64
+
+ 60%|██████    | 15/25 [00:32<00:21,  2.10s/it]Trial 16 finished, success: tensor([True]), steps: 63
+
+ 64%|██████▍   | 16/25 [00:34<00:18,  2.01s/it]Trial 17 finished, success: tensor([True]), steps: 65
+
+ 68%|██████▊   | 17/25 [00:36<00:16,  2.10s/it]Trial 18 finished, success: tensor([True]), steps: 61
+
+ 72%|███████▏  | 18/25 [00:38<00:14,  2.00s/it]Trial 19 finished, success: tensor([True]), steps: 65
+
+ 76%|███████▌  | 19/25 [00:40<00:12,  2.04s/it]Trial 20 finished, success: tensor([True]), steps: 63
+
+ 80%|████████  | 20/25 [00:43<00:10,  2.18s/it]Trial 21 finished, success: tensor([True]), steps: 63
+
+ 84%|████████▍ | 21/25 [00:45<00:08,  2.08s/it]Trial 22 finished, success: tensor([True]), steps: 78
+
+ 88%|████████▊ | 22/25 [00:48<00:07,  2.38s/it]Trial 23 finished, success: tensor([True]), steps: 75
+
+ 92%|█████████▏| 23/25 [00:50<00:04,  2.32s/it]Trial 24 finished, success: tensor([True]), steps: 78
+
+ 96%|█████████▌| 24/25 [00:53<00:02,  2.46s/it]Trial 25 finished, success: tensor([True]), steps: 74
+
+100%|██████████| 25/25 [00:55<00:00,  2.40s/it]100%|██████████| 25/25 [00:55<00:00,  2.21s/it]
+Success rate: 100.0%
+grid search:  67%|██████▋   | 37/55 [35:22<17:01, 56.75s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 77
+
+  4%|▍         | 1/25 [00:02<00:53,  2.24s/it]Trial 2 finished, success: tensor([True]), steps: 73
+
+  8%|▊         | 2/25 [00:04<00:51,  2.23s/it]Trial 3 finished, success: tensor([True]), steps: 75
+
+ 12%|█▏        | 3/25 [00:06<00:49,  2.23s/it]Trial 4 finished, success: tensor([True]), steps: 75
+
+ 16%|█▌        | 4/25 [00:08<00:46,  2.23s/it]Trial 5 finished, success: tensor([True]), steps: 54
+
+ 20%|██        | 5/25 [00:10<00:41,  2.07s/it]Trial 6 finished, success: tensor([True]), steps: 68
+
+ 24%|██▍       | 6/25 [00:12<00:40,  2.12s/it]Trial 7 finished, success: tensor([True]), steps: 77
+
+ 28%|██▊       | 7/25 [00:15<00:42,  2.34s/it]Trial 8 finished, success: tensor([True]), steps: 55
+
+ 32%|███▏      | 8/25 [00:17<00:37,  2.20s/it]Trial 9 finished, success: tensor([True]), steps: 94
+
+ 36%|███▌      | 9/25 [00:20<00:37,  2.34s/it]Trial 10 finished, success: tensor([True]), steps: 73
+
+ 40%|████      | 10/25 [00:22<00:34,  2.28s/it]Trial 11 finished, success: tensor([True]), steps: 77
+
+ 44%|████▍     | 11/25 [00:25<00:33,  2.39s/it]Trial 12 finished, success: tensor([True]), steps: 83
+
+ 48%|████▊     | 12/25 [00:27<00:32,  2.48s/it]Trial 13 finished, success: tensor([True]), steps: 67
+
+ 52%|█████▏    | 13/25 [00:30<00:30,  2.57s/it]Trial 14 finished, success: tensor([True]), steps: 72
+
+ 56%|█████▌    | 14/25 [00:32<00:27,  2.46s/it]Trial 15 finished, success: tensor([True]), steps: 66
+
+ 60%|██████    | 15/25 [00:34<00:23,  2.37s/it]Trial 16 finished, success: tensor([True]), steps: 66
+
+ 64%|██████▍   | 16/25 [00:36<00:20,  2.29s/it]Trial 17 finished, success: tensor([True]), steps: 79
+
+ 68%|██████▊   | 17/25 [00:39<00:18,  2.30s/it]Trial 18 finished, success: tensor([True]), steps: 74
+
+ 72%|███████▏  | 18/25 [00:41<00:15,  2.25s/it]Trial 19 finished, success: tensor([True]), steps: 65
+
+ 76%|███████▌  | 19/25 [00:43<00:13,  2.30s/it]Trial 20 finished, success: tensor([True]), steps: 65
+
+ 80%|████████  | 20/25 [00:45<00:11,  2.25s/it]Trial 21 finished, success: tensor([True]), steps: 75
+
+ 84%|████████▍ | 21/25 [00:48<00:09,  2.38s/it]Trial 22 finished, success: tensor([True]), steps: 78
+
+ 88%|████████▊ | 22/25 [00:50<00:06,  2.32s/it]Trial 23 finished, success: tensor([True]), steps: 75
+
+ 92%|█████████▏| 23/25 [00:52<00:04,  2.25s/it]Trial 24 finished, success: tensor([True]), steps: 86
+
+ 96%|█████████▌| 24/25 [00:56<00:02,  2.58s/it]Trial 25 finished, success: tensor([True]), steps: 84
+
+100%|██████████| 25/25 [00:58<00:00,  2.60s/it]100%|██████████| 25/25 [00:58<00:00,  2.36s/it]
+Success rate: 100.0%
+grid search:  69%|██████▉   | 38/55 [36:21<16:15, 57.40s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 78
+
+  4%|▍         | 1/25 [00:02<01:09,  2.89s/it]Trial 2 finished, success: tensor([True]), steps: 75
+
+  8%|▊         | 2/25 [00:05<00:57,  2.49s/it]Trial 3 finished, success: tensor([True]), steps: 72
+
+ 12%|█▏        | 3/25 [00:07<00:51,  2.32s/it]Trial 4 finished, success: tensor([True]), steps: 76
+
+ 16%|█▌        | 4/25 [00:09<00:47,  2.27s/it]Trial 5 finished, success: tensor([True]), steps: 55
+
+ 20%|██        | 5/25 [00:11<00:41,  2.08s/it]Trial 6 finished, success: tensor([True]), steps: 77
+
+ 24%|██▍       | 6/25 [00:13<00:40,  2.14s/it]Trial 7 finished, success: tensor([True]), steps: 73
+
+ 28%|██▊       | 7/25 [00:15<00:39,  2.19s/it]Trial 8 finished, success: tensor([True]), steps: 54
+
+ 32%|███▏      | 8/25 [00:17<00:34,  2.04s/it]Trial 9 finished, success: tensor([True]), steps: 87
+
+ 36%|███▌      | 9/25 [00:20<00:35,  2.23s/it]Trial 10 finished, success: tensor([True]), steps: 71
+
+ 40%|████      | 10/25 [00:22<00:32,  2.20s/it]Trial 11 finished, success: tensor([True]), steps: 85
+
+ 44%|████▍     | 11/25 [00:24<00:32,  2.35s/it]Trial 12 finished, success: tensor([True]), steps: 73
+
+ 48%|████▊     | 12/25 [00:27<00:31,  2.43s/it]Trial 13 finished, success: tensor([True]), steps: 66
+
+ 52%|█████▏    | 13/25 [00:29<00:27,  2.33s/it]Trial 14 finished, success: tensor([True]), steps: 73
+
+ 56%|█████▌    | 14/25 [00:32<00:28,  2.56s/it]Trial 15 finished, success: tensor([True]), steps: 68
+
+ 60%|██████    | 15/25 [00:35<00:25,  2.53s/it]Trial 16 finished, success: tensor([True]), steps: 68
+
+ 64%|██████▍   | 16/25 [00:37<00:23,  2.61s/it]Trial 17 finished, success: tensor([True]), steps: 67
+
+ 68%|██████▊   | 17/25 [00:40<00:19,  2.49s/it]Trial 18 finished, success: tensor([True]), steps: 75
+
+ 72%|███████▏  | 18/25 [00:42<00:16,  2.39s/it]Trial 19 finished, success: tensor([True]), steps: 62
+
+ 76%|███████▌  | 19/25 [00:44<00:13,  2.30s/it]Trial 20 finished, success: tensor([True]), steps: 67
+
+ 80%|████████  | 20/25 [00:46<00:11,  2.25s/it]Trial 21 finished, success: tensor([True]), steps: 76
+
+ 84%|████████▍ | 21/25 [00:49<00:09,  2.45s/it]Trial 22 finished, success: tensor([True]), steps: 79
+
+ 88%|████████▊ | 22/25 [00:52<00:07,  2.53s/it]Trial 23 finished, success: tensor([True]), steps: 78
+
+ 92%|█████████▏| 23/25 [00:54<00:04,  2.43s/it]Trial 24 finished, success: tensor([True]), steps: 79
+
+ 96%|█████████▌| 24/25 [00:56<00:02,  2.36s/it]Trial 25 finished, success: tensor([True]), steps: 78
+
+100%|██████████| 25/25 [00:59<00:00,  2.60s/it]100%|██████████| 25/25 [00:59<00:00,  2.39s/it]
+Success rate: 100.0%
+grid search:  71%|███████   | 39/55 [37:21<15:29, 58.10s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 74
+
+  4%|▍         | 1/25 [00:03<01:12,  3.01s/it]Trial 2 finished, success: tensor([True]), steps: 72
+
+  8%|▊         | 2/25 [00:05<00:56,  2.46s/it]Trial 3 finished, success: tensor([True]), steps: 81
+
+ 12%|█▏        | 3/25 [00:08<00:59,  2.70s/it]Trial 4 finished, success: tensor([True]), steps: 75
+
+ 16%|█▌        | 4/25 [00:10<00:52,  2.50s/it]Trial 5 finished, success: tensor([True]), steps: 54
+
+ 20%|██        | 5/25 [00:12<00:49,  2.50s/it]Trial 6 finished, success: tensor([True]), steps: 81
+
+ 24%|██▍       | 6/25 [00:15<00:48,  2.54s/it]Trial 7 finished, success: tensor([True]), steps: 76
+
+ 28%|██▊       | 7/25 [00:18<00:46,  2.60s/it]Trial 8 finished, success: tensor([True]), steps: 57
+
+ 32%|███▏      | 8/25 [00:19<00:39,  2.32s/it]Trial 9 finished, success: tensor([True]), steps: 84
+
+ 36%|███▌      | 9/25 [00:22<00:40,  2.54s/it]Trial 10 finished, success: tensor([True]), steps: 71
+
+ 40%|████      | 10/25 [00:24<00:36,  2.41s/it]Trial 11 finished, success: tensor([True]), steps: 80
+
+ 44%|████▍     | 11/25 [00:27<00:33,  2.36s/it]Trial 12 finished, success: tensor([True]), steps: 76
+
+ 48%|████▊     | 12/25 [00:29<00:31,  2.43s/it]Trial 13 finished, success: tensor([True]), steps: 64
+
+ 52%|█████▏    | 13/25 [00:31<00:26,  2.23s/it]Trial 14 finished, success: tensor([True]), steps: 67
+
+ 56%|█████▌    | 14/25 [00:33<00:24,  2.23s/it]Trial 15 finished, success: tensor([True]), steps: 68
+
+ 60%|██████    | 15/25 [00:35<00:22,  2.21s/it]Trial 16 finished, success: tensor([True]), steps: 63
+
+ 64%|██████▍   | 16/25 [00:38<00:20,  2.30s/it]Trial 17 finished, success: tensor([True]), steps: 66
+
+ 68%|██████▊   | 17/25 [00:40<00:18,  2.26s/it]Trial 18 finished, success: tensor([True]), steps: 79
+
+ 72%|███████▏  | 18/25 [00:42<00:15,  2.22s/it]Trial 19 finished, success: tensor([True]), steps: 64
+
+ 76%|███████▌  | 19/25 [00:44<00:12,  2.09s/it]Trial 20 finished, success: tensor([True]), steps: 66
+
+ 80%|████████  | 20/25 [00:46<00:10,  2.10s/it]Trial 21 finished, success: tensor([True]), steps: 76
+
+ 84%|████████▍ | 21/25 [00:48<00:08,  2.13s/it]Trial 22 finished, success: tensor([True]), steps: 79
+
+ 88%|████████▊ | 22/25 [00:51<00:06,  2.31s/it]Trial 23 finished, success: tensor([True]), steps: 75
+
+ 92%|█████████▏| 23/25 [00:54<00:04,  2.36s/it]Trial 24 finished, success: tensor([True]), steps: 97
+
+ 96%|█████████▌| 24/25 [00:57<00:02,  2.55s/it]Trial 25 finished, success: tensor([True]), steps: 79
+
+100%|██████████| 25/25 [00:59<00:00,  2.49s/it]100%|██████████| 25/25 [00:59<00:00,  2.38s/it]
+Success rate: 100.0%
+grid search:  73%|███████▎  | 40/55 [38:20<14:37, 58.50s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 67
+
+  4%|▍         | 1/25 [00:02<00:49,  2.07s/it]Trial 2 finished, success: tensor([True]), steps: 70
+
+  8%|▊         | 2/25 [00:04<00:49,  2.13s/it]Trial 3 finished, success: tensor([True]), steps: 70
+
+ 12%|█▏        | 3/25 [00:06<00:46,  2.13s/it]Trial 4 finished, success: tensor([True]), steps: 67
+
+ 16%|█▌        | 4/25 [00:08<00:45,  2.16s/it]Trial 5 finished, success: tensor([True]), steps: 61
+
+ 20%|██        | 5/25 [00:10<00:39,  2.00s/it]Trial 6 finished, success: tensor([True]), steps: 80
+
+ 24%|██▍       | 6/25 [00:12<00:39,  2.07s/it]Trial 7 finished, success: tensor([True]), steps: 67
+
+ 28%|██▊       | 7/25 [00:14<00:37,  2.08s/it]Trial 8 finished, success: tensor([True]), steps: 56
+
+ 32%|███▏      | 8/25 [00:16<00:33,  1.98s/it]Trial 9 finished, success: tensor([True]), steps: 71
+
+ 36%|███▌      | 9/25 [00:18<00:32,  2.02s/it]Trial 10 finished, success: tensor([True]), steps: 67
+
+ 40%|████      | 10/25 [00:20<00:30,  2.05s/it]Trial 11 finished, success: tensor([True]), steps: 73
+
+ 44%|████▍     | 11/25 [00:22<00:29,  2.07s/it]Trial 12 finished, success: tensor([True]), steps: 68
+
+ 48%|████▊     | 12/25 [00:24<00:27,  2.11s/it]Trial 13 finished, success: tensor([True]), steps: 64
+
+ 52%|█████▏    | 13/25 [00:26<00:24,  2.01s/it]Trial 14 finished, success: tensor([True]), steps: 66
+
+ 56%|█████▌    | 14/25 [00:29<00:23,  2.15s/it]Trial 15 finished, success: tensor([True]), steps: 63
+
+ 60%|██████    | 15/25 [00:30<00:20,  2.04s/it]Trial 16 finished, success: tensor([True]), steps: 63
+
+ 64%|██████▍   | 16/25 [00:32<00:17,  1.94s/it]Trial 17 finished, success: tensor([True]), steps: 64
+
+ 68%|██████▊   | 17/25 [00:34<00:15,  1.92s/it]Trial 18 finished, success: tensor([True]), steps: 69
+
+ 72%|███████▏  | 18/25 [00:36<00:14,  2.02s/it]Trial 19 finished, success: tensor([True]), steps: 64
+
+ 76%|███████▌  | 19/25 [00:38<00:11,  2.00s/it]Trial 20 finished, success: tensor([True]), steps: 65
+
+ 80%|████████  | 20/25 [00:40<00:10,  2.03s/it]Trial 21 finished, success: tensor([True]), steps: 65
+
+ 84%|████████▍ | 21/25 [00:42<00:08,  2.06s/it]Trial 22 finished, success: tensor([True]), steps: 78
+
+ 88%|████████▊ | 22/25 [00:45<00:06,  2.27s/it]Trial 23 finished, success: tensor([True]), steps: 65
+
+ 92%|█████████▏| 23/25 [00:47<00:04,  2.23s/it]Trial 24 finished, success: tensor([True]), steps: 71
+
+ 96%|█████████▌| 24/25 [00:50<00:02,  2.22s/it]Trial 25 finished, success: tensor([True]), steps: 71
+
+100%|██████████| 25/25 [00:52<00:00,  2.23s/it]100%|██████████| 25/25 [00:52<00:00,  2.09s/it]
+Success rate: 100.0%
+grid search:  75%|███████▍  | 41/55 [39:12<13:13, 56.65s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 67
+
+  4%|▍         | 1/25 [00:02<00:58,  2.44s/it]Trial 2 finished, success: tensor([True]), steps: 70
+
+  8%|▊         | 2/25 [00:05<01:03,  2.74s/it]Trial 3 finished, success: tensor([True]), steps: 70
+
+ 12%|█▏        | 3/25 [00:07<00:55,  2.51s/it]Trial 4 finished, success: tensor([True]), steps: 66
+
+ 16%|█▌        | 4/25 [00:09<00:49,  2.36s/it]Trial 5 finished, success: tensor([True]), steps: 59
+
+ 20%|██        | 5/25 [00:11<00:43,  2.15s/it]Trial 6 finished, success: tensor([True]), steps: 80
+
+ 24%|██▍       | 6/25 [00:13<00:41,  2.19s/it]Trial 7 finished, success: tensor([True]), steps: 71
+
+ 28%|██▊       | 7/25 [00:16<00:39,  2.19s/it]Trial 8 finished, success: tensor([True]), steps: 56
+
+ 32%|███▏      | 8/25 [00:17<00:34,  2.04s/it]Trial 9 finished, success: tensor([True]), steps: 76
+
+ 36%|███▌      | 9/25 [00:20<00:36,  2.27s/it]Trial 10 finished, success: tensor([True]), steps: 68
+
+ 40%|████      | 10/25 [00:22<00:33,  2.23s/it]Trial 11 finished, success: tensor([True]), steps: 71
+
+ 44%|████▍     | 11/25 [00:24<00:31,  2.24s/it]Trial 12 finished, success: tensor([True]), steps: 69
+
+ 48%|████▊     | 12/25 [00:26<00:28,  2.19s/it]Trial 13 finished, success: tensor([True]), steps: 66
+
+ 52%|█████▏    | 13/25 [00:30<00:30,  2.52s/it]Trial 14 finished, success: tensor([True]), steps: 66
+
+ 56%|█████▌    | 14/25 [00:32<00:26,  2.42s/it]Trial 15 finished, success: tensor([True]), steps: 63
+
+ 60%|██████    | 15/25 [00:34<00:22,  2.24s/it]Trial 16 finished, success: tensor([True]), steps: 64
+
+ 64%|██████▍   | 16/25 [00:36<00:19,  2.11s/it]Trial 17 finished, success: tensor([True]), steps: 65
+
+ 68%|██████▊   | 17/25 [00:38<00:16,  2.12s/it]Trial 18 finished, success: tensor([True]), steps: 69
+
+ 72%|███████▏  | 18/25 [00:40<00:14,  2.14s/it]Trial 19 finished, success: tensor([True]), steps: 65
+
+ 76%|███████▌  | 19/25 [00:43<00:13,  2.29s/it]Trial 20 finished, success: tensor([True]), steps: 65
+
+ 80%|████████  | 20/25 [00:45<00:11,  2.26s/it]Trial 21 finished, success: tensor([True]), steps: 63
+
+ 84%|████████▍ | 21/25 [00:47<00:08,  2.13s/it]Trial 22 finished, success: tensor([True]), steps: 83
+
+ 88%|████████▊ | 22/25 [00:50<00:07,  2.57s/it]Trial 23 finished, success: tensor([True]), steps: 68
+
+ 92%|█████████▏| 23/25 [00:52<00:04,  2.42s/it]Trial 24 finished, success: tensor([True]), steps: 81
+
+ 96%|█████████▌| 24/25 [00:56<00:02,  2.94s/it]Trial 25 finished, success: tensor([True]), steps: 73
+
+100%|██████████| 25/25 [00:58<00:00,  2.69s/it]100%|██████████| 25/25 [00:58<00:00,  2.36s/it]
+Success rate: 100.0%
+grid search:  76%|███████▋  | 42/55 [40:11<12:25, 57.35s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 81
+
+  4%|▍         | 1/25 [00:02<01:05,  2.73s/it]Trial 2 finished, success: tensor([True]), steps: 75
+
+  8%|▊         | 2/25 [00:04<00:55,  2.41s/it]Trial 3 finished, success: tensor([True]), steps: 72
+
+ 12%|█▏        | 3/25 [00:07<00:51,  2.32s/it]Trial 4 finished, success: tensor([True]), steps: 76
+
+ 16%|█▌        | 4/25 [00:09<00:47,  2.27s/it]Trial 5 finished, success: tensor([True]), steps: 55
+
+ 20%|██        | 5/25 [00:11<00:41,  2.08s/it]Trial 6 finished, success: tensor([True]), steps: 68
+
+ 24%|██▍       | 6/25 [00:13<00:39,  2.06s/it]Trial 7 finished, success: tensor([True]), steps: 75
+
+ 28%|██▊       | 7/25 [00:15<00:41,  2.32s/it]Trial 8 finished, success: tensor([True]), steps: 56
+
+ 32%|███▏      | 8/25 [00:17<00:36,  2.14s/it]Trial 9 finished, success: tensor([True]), steps: 86
+
+ 36%|███▌      | 9/25 [00:20<00:37,  2.35s/it]Trial 10 finished, success: tensor([True]), steps: 73
+
+ 40%|████      | 10/25 [00:22<00:34,  2.31s/it]Trial 11 finished, success: tensor([True]), steps: 80
+
+ 44%|████▍     | 11/25 [00:24<00:31,  2.28s/it]Trial 12 finished, success: tensor([True]), steps: 70
+
+ 48%|████▊     | 12/25 [00:27<00:29,  2.24s/it]Trial 13 finished, success: tensor([True]), steps: 67
+
+ 52%|█████▏    | 13/25 [00:29<00:26,  2.24s/it]Trial 14 finished, success: tensor([True]), steps: 73
+
+ 56%|█████▌    | 14/25 [00:31<00:24,  2.26s/it]Trial 15 finished, success: tensor([True]), steps: 68
+
+ 60%|██████    | 15/25 [00:33<00:22,  2.22s/it]Trial 16 finished, success: tensor([True]), steps: 66
+
+ 64%|██████▍   | 16/25 [00:35<00:19,  2.21s/it]Trial 17 finished, success: tensor([True]), steps: 67
+
+ 68%|██████▊   | 17/25 [00:38<00:17,  2.20s/it]Trial 18 finished, success: tensor([True]), steps: 76
+
+ 72%|███████▏  | 18/25 [00:40<00:15,  2.21s/it]Trial 19 finished, success: tensor([True]), steps: 60
+
+ 76%|███████▌  | 19/25 [00:42<00:12,  2.09s/it]Trial 20 finished, success: tensor([True]), steps: 66
+
+ 80%|████████  | 20/25 [00:44<00:10,  2.10s/it]Trial 21 finished, success: tensor([True]), steps: 73
+
+ 84%|████████▍ | 21/25 [00:46<00:08,  2.12s/it]Trial 22 finished, success: tensor([True]), steps: 78
+
+ 88%|████████▊ | 22/25 [00:48<00:06,  2.12s/it]Trial 23 finished, success: tensor([True]), steps: 77
+
+ 92%|█████████▏| 23/25 [00:50<00:04,  2.14s/it]Trial 24 finished, success: tensor([True]), steps: 86
+
+ 96%|█████████▌| 24/25 [00:53<00:02,  2.28s/it]Trial 25 finished, success: tensor([True]), steps: 82
+
+100%|██████████| 25/25 [00:56<00:00,  2.40s/it]100%|██████████| 25/25 [00:56<00:00,  2.24s/it]
+Success rate: 100.0%
+grid search:  78%|███████▊  | 43/55 [41:07<11:23, 56.96s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 81
+
+  4%|▍         | 1/25 [00:02<01:05,  2.73s/it]Trial 2 finished, success: tensor([True]), steps: 73
+
+  8%|▊         | 2/25 [00:04<00:55,  2.43s/it]Trial 3 finished, success: tensor([True]), steps: 73
+
+ 12%|█▏        | 3/25 [00:07<00:51,  2.36s/it]Trial 4 finished, success: tensor([True]), steps: 70
+
+ 16%|█▌        | 4/25 [00:09<00:47,  2.28s/it]Trial 5 finished, success: tensor([True]), steps: 55
+
+ 20%|██        | 5/25 [00:11<00:41,  2.09s/it]Trial 6 finished, success: tensor([True]), steps: 68
+
+ 24%|██▍       | 6/25 [00:13<00:40,  2.13s/it]Trial 7 finished, success: tensor([True]), steps: 74
+
+ 28%|██▊       | 7/25 [00:15<00:38,  2.14s/it]Trial 8 finished, success: tensor([True]), steps: 55
+
+ 32%|███▏      | 8/25 [00:17<00:34,  2.04s/it]Trial 9 finished, success: tensor([True]), steps: 85
+
+ 36%|███▌      | 9/25 [00:19<00:35,  2.23s/it]Trial 10 finished, success: tensor([True]), steps: 72
+
+ 40%|████      | 10/25 [00:22<00:33,  2.22s/it]Trial 11 finished, success: tensor([True]), steps: 74
+
+ 44%|████▍     | 11/25 [00:24<00:31,  2.23s/it]Trial 12 finished, success: tensor([True]), steps: 77
+
+ 48%|████▊     | 12/25 [00:26<00:29,  2.26s/it]Trial 13 finished, success: tensor([True]), steps: 69
+
+ 52%|█████▏    | 13/25 [00:29<00:27,  2.26s/it]Trial 14 finished, success: tensor([True]), steps: 69
+
+ 56%|█████▌    | 14/25 [00:31<00:24,  2.27s/it]Trial 15 finished, success: tensor([True]), steps: 69
+
+ 60%|██████    | 15/25 [00:33<00:22,  2.26s/it]Trial 16 finished, success: tensor([True]), steps: 68
+
+ 64%|██████▍   | 16/25 [00:35<00:20,  2.25s/it]Trial 17 finished, success: tensor([True]), steps: 66
+
+ 68%|██████▊   | 17/25 [00:38<00:18,  2.30s/it]Trial 18 finished, success: tensor([True]), steps: 81
+
+ 72%|███████▏  | 18/25 [00:40<00:16,  2.39s/it]Trial 19 finished, success: tensor([False]), steps: 400
+
+ 76%|███████▌  | 19/25 [00:53<00:32,  5.39s/it]Trial 20 finished, success: tensor([True]), steps: 68
+
+ 80%|████████  | 20/25 [00:55<00:22,  4.44s/it]Trial 21 finished, success: tensor([True]), steps: 73
+
+ 84%|████████▍ | 21/25 [00:58<00:15,  3.91s/it]Trial 22 finished, success: tensor([True]), steps: 82
+
+ 88%|████████▊ | 22/25 [01:00<00:10,  3.50s/it]Trial 23 finished, success: tensor([True]), steps: 76
+
+ 92%|█████████▏| 23/25 [01:03<00:06,  3.20s/it]Trial 24 finished, success: tensor([True]), steps: 79
+
+ 96%|█████████▌| 24/25 [01:05<00:02,  2.92s/it]Trial 25 finished, success: tensor([True]), steps: 72
+
+100%|██████████| 25/25 [01:07<00:00,  2.68s/it]100%|██████████| 25/25 [01:07<00:00,  2.70s/it]
+Success rate: 96.0%
+grid search:  80%|████████  | 44/55 [42:15<11:01, 60.12s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 76
+
+  4%|▍         | 1/25 [00:02<00:52,  2.20s/it]Trial 2 finished, success: tensor([True]), steps: 75
+
+  8%|▊         | 2/25 [00:04<00:51,  2.23s/it]Trial 3 finished, success: tensor([True]), steps: 72
+
+ 12%|█▏        | 3/25 [00:06<00:48,  2.23s/it]Trial 4 finished, success: tensor([True]), steps: 70
+
+ 16%|█▌        | 4/25 [00:08<00:46,  2.21s/it]Trial 5 finished, success: tensor([True]), steps: 60
+
+ 20%|██        | 5/25 [00:10<00:41,  2.05s/it]Trial 6 finished, success: tensor([True]), steps: 77
+
+ 24%|██▍       | 6/25 [00:12<00:39,  2.07s/it]Trial 7 finished, success: tensor([True]), steps: 74
+
+ 28%|██▊       | 7/25 [00:15<00:40,  2.23s/it]Trial 8 finished, success: tensor([True]), steps: 55
+
+ 32%|███▏      | 8/25 [00:16<00:35,  2.06s/it]Trial 9 finished, success: tensor([True]), steps: 94
+
+ 36%|███▌      | 9/25 [00:19<00:36,  2.29s/it]Trial 10 finished, success: tensor([True]), steps: 71
+
+ 40%|████      | 10/25 [00:21<00:33,  2.23s/it]Trial 11 finished, success: tensor([True]), steps: 77
+
+ 44%|████▍     | 11/25 [00:24<00:33,  2.39s/it]Trial 12 finished, success: tensor([True]), steps: 76
+
+ 48%|████▊     | 12/25 [00:26<00:30,  2.33s/it]Trial 13 finished, success: tensor([True]), steps: 65
+
+ 52%|█████▏    | 13/25 [00:28<00:27,  2.26s/it]Trial 14 finished, success: tensor([True]), steps: 68
+
+ 56%|█████▌    | 14/25 [00:31<00:24,  2.22s/it]Trial 15 finished, success: tensor([True]), steps: 67
+
+ 60%|██████    | 15/25 [00:33<00:24,  2.43s/it]Trial 16 finished, success: tensor([True]), steps: 62
+
+ 64%|██████▍   | 16/25 [00:35<00:20,  2.23s/it]Trial 17 finished, success: tensor([True]), steps: 76
+
+ 68%|██████▊   | 17/25 [00:37<00:17,  2.22s/it]Trial 18 finished, success: tensor([True]), steps: 75
+
+ 72%|███████▏  | 18/25 [00:40<00:15,  2.23s/it]Trial 19 finished, success: tensor([True]), steps: 65
+
+ 76%|███████▌  | 19/25 [00:42<00:14,  2.36s/it]Trial 20 finished, success: tensor([True]), steps: 66
+
+ 80%|████████  | 20/25 [00:44<00:11,  2.28s/it]Trial 21 finished, success: tensor([True]), steps: 76
+
+ 84%|████████▍ | 21/25 [00:47<00:08,  2.22s/it]Trial 22 finished, success: tensor([True]), steps: 80
+
+ 88%|████████▊ | 22/25 [00:49<00:06,  2.24s/it]Trial 23 finished, success: tensor([True]), steps: 81
+
+ 92%|█████████▏| 23/25 [00:51<00:04,  2.35s/it]Trial 24 finished, success: tensor([True]), steps: 85
+
+ 96%|█████████▌| 24/25 [00:54<00:02,  2.51s/it]Trial 25 finished, success: tensor([True]), steps: 81
+
+100%|██████████| 25/25 [00:57<00:00,  2.51s/it]100%|██████████| 25/25 [00:57<00:00,  2.29s/it]
+Success rate: 100.0%
+grid search:  82%|████████▏ | 45/55 [43:12<09:52, 59.28s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 67
+
+  4%|▍         | 1/25 [00:02<00:53,  2.24s/it]Trial 2 finished, success: tensor([True]), steps: 68
+
+  8%|▊         | 2/25 [00:04<00:51,  2.23s/it]Trial 3 finished, success: tensor([True]), steps: 70
+
+ 12%|█▏        | 3/25 [00:06<00:48,  2.20s/it]Trial 4 finished, success: tensor([True]), steps: 69
+
+ 16%|█▌        | 4/25 [00:08<00:45,  2.14s/it]Trial 5 finished, success: tensor([True]), steps: 59
+
+ 20%|██        | 5/25 [00:10<00:39,  1.98s/it]Trial 6 finished, success: tensor([True]), steps: 73
+
+ 24%|██▍       | 6/25 [00:12<00:39,  2.06s/it]Trial 7 finished, success: tensor([True]), steps: 73
+
+ 28%|██▊       | 7/25 [00:14<00:37,  2.10s/it]Trial 8 finished, success: tensor([True]), steps: 58
+
+ 32%|███▏      | 8/25 [00:16<00:33,  1.98s/it]Trial 9 finished, success: tensor([True]), steps: 74
+
+ 36%|███▌      | 9/25 [00:19<00:35,  2.24s/it]Trial 10 finished, success: tensor([True]), steps: 67
+
+ 40%|████      | 10/25 [00:21<00:33,  2.21s/it]Trial 11 finished, success: tensor([True]), steps: 69
+
+ 44%|████▍     | 11/25 [00:23<00:31,  2.25s/it]Trial 12 finished, success: tensor([True]), steps: 69
+
+ 48%|████▊     | 12/25 [00:25<00:28,  2.20s/it]Trial 13 finished, success: tensor([True]), steps: 63
+
+ 52%|█████▏    | 13/25 [00:27<00:24,  2.08s/it]Trial 14 finished, success: tensor([True]), steps: 65
+
+ 56%|█████▌    | 14/25 [00:29<00:22,  2.09s/it]Trial 15 finished, success: tensor([True]), steps: 62
+
+ 60%|██████    | 15/25 [00:32<00:22,  2.22s/it]Trial 16 finished, success: tensor([True]), steps: 63
+
+ 64%|██████▍   | 16/25 [00:34<00:18,  2.09s/it]Trial 17 finished, success: tensor([True]), steps: 65
+
+ 68%|██████▊   | 17/25 [00:36<00:16,  2.10s/it]Trial 18 finished, success: tensor([True]), steps: 68
+
+ 72%|███████▏  | 18/25 [00:38<00:14,  2.12s/it]Trial 19 finished, success: tensor([True]), steps: 65
+
+ 76%|███████▌  | 19/25 [00:40<00:12,  2.13s/it]Trial 20 finished, success: tensor([True]), steps: 64
+
+ 80%|████████  | 20/25 [00:42<00:10,  2.01s/it]Trial 21 finished, success: tensor([True]), steps: 63
+
+ 84%|████████▍ | 21/25 [00:44<00:07,  1.96s/it]Trial 22 finished, success: tensor([True]), steps: 78
+
+ 88%|████████▊ | 22/25 [00:46<00:06,  2.05s/it]Trial 23 finished, success: tensor([True]), steps: 73
+
+ 92%|█████████▏| 23/25 [00:48<00:04,  2.13s/it]Trial 24 finished, success: tensor([True]), steps: 74
+
+ 96%|█████████▌| 24/25 [00:50<00:02,  2.11s/it]Trial 25 finished, success: tensor([True]), steps: 72
+
+100%|██████████| 25/25 [00:53<00:00,  2.17s/it]100%|██████████| 25/25 [00:53<00:00,  2.12s/it]
+Success rate: 100.0%
+grid search:  84%|████████▎ | 46/55 [44:05<08:36, 57.41s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 65
+
+  4%|▍         | 1/25 [00:02<00:49,  2.06s/it]Trial 2 finished, success: tensor([True]), steps: 69
+
+  8%|▊         | 2/25 [00:04<00:48,  2.09s/it]Trial 3 finished, success: tensor([True]), steps: 75
+
+ 12%|█▏        | 3/25 [00:06<00:47,  2.16s/it]Trial 4 finished, success: tensor([True]), steps: 65
+
+ 16%|█▌        | 4/25 [00:08<00:45,  2.16s/it]Trial 5 finished, success: tensor([True]), steps: 59
+
+ 20%|██        | 5/25 [00:10<00:43,  2.15s/it]Trial 6 finished, success: tensor([True]), steps: 77
+
+ 24%|██▍       | 6/25 [00:12<00:40,  2.15s/it]Trial 7 finished, success: tensor([True]), steps: 73
+
+ 28%|██▊       | 7/25 [00:15<00:44,  2.46s/it]Trial 8 finished, success: tensor([True]), steps: 56
+
+ 32%|███▏      | 8/25 [00:17<00:38,  2.24s/it]Trial 9 finished, success: tensor([True]), steps: 74
+
+ 36%|███▌      | 9/25 [00:19<00:35,  2.24s/it]Trial 10 finished, success: tensor([True]), steps: 68
+
+ 40%|████      | 10/25 [00:22<00:35,  2.37s/it]Trial 11 finished, success: tensor([True]), steps: 73
+
+ 44%|████▍     | 11/25 [00:24<00:32,  2.32s/it]Trial 12 finished, success: tensor([True]), steps: 68
+
+ 48%|████▊     | 12/25 [00:26<00:29,  2.26s/it]Trial 13 finished, success: tensor([True]), steps: 68
+
+ 52%|█████▏    | 13/25 [00:29<00:27,  2.25s/it]Trial 14 finished, success: tensor([True]), steps: 66
+
+ 56%|█████▌    | 14/25 [00:31<00:24,  2.23s/it]Trial 15 finished, success: tensor([True]), steps: 64
+
+ 60%|██████    | 15/25 [00:33<00:21,  2.11s/it]Trial 16 finished, success: tensor([True]), steps: 63
+
+ 64%|██████▍   | 16/25 [00:34<00:18,  2.01s/it]Trial 17 finished, success: tensor([True]), steps: 67
+
+ 68%|██████▊   | 17/25 [00:37<00:16,  2.07s/it]Trial 18 finished, success: tensor([True]), steps: 69
+
+ 72%|███████▏  | 18/25 [00:39<00:14,  2.09s/it]Trial 19 finished, success: tensor([True]), steps: 65
+
+ 76%|███████▌  | 19/25 [00:41<00:13,  2.26s/it]Trial 20 finished, success: tensor([True]), steps: 65
+
+ 80%|████████  | 20/25 [00:44<00:11,  2.23s/it]Trial 21 finished, success: tensor([True]), steps: 62
+
+ 84%|████████▍ | 21/25 [00:46<00:08,  2.24s/it]Trial 22 finished, success: tensor([True]), steps: 83
+
+ 88%|████████▊ | 22/25 [00:49<00:07,  2.35s/it]Trial 23 finished, success: tensor([True]), steps: 72
+
+ 92%|█████████▏| 23/25 [00:51<00:04,  2.32s/it]Trial 24 finished, success: tensor([True]), steps: 71
+
+ 96%|█████████▌| 24/25 [00:53<00:02,  2.25s/it]Trial 25 finished, success: tensor([True]), steps: 72
+
+100%|██████████| 25/25 [00:55<00:00,  2.21s/it]100%|██████████| 25/25 [00:55<00:00,  2.22s/it]
+Success rate: 100.0%
+grid search:  85%|████████▌ | 47/55 [45:01<07:34, 56.83s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 77
+
+  4%|▍         | 1/25 [00:02<00:54,  2.25s/it]Trial 2 finished, success: tensor([True]), steps: 81
+
+  8%|▊         | 2/25 [00:04<00:56,  2.44s/it]Trial 3 finished, success: tensor([True]), steps: 74
+
+ 12%|█▏        | 3/25 [00:07<00:51,  2.36s/it]Trial 4 finished, success: tensor([True]), steps: 75
+
+ 16%|█▌        | 4/25 [00:09<00:52,  2.49s/it]Trial 5 finished, success: tensor([True]), steps: 55
+
+ 20%|██        | 5/25 [00:11<00:43,  2.19s/it]Trial 6 finished, success: tensor([True]), steps: 80
+
+ 24%|██▍       | 6/25 [00:13<00:41,  2.18s/it]Trial 7 finished, success: tensor([True]), steps: 78
+
+ 28%|██▊       | 7/25 [00:16<00:46,  2.56s/it]Trial 8 finished, success: tensor([True]), steps: 57
+
+ 32%|███▏      | 8/25 [00:18<00:39,  2.33s/it]Trial 9 finished, success: tensor([True]), steps: 89
+
+ 36%|███▌      | 9/25 [00:21<00:39,  2.45s/it]Trial 10 finished, success: tensor([True]), steps: 69
+
+ 40%|████      | 10/25 [00:23<00:35,  2.39s/it]Trial 11 finished, success: tensor([True]), steps: 78
+
+ 44%|████▍     | 11/25 [00:25<00:32,  2.34s/it]Trial 12 finished, success: tensor([True]), steps: 78
+
+ 48%|████▊     | 12/25 [00:28<00:29,  2.30s/it]Trial 13 finished, success: tensor([True]), steps: 66
+
+ 52%|█████▏    | 13/25 [00:30<00:27,  2.27s/it]Trial 14 finished, success: tensor([True]), steps: 72
+
+ 56%|█████▌    | 14/25 [00:32<00:24,  2.24s/it]Trial 15 finished, success: tensor([True]), steps: 66
+
+ 60%|██████    | 15/25 [00:35<00:23,  2.31s/it]Trial 16 finished, success: tensor([True]), steps: 65
+
+ 64%|██████▍   | 16/25 [00:37<00:20,  2.28s/it]Trial 17 finished, success: tensor([True]), steps: 76
+
+ 68%|██████▊   | 17/25 [00:39<00:18,  2.28s/it]Trial 18 finished, success: tensor([True]), steps: 74
+
+ 72%|███████▏  | 18/25 [00:41<00:15,  2.26s/it]Trial 19 finished, success: tensor([True]), steps: 66
+
+ 76%|███████▌  | 19/25 [00:43<00:13,  2.21s/it]Trial 20 finished, success: tensor([True]), steps: 66
+
+ 80%|████████  | 20/25 [00:45<00:10,  2.19s/it]Trial 21 finished, success: tensor([True]), steps: 73
+
+ 84%|████████▍ | 21/25 [00:48<00:08,  2.20s/it]Trial 22 finished, success: tensor([True]), steps: 83
+
+ 88%|████████▊ | 22/25 [00:50<00:06,  2.31s/it]Trial 23 finished, success: tensor([True]), steps: 80
+
+ 92%|█████████▏| 23/25 [00:52<00:04,  2.28s/it]Trial 24 finished, success: tensor([True]), steps: 86
+
+ 96%|█████████▌| 24/25 [00:56<00:02,  2.61s/it]Trial 25 finished, success: tensor([True]), steps: 60
+
+100%|██████████| 25/25 [00:58<00:00,  2.36s/it]100%|██████████| 25/25 [00:58<00:00,  2.32s/it]
+Success rate: 100.0%
+grid search:  87%|████████▋ | 48/55 [45:59<06:40, 57.21s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 76
+
+  4%|▍         | 1/25 [00:02<00:49,  2.08s/it]Trial 2 finished, success: tensor([True]), steps: 72
+
+  8%|▊         | 2/25 [00:04<00:48,  2.11s/it]Trial 3 finished, success: tensor([True]), steps: 84
+
+ 12%|█▏        | 3/25 [00:06<00:52,  2.38s/it]Trial 4 finished, success: tensor([True]), steps: 73
+
+ 16%|█▌        | 4/25 [00:09<00:48,  2.31s/it]Trial 5 finished, success: tensor([True]), steps: 55
+
+ 20%|██        | 5/25 [00:10<00:42,  2.11s/it]Trial 6 finished, success: tensor([True]), steps: 68
+
+ 24%|██▍       | 6/25 [00:13<00:40,  2.13s/it]Trial 7 finished, success: tensor([True]), steps: 73
+
+ 28%|██▊       | 7/25 [00:15<00:38,  2.12s/it]Trial 8 finished, success: tensor([True]), steps: 57
+
+ 32%|███▏      | 8/25 [00:16<00:34,  2.00s/it]Trial 9 finished, success: tensor([True]), steps: 93
+
+ 36%|███▌      | 9/25 [00:20<00:38,  2.42s/it]Trial 10 finished, success: tensor([True]), steps: 77
+
+ 40%|████      | 10/25 [00:22<00:35,  2.36s/it]Trial 11 finished, success: tensor([True]), steps: 79
+
+ 44%|████▍     | 11/25 [00:24<00:32,  2.35s/it]Trial 12 finished, success: tensor([True]), steps: 80
+
+ 48%|████▊     | 12/25 [00:27<00:30,  2.32s/it]Trial 13 finished, success: tensor([True]), steps: 66
+
+ 52%|█████▏    | 13/25 [00:29<00:27,  2.26s/it]Trial 14 finished, success: tensor([True]), steps: 73
+
+ 56%|█████▌    | 14/25 [00:31<00:26,  2.38s/it]Trial 15 finished, success: tensor([True]), steps: 67
+
+ 60%|██████    | 15/25 [00:33<00:23,  2.32s/it]Trial 16 finished, success: tensor([True]), steps: 69
+
+ 64%|██████▍   | 16/25 [00:36<00:20,  2.28s/it]Trial 17 finished, success: tensor([True]), steps: 74
+
+ 68%|██████▊   | 17/25 [00:38<00:17,  2.22s/it]Trial 18 finished, success: tensor([True]), steps: 82
+
+ 72%|███████▏  | 18/25 [00:41<00:17,  2.53s/it]Trial 19 finished, success: tensor([True]), steps: 65
+
+ 76%|███████▌  | 19/25 [00:43<00:14,  2.46s/it]Trial 20 finished, success: tensor([True]), steps: 67
+
+ 80%|████████  | 20/25 [00:45<00:11,  2.37s/it]Trial 21 finished, success: tensor([True]), steps: 73
+
+ 84%|████████▍ | 21/25 [00:48<00:09,  2.32s/it]Trial 22 finished, success: tensor([True]), steps: 78
+
+ 88%|████████▊ | 22/25 [00:50<00:06,  2.29s/it]Trial 23 finished, success: tensor([True]), steps: 75
+
+ 92%|█████████▏| 23/25 [00:52<00:04,  2.23s/it]Trial 24 finished, success: tensor([True]), steps: 88
+
+ 96%|█████████▌| 24/25 [00:55<00:02,  2.32s/it]Trial 25 finished, success: tensor([True]), steps: 72
+
+100%|██████████| 25/25 [00:57<00:00,  2.25s/it]100%|██████████| 25/25 [00:57<00:00,  2.28s/it]
+Success rate: 100.0%
+grid search:  89%|████████▉ | 49/55 [46:56<05:43, 57.18s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 74
+
+  4%|▍         | 1/25 [00:02<00:50,  2.11s/it]Trial 2 finished, success: tensor([True]), steps: 73
+
+  8%|▊         | 2/25 [00:04<00:50,  2.22s/it]Trial 3 finished, success: tensor([True]), steps: 72
+
+ 12%|█▏        | 3/25 [00:06<00:48,  2.20s/it]Trial 4 finished, success: tensor([True]), steps: 76
+
+ 16%|█▌        | 4/25 [00:08<00:46,  2.19s/it]Trial 5 finished, success: tensor([True]), steps: 55
+
+ 20%|██        | 5/25 [00:10<00:39,  1.99s/it]Trial 6 finished, success: tensor([True]), steps: 78
+
+ 24%|██▍       | 6/25 [00:12<00:39,  2.08s/it]Trial 7 finished, success: tensor([True]), steps: 77
+
+ 28%|██▊       | 7/25 [00:15<00:43,  2.44s/it]Trial 8 finished, success: tensor([True]), steps: 55
+
+ 32%|███▏      | 8/25 [00:17<00:37,  2.19s/it]Trial 9 finished, success: tensor([True]), steps: 89
+
+ 36%|███▌      | 9/25 [00:20<00:36,  2.30s/it]Trial 10 finished, success: tensor([True]), steps: 72
+
+ 40%|████      | 10/25 [00:22<00:34,  2.27s/it]Trial 11 finished, success: tensor([True]), steps: 81
+
+ 44%|████▍     | 11/25 [00:25<00:34,  2.44s/it]Trial 12 finished, success: tensor([True]), steps: 76
+
+ 48%|████▊     | 12/25 [00:27<00:30,  2.35s/it]Trial 13 finished, success: tensor([True]), steps: 65
+
+ 52%|█████▏    | 13/25 [00:29<00:27,  2.29s/it]Trial 14 finished, success: tensor([True]), steps: 83
+
+ 56%|█████▌    | 14/25 [00:31<00:25,  2.36s/it]Trial 15 finished, success: tensor([True]), steps: 68
+
+ 60%|██████    | 15/25 [00:33<00:22,  2.29s/it]Trial 16 finished, success: tensor([True]), steps: 64
+
+ 64%|██████▍   | 16/25 [00:35<00:19,  2.16s/it]Trial 17 finished, success: tensor([True]), steps: 66
+
+ 68%|██████▊   | 17/25 [00:38<00:17,  2.22s/it]Trial 18 finished, success: tensor([True]), steps: 80
+
+ 72%|███████▏  | 18/25 [00:40<00:15,  2.25s/it]Trial 19 finished, success: tensor([True]), steps: 67
+
+ 76%|███████▌  | 19/25 [00:42<00:13,  2.21s/it]Trial 20 finished, success: tensor([True]), steps: 65
+
+ 80%|████████  | 20/25 [00:44<00:11,  2.22s/it]Trial 21 finished, success: tensor([True]), steps: 82
+
+ 84%|████████▍ | 21/25 [00:47<00:09,  2.37s/it]Trial 22 finished, success: tensor([True]), steps: 81
+
+ 88%|████████▊ | 22/25 [00:50<00:07,  2.46s/it]Trial 23 finished, success: tensor([True]), steps: 74
+
+ 92%|█████████▏| 23/25 [00:52<00:04,  2.37s/it]Trial 24 finished, success: tensor([True]), steps: 90
+
+ 96%|█████████▌| 24/25 [00:54<00:02,  2.41s/it]Trial 25 finished, success: tensor([True]), steps: 86
+
+100%|██████████| 25/25 [00:57<00:00,  2.46s/it]100%|██████████| 25/25 [00:57<00:00,  2.30s/it]
+Success rate: 100.0%
+grid search:  91%|█████████ | 50/55 [47:53<04:46, 57.27s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 83
+
+  4%|▍         | 1/25 [00:02<01:02,  2.61s/it]Trial 2 finished, success: tensor([False]), steps: 400
+
+  8%|▊         | 2/25 [00:13<02:54,  7.60s/it]Trial 3 finished, success: tensor([False]), steps: 400
+
+ 12%|█▏        | 3/25 [00:24<03:22,  9.21s/it]Trial 4 finished, success: tensor([False]), steps: 400
+
+ 16%|█▌        | 4/25 [00:36<03:30, 10.01s/it]Trial 5 finished, success: tensor([True]), steps: 76
+
+ 20%|██        | 5/25 [00:38<02:23,  7.17s/it]Trial 6 finished, success: tensor([False]), steps: 400
+
+ 24%|██▍       | 6/25 [00:49<02:39,  8.42s/it]Trial 7 finished, success: tensor([False]), steps: 400
+
+ 28%|██▊       | 7/25 [01:00<02:47,  9.28s/it]Trial 8 finished, success: tensor([False]), steps: 400
+
+ 32%|███▏      | 8/25 [01:11<02:51, 10.07s/it]Trial 9 finished, success: tensor([False]), steps: 400
+
+ 36%|███▌      | 9/25 [01:23<02:47, 10.47s/it]Trial 10 finished, success: tensor([False]), steps: 400
+
+ 40%|████      | 10/25 [01:34<02:39, 10.62s/it]Trial 11 finished, success: tensor([False]), steps: 400
+
+ 44%|████▍     | 11/25 [01:45<02:31, 10.85s/it]Trial 12 finished, success: tensor([False]), steps: 400
+
+ 48%|████▊     | 12/25 [01:56<02:20, 10.81s/it]Trial 13 finished, success: tensor([True]), steps: 81
+
+ 52%|█████▏    | 13/25 [01:59<01:42,  8.51s/it]Trial 14 finished, success: tensor([False]), steps: 400
+
+ 56%|█████▌    | 14/25 [02:10<01:42,  9.33s/it]Trial 15 finished, success: tensor([False]), steps: 400
+
+ 60%|██████    | 15/25 [02:21<01:37,  9.73s/it]Trial 16 finished, success: tensor([False]), steps: 400
+
+ 64%|██████▍   | 16/25 [02:31<01:29,  9.97s/it]Trial 17 finished, success: tensor([False]), steps: 400
+
+ 68%|██████▊   | 17/25 [02:42<01:21, 10.17s/it]Trial 18 finished, success: tensor([False]), steps: 400
+
+ 72%|███████▏  | 18/25 [02:53<01:12, 10.38s/it]Trial 19 finished, success: tensor([False]), steps: 400
+
+ 76%|███████▌  | 19/25 [03:04<01:02, 10.46s/it]Trial 20 finished, success: tensor([False]), steps: 400
+
+ 80%|████████  | 20/25 [03:14<00:52, 10.49s/it]Trial 21 finished, success: tensor([True]), steps: 87
+
+ 84%|████████▍ | 21/25 [03:17<00:32,  8.09s/it]Trial 22 finished, success: tensor([False]), steps: 400
+
+ 88%|████████▊ | 22/25 [03:27<00:26,  8.87s/it]Trial 23 finished, success: tensor([False]), steps: 400
+
+ 92%|█████████▏| 23/25 [03:38<00:18,  9.40s/it]Trial 24 finished, success: tensor([False]), steps: 400
+
+ 96%|█████████▌| 24/25 [03:49<00:09,  9.76s/it]Trial 25 finished, success: tensor([False]), steps: 400
+
+100%|██████████| 25/25 [03:59<00:00, 10.02s/it]100%|██████████| 25/25 [03:59<00:00,  9.59s/it]
+Success rate: 16.0%
+grid search:  93%|█████████▎| 51/55 [51:53<07:27, 111.98s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 96
+
+  4%|▍         | 1/25 [00:02<01:02,  2.61s/it]Trial 2 finished, success: tensor([False]), steps: 400
+
+  8%|▊         | 2/25 [00:13<02:48,  7.34s/it]Trial 3 finished, success: tensor([False]), steps: 400
+
+ 12%|█▏        | 3/25 [00:23<03:15,  8.88s/it]Trial 4 finished, success: tensor([False]), steps: 400
+
+ 16%|█▌        | 4/25 [00:34<03:21,  9.58s/it]Trial 5 finished, success: tensor([False]), steps: 400
+
+ 20%|██        | 5/25 [00:45<03:18,  9.91s/it]Trial 6 finished, success: tensor([False]), steps: 400
+
+ 24%|██▍       | 6/25 [00:55<03:13, 10.19s/it]Trial 7 finished, success: tensor([False]), steps: 400
+
+ 28%|██▊       | 7/25 [01:06<03:06, 10.34s/it]Trial 8 finished, success: tensor([False]), steps: 400
+
+ 32%|███▏      | 8/25 [01:17<02:57, 10.46s/it]Trial 9 finished, success: tensor([True]), steps: 114
+
+ 36%|███▌      | 9/25 [01:20<02:11,  8.22s/it]Trial 10 finished, success: tensor([False]), steps: 400
+
+ 40%|████      | 10/25 [01:31<02:14,  8.96s/it]Trial 11 finished, success: tensor([False]), steps: 400
+
+ 44%|████▍     | 11/25 [01:41<02:12,  9.46s/it]Trial 12 finished, success: tensor([False]), steps: 400
+
+ 48%|████▊     | 12/25 [01:52<02:07,  9.80s/it]Trial 13 finished, success: tensor([True]), steps: 74
+
+ 52%|█████▏    | 13/25 [01:54<01:29,  7.48s/it]Trial 14 finished, success: tensor([False]), steps: 400
+
+ 56%|█████▌    | 14/25 [02:05<01:32,  8.41s/it]Trial 15 finished, success: tensor([False]), steps: 400
+
+ 60%|██████    | 15/25 [02:15<01:30,  9.09s/it]Trial 16 finished, success: tensor([False]), steps: 400
+
+ 64%|██████▍   | 16/25 [02:26<01:25,  9.53s/it]Trial 17 finished, success: tensor([False]), steps: 400
+
+ 68%|██████▊   | 17/25 [02:36<01:19,  9.89s/it]Trial 18 finished, success: tensor([False]), steps: 400
+
+ 72%|███████▏  | 18/25 [02:47<01:10, 10.08s/it]Trial 19 finished, success: tensor([False]), steps: 400
+
+ 76%|███████▌  | 19/25 [02:58<01:01, 10.29s/it]Trial 20 finished, success: tensor([False]), steps: 400
+
+ 80%|████████  | 20/25 [03:08<00:51, 10.35s/it]Trial 21 finished, success: tensor([True]), steps: 105
+
+ 84%|████████▍ | 21/25 [03:11<00:32,  8.15s/it]Trial 22 finished, success: tensor([False]), steps: 400
+
+ 88%|████████▊ | 22/25 [03:22<00:26,  8.87s/it]Trial 23 finished, success: tensor([False]), steps: 400
+
+ 92%|█████████▏| 23/25 [03:32<00:18,  9.33s/it]Trial 24 finished, success: tensor([False]), steps: 400
+
+ 96%|█████████▌| 24/25 [03:43<00:09,  9.73s/it]Trial 25 finished, success: tensor([True]), steps: 98
+
+100%|██████████| 25/25 [03:46<00:00,  7.71s/it]100%|██████████| 25/25 [03:46<00:00,  9.05s/it]
+Success rate: 20.0%
+grid search:  95%|█████████▍| 52/55 [55:39<07:18, 146.30s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 82
+
+  4%|▍         | 1/25 [00:02<01:00,  2.53s/it]Trial 2 finished, success: tensor([True]), steps: 74
+
+  8%|▊         | 2/25 [00:04<00:53,  2.31s/it]Trial 3 finished, success: tensor([True]), steps: 65
+
+ 12%|█▏        | 3/25 [00:06<00:49,  2.23s/it]Trial 4 finished, success: tensor([True]), steps: 76
+
+ 16%|█▌        | 4/25 [00:09<00:46,  2.22s/it]Trial 5 finished, success: tensor([True]), steps: 56
+
+ 20%|██        | 5/25 [00:10<00:40,  2.03s/it]Trial 6 finished, success: tensor([True]), steps: 66
+
+ 24%|██▍       | 6/25 [00:12<00:38,  2.04s/it]Trial 7 finished, success: tensor([True]), steps: 76
+
+ 28%|██▊       | 7/25 [00:14<00:37,  2.06s/it]Trial 8 finished, success: tensor([True]), steps: 59
+
+ 32%|███▏      | 8/25 [00:16<00:32,  1.94s/it]Trial 9 finished, success: tensor([True]), steps: 95
+
+ 36%|███▌      | 9/25 [00:19<00:34,  2.15s/it]Trial 10 finished, success: tensor([True]), steps: 70
+
+ 40%|████      | 10/25 [00:21<00:32,  2.15s/it]Trial 11 finished, success: tensor([True]), steps: 80
+
+ 44%|████▍     | 11/25 [00:23<00:30,  2.18s/it]Trial 12 finished, success: tensor([True]), steps: 69
+
+ 48%|████▊     | 12/25 [00:25<00:27,  2.14s/it]Trial 13 finished, success: tensor([True]), steps: 69
+
+ 52%|█████▏    | 13/25 [00:27<00:25,  2.13s/it]Trial 14 finished, success: tensor([True]), steps: 81
+
+ 56%|█████▌    | 14/25 [00:30<00:24,  2.24s/it]Trial 15 finished, success: tensor([True]), steps: 68
+
+ 60%|██████    | 15/25 [00:32<00:21,  2.19s/it]Trial 16 finished, success: tensor([True]), steps: 67
+
+ 64%|██████▍   | 16/25 [00:34<00:19,  2.17s/it]Trial 17 finished, success: tensor([True]), steps: 67
+
+ 68%|██████▊   | 17/25 [00:36<00:17,  2.13s/it]Trial 18 finished, success: tensor([True]), steps: 75
+
+ 72%|███████▏  | 18/25 [00:38<00:14,  2.12s/it]Trial 19 finished, success: tensor([True]), steps: 64
+
+ 76%|███████▌  | 19/25 [00:40<00:12,  2.02s/it]Trial 20 finished, success: tensor([True]), steps: 70
+
+ 80%|████████  | 20/25 [00:42<00:10,  2.05s/it]Trial 21 finished, success: tensor([True]), steps: 69
+
+ 84%|████████▍ | 21/25 [00:44<00:08,  2.07s/it]Trial 22 finished, success: tensor([True]), steps: 80
+
+ 88%|████████▊ | 22/25 [00:46<00:06,  2.11s/it]Trial 23 finished, success: tensor([True]), steps: 75
+
+ 92%|█████████▏| 23/25 [00:48<00:04,  2.12s/it]Trial 24 finished, success: tensor([True]), steps: 102
+
+ 96%|█████████▌| 24/25 [00:52<00:02,  2.40s/it]Trial 25 finished, success: tensor([True]), steps: 79
+
+100%|██████████| 25/25 [00:54<00:00,  2.31s/it]100%|██████████| 25/25 [00:54<00:00,  2.16s/it]
+Success rate: 100.0%
+grid search:  96%|█████████▋| 53/55 [56:34<03:57, 118.65s/it]
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 80
+
+  4%|▍         | 1/25 [00:02<00:53,  2.22s/it]Trial 2 finished, success: tensor([True]), steps: 81
+
+  8%|▊         | 2/25 [00:04<00:55,  2.43s/it]Trial 3 finished, success: tensor([True]), steps: 69
+
+ 12%|█▏        | 3/25 [00:06<00:50,  2.31s/it]Trial 4 finished, success: tensor([True]), steps: 69
+
+ 16%|█▌        | 4/25 [00:09<00:46,  2.20s/it]Trial 5 finished, success: tensor([True]), steps: 57
+
+ 20%|██        | 5/25 [00:10<00:40,  2.02s/it]Trial 6 finished, success: tensor([True]), steps: 65
+
+ 24%|██▍       | 6/25 [00:12<00:38,  2.03s/it]Trial 7 finished, success: tensor([True]), steps: 73
+
+ 28%|██▊       | 7/25 [00:14<00:36,  2.05s/it]Trial 8 finished, success: tensor([True]), steps: 54
+
+ 32%|███▏      | 8/25 [00:16<00:32,  1.94s/it]Trial 9 finished, success: tensor([True]), steps: 89
+
+ 36%|███▌      | 9/25 [00:19<00:33,  2.12s/it]Trial 10 finished, success: tensor([True]), steps: 73
+
+ 40%|████      | 10/25 [00:21<00:31,  2.12s/it]Trial 11 finished, success: tensor([True]), steps: 82
+
+ 44%|████▍     | 11/25 [00:23<00:31,  2.22s/it]Trial 12 finished, success: tensor([True]), steps: 80
+
+ 48%|████▊     | 12/25 [00:25<00:28,  2.18s/it]Trial 13 finished, success: tensor([True]), steps: 69
+
+ 52%|█████▏    | 13/25 [00:27<00:25,  2.15s/it]Trial 14 finished, success: tensor([True]), steps: 75
+
+ 56%|█████▌    | 14/25 [00:29<00:23,  2.13s/it]Trial 15 finished, success: tensor([True]), steps: 69
+
+ 60%|██████    | 15/25 [00:31<00:21,  2.11s/it]Trial 16 finished, success: tensor([True]), steps: 68
+
+ 64%|██████▍   | 16/25 [00:34<00:18,  2.10s/it]Trial 17 finished, success: tensor([True]), steps: 74
+
+ 68%|██████▊   | 17/25 [00:36<00:16,  2.10s/it]Trial 18 finished, success: tensor([True]), steps: 78
+
+ 72%|███████▏  | 18/25 [00:38<00:14,  2.10s/it]Trial 19 finished, success: tensor([True]), steps: 65
+
+ 76%|███████▌  | 19/25 [00:40<00:12,  2.08s/it]Trial 20 finished, success: tensor([True]), steps: 73
+
+ 80%|████████  | 20/25 [00:42<00:10,  2.09s/it]Trial 21 finished, success: tensor([True]), steps: 76
+
+ 84%|████████▍ | 21/25 [00:44<00:08,  2.11s/it]Trial 22 finished, success: tensor([True]), steps: 77
+
+ 88%|████████▊ | 22/25 [00:46<00:06,  2.11s/it]Trial 23 finished, success: tensor([True]), steps: 67
+
+ 92%|█████████▏| 23/25 [00:48<00:04,  2.09s/it]Trial 24 finished, success: tensor([True]), steps: 88
+
+ 96%|█████████▌| 24/25 [00:51<00:02,  2.22s/it]Trial 25 finished, success: tensor([True]), steps: 70
+
+100%|██████████| 25/25 [00:53<00:00,  2.22s/it]100%|██████████| 25/25 [00:53<00:00,  2.14s/it]
+Success rate: 100.0%
+grid search:  98%|█████████▊| 54/55 [57:27<01:39, 99.08s/it] 
+  0%|          | 0/25 [00:00<?, ?it/s]Trial 1 finished, success: tensor([True]), steps: 93
+
+  4%|▍         | 1/25 [00:02<01:03,  2.65s/it]Trial 2 finished, success: tensor([True]), steps: 98
+
+  8%|▊         | 2/25 [00:05<01:04,  2.82s/it]Trial 3 finished, success: tensor([True]), steps: 73
+
+ 12%|█▏        | 3/25 [00:07<00:54,  2.49s/it]Trial 4 finished, success: tensor([True]), steps: 61
+
+ 16%|█▌        | 4/25 [00:09<00:45,  2.17s/it]Trial 5 finished, success: tensor([True]), steps: 66
+
+ 20%|██        | 5/25 [00:11<00:43,  2.15s/it]Trial 6 finished, success: tensor([True]), steps: 69
+
+ 24%|██▍       | 6/25 [00:13<00:40,  2.12s/it]Trial 7 finished, success: tensor([True]), steps: 106
+
+ 28%|██▊       | 7/25 [00:16<00:42,  2.39s/it]Trial 8 finished, success: tensor([True]), steps: 59
+
+ 32%|███▏      | 8/25 [00:18<00:36,  2.16s/it]Trial 9 finished, success: tensor([True]), steps: 109
+
+ 36%|███▌      | 9/25 [00:21<00:38,  2.42s/it]Trial 10 finished, success: tensor([True]), steps: 82
+
+ 40%|████      | 10/25 [00:23<00:36,  2.43s/it]Trial 11 finished, success: tensor([True]), steps: 89
+
+ 44%|████▍     | 11/25 [00:26<00:34,  2.47s/it]Trial 12 finished, success: tensor([True]), steps: 80
+
+ 48%|████▊     | 12/25 [00:28<00:31,  2.39s/it]Trial 13 finished, success: tensor([True]), steps: 76
+
+ 52%|█████▏    | 13/25 [00:30<00:27,  2.32s/it]Trial 14 finished, success: tensor([False]), steps: 400
+
+ 56%|█████▌    | 14/25 [00:41<00:53,  4.89s/it]Trial 15 finished, success: tensor([True]), steps: 77
+
+ 60%|██████    | 15/25 [00:43<00:40,  4.08s/it]Trial 16 finished, success: tensor([True]), steps: 71
+
+ 64%|██████▍   | 16/25 [00:45<00:31,  3.49s/it]Trial 17 finished, success: tensor([True]), steps: 70
+
+ 68%|██████▊   | 17/25 [00:47<00:24,  3.05s/it]Trial 18 finished, success: tensor([True]), steps: 93
+
+ 72%|███████▏  | 18/25 [00:50<00:20,  2.89s/it]Trial 19 finished, success: tensor([True]), steps: 92
+
+ 76%|███████▌  | 19/25 [00:52<00:16,  2.78s/it]Trial 20 finished, success: tensor([False]), steps: 400
+
+ 80%|████████  | 20/25 [01:03<00:26,  5.23s/it]Trial 21 finished, success: tensor([True]), steps: 76
+
+ 84%|████████▍ | 21/25 [01:05<00:17,  4.32s/it]Trial 22 finished, success: tensor([True]), steps: 81
+
+ 88%|████████▊ | 22/25 [01:08<00:11,  3.77s/it]Trial 23 finished, success: tensor([True]), steps: 80
+
+ 92%|█████████▏| 23/25 [01:10<00:06,  3.28s/it]Trial 24 finished, success: tensor([True]), steps: 151
+
+ 96%|█████████▌| 24/25 [01:14<00:03,  3.55s/it]Trial 25 finished, success: tensor([True]), steps: 70
+
+100%|██████████| 25/25 [01:16<00:00,  3.10s/it]100%|██████████| 25/25 [01:16<00:00,  3.07s/it]
+Success rate: 92.0%
+grid search: 100%|██████████| 55/55 [58:44<00:00, 92.37s/it]grid search: 100%|██████████| 55/55 [58:44<00:00, 64.08s/it]
+/root/autodl-tmp/RoboticsDiffusionTransformer/eval_sim/eval_rdt_maniskill.py:278: UserWarning: Glyph 21442 (\N{CJK UNIFIED IDEOGRAPH-53C2}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/root/autodl-tmp/RoboticsDiffusionTransformer/eval_sim/eval_rdt_maniskill.py:278: UserWarning: Glyph 25968 (\N{CJK UNIFIED IDEOGRAPH-6570}) missing from font(s) DejaVu Sans.
+  plt.tight_layout()
+/root/autodl-tmp/RoboticsDiffusionTransformer/eval_sim/eval_rdt_maniskill.py:280: UserWarning: Glyph 21442 (\N{CJK UNIFIED IDEOGRAPH-53C2}) missing from font(s) DejaVu Sans.
+  plt.savefig(str(args.env_id)+str(pruning_mode)+str(keep_img_token_nums)+'_729 token'+'.png', dpi=300, bbox_inches='tight')  # ← 保存
+/root/autodl-tmp/RoboticsDiffusionTransformer/eval_sim/eval_rdt_maniskill.py:280: UserWarning: Glyph 25968 (\N{CJK UNIFIED IDEOGRAPH-6570}) missing from font(s) DejaVu Sans.
+  plt.savefig(str(args.env_id)+str(pruning_mode)+str(keep_img_token_nums)+'_729 token'+'.png', dpi=300, bbox_inches='tight')  # ← 保存
+[{'alpha': 1, 'temp': 0.01, 'success_rate': 100.0}, {'alpha': 1, 'temp': 0.056234132519034905, 'success_rate': 100.0}, {'alpha': 1, 'temp': 0.31622776601683794, 'success_rate': 100.0}, {'alpha': 1, 'temp': 1.7782794100389228, 'success_rate': 100.0}, {'alpha': 1, 'temp': 10.0, 'success_rate': 100.0}, {'alpha': 0.9, 'temp': 0.01, 'success_rate': 100.0}, {'alpha': 0.9, 'temp': 0.056234132519034905, 'success_rate': 100.0}, {'alpha': 0.9, 'temp': 0.31622776601683794, 'success_rate': 100.0}, {'alpha': 0.9, 'temp': 1.7782794100389228, 'success_rate': 100.0}, {'alpha': 0.9, 'temp': 10.0, 'success_rate': 100.0}, {'alpha': 0.8, 'temp': 0.01, 'success_rate': 100.0}, {'alpha': 0.8, 'temp': 0.056234132519034905, 'success_rate': 100.0}, {'alpha': 0.8, 'temp': 0.31622776601683794, 'success_rate': 100.0}, {'alpha': 0.8, 'temp': 1.7782794100389228, 'success_rate': 100.0}, {'alpha': 0.8, 'temp': 10.0, 'success_rate': 100.0}, {'alpha': 0.7, 'temp': 0.01, 'success_rate': 100.0}, {'alpha': 0.7, 'temp': 0.056234132519034905, 'success_rate': 100.0}, {'alpha': 0.7, 'temp': 0.31622776601683794, 'success_rate': 100.0}, {'alpha': 0.7, 'temp': 1.7782794100389228, 'success_rate': 100.0}, {'alpha': 0.7, 'temp': 10.0, 'success_rate': 100.0}, {'alpha': 0.6, 'temp': 0.01, 'success_rate': 100.0}, {'alpha': 0.6, 'temp': 0.056234132519034905, 'success_rate': 100.0}, {'alpha': 0.6, 'temp': 0.31622776601683794, 'success_rate': 100.0}, {'alpha': 0.6, 'temp': 1.7782794100389228, 'success_rate': 100.0}, {'alpha': 0.6, 'temp': 10.0, 'success_rate': 100.0}, {'alpha': 0.5, 'temp': 0.01, 'success_rate': 100.0}, {'alpha': 0.5, 'temp': 0.056234132519034905, 'success_rate': 100.0}, {'alpha': 0.5, 'temp': 0.31622776601683794, 'success_rate': 96.0}, {'alpha': 0.5, 'temp': 1.7782794100389228, 'success_rate': 100.0}, {'alpha': 0.5, 'temp': 10.0, 'success_rate': 100.0}, {'alpha': 0.4, 'temp': 0.01, 'success_rate': 100.0}, {'alpha': 0.4, 'temp': 0.056234132519034905, 'success_rate': 100.0}, {'alpha': 0.4, 'temp': 0.31622776601683794, 'success_rate': 100.0}, {'alpha': 0.4, 'temp': 1.7782794100389228, 'success_rate': 100.0}, {'alpha': 0.4, 'temp': 10.0, 'success_rate': 100.0}, {'alpha': 0.3, 'temp': 0.01, 'success_rate': 100.0}, {'alpha': 0.3, 'temp': 0.056234132519034905, 'success_rate': 100.0}, {'alpha': 0.3, 'temp': 0.31622776601683794, 'success_rate': 100.0}, {'alpha': 0.3, 'temp': 1.7782794100389228, 'success_rate': 100.0}, {'alpha': 0.3, 'temp': 10.0, 'success_rate': 100.0}, {'alpha': 0.2, 'temp': 0.01, 'success_rate': 100.0}, {'alpha': 0.2, 'temp': 0.056234132519034905, 'success_rate': 100.0}, {'alpha': 0.2, 'temp': 0.31622776601683794, 'success_rate': 100.0}, {'alpha': 0.2, 'temp': 1.7782794100389228, 'success_rate': 96.0}, {'alpha': 0.2, 'temp': 10.0, 'success_rate': 100.0}, {'alpha': 0.1, 'temp': 0.01, 'success_rate': 100.0}, {'alpha': 0.1, 'temp': 0.056234132519034905, 'success_rate': 100.0}, {'alpha': 0.1, 'temp': 0.31622776601683794, 'success_rate': 100.0}, {'alpha': 0.1, 'temp': 1.7782794100389228, 'success_rate': 100.0}, {'alpha': 0.1, 'temp': 10.0, 'success_rate': 100.0}, {'alpha': 0, 'temp': 0.01, 'success_rate': 16.0}, {'alpha': 0, 'temp': 0.056234132519034905, 'success_rate': 20.0}, {'alpha': 0, 'temp': 0.31622776601683794, 'success_rate': 100.0}, {'alpha': 0, 'temp': 1.7782794100389228, 'success_rate': 100.0}, {'alpha': 0, 'temp': 10.0, 'success_rate': 92.0}]
+BEST -> alpha=1, temp=0.01, success_rate=100.00%
+BEST -> alpha=1, temp=0.056234132519034905, success_rate=100.00%
+BEST -> alpha=1, temp=0.31622776601683794, success_rate=100.00%
+BEST -> alpha=1, temp=1.7782794100389228, success_rate=100.00%
+BEST -> alpha=1, temp=10.0, success_rate=100.00%
+BEST -> alpha=0.9, temp=0.01, success_rate=100.00%
+BEST -> alpha=0.9, temp=0.056234132519034905, success_rate=100.00%
+BEST -> alpha=0.9, temp=0.31622776601683794, success_rate=100.00%
+BEST -> alpha=0.9, temp=1.7782794100389228, success_rate=100.00%
+BEST -> alpha=0.9, temp=10.0, success_rate=100.00%
+BEST -> alpha=0.8, temp=0.01, success_rate=100.00%
+BEST -> alpha=0.8, temp=0.056234132519034905, success_rate=100.00%
+BEST -> alpha=0.8, temp=0.31622776601683794, success_rate=100.00%
+BEST -> alpha=0.8, temp=1.7782794100389228, success_rate=100.00%
+BEST -> alpha=0.8, temp=10.0, success_rate=100.00%
+BEST -> alpha=0.7, temp=0.01, success_rate=100.00%
+BEST -> alpha=0.7, temp=0.056234132519034905, success_rate=100.00%
+BEST -> alpha=0.7, temp=0.31622776601683794, success_rate=100.00%
+BEST -> alpha=0.7, temp=1.7782794100389228, success_rate=100.00%
+BEST -> alpha=0.7, temp=10.0, success_rate=100.00%
+BEST -> alpha=0.6, temp=0.01, success_rate=100.00%
+BEST -> alpha=0.6, temp=0.056234132519034905, success_rate=100.00%
+BEST -> alpha=0.6, temp=0.31622776601683794, success_rate=100.00%
+BEST -> alpha=0.6, temp=1.7782794100389228, success_rate=100.00%
+BEST -> alpha=0.6, temp=10.0, success_rate=100.00%
+BEST -> alpha=0.5, temp=0.01, success_rate=100.00%
+BEST -> alpha=0.5, temp=0.056234132519034905, success_rate=100.00%
+BEST -> alpha=0.5, temp=1.7782794100389228, success_rate=100.00%
+BEST -> alpha=0.5, temp=10.0, success_rate=100.00%
+BEST -> alpha=0.4, temp=0.01, success_rate=100.00%
+BEST -> alpha=0.4, temp=0.056234132519034905, success_rate=100.00%
+BEST -> alpha=0.4, temp=0.31622776601683794, success_rate=100.00%
+BEST -> alpha=0.4, temp=1.7782794100389228, success_rate=100.00%
+BEST -> alpha=0.4, temp=10.0, success_rate=100.00%
+BEST -> alpha=0.3, temp=0.01, success_rate=100.00%
+BEST -> alpha=0.3, temp=0.056234132519034905, success_rate=100.00%
+BEST -> alpha=0.3, temp=0.31622776601683794, success_rate=100.00%
+BEST -> alpha=0.3, temp=1.7782794100389228, success_rate=100.00%
+BEST -> alpha=0.3, temp=10.0, success_rate=100.00%
+BEST -> alpha=0.2, temp=0.01, success_rate=100.00%
+BEST -> alpha=0.2, temp=0.056234132519034905, success_rate=100.00%
+BEST -> alpha=0.2, temp=0.31622776601683794, success_rate=100.00%
+BEST -> alpha=0.2, temp=10.0, success_rate=100.00%
+BEST -> alpha=0.1, temp=0.01, success_rate=100.00%
+BEST -> alpha=0.1, temp=0.056234132519034905, success_rate=100.00%
+BEST -> alpha=0.1, temp=0.31622776601683794, success_rate=100.00%
+BEST -> alpha=0.1, temp=1.7782794100389228, success_rate=100.00%
+BEST -> alpha=0.1, temp=10.0, success_rate=100.00%
+BEST -> alpha=0, temp=0.31622776601683794, success_rate=100.00%
+BEST -> alpha=0, temp=1.7782794100389228, success_rate=100.00%
+policy.keep_img_token_nums: 364
+policy.save_vis_doc_name: PushCube-v1_random_364_729 token
+policy.pruning_mode: score

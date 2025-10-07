@@ -8,7 +8,23 @@ from torchvision import transforms
 from configs.state_vec import STATE_VEC_IDX_MAPPING
 from models.multimodal_encoder.siglip_encoder import SiglipVisionTower
 from models.multimodal_encoder.t5_encoder import T5Embedder
+
+#RDT runner
+from models.rdt_runner_taylor import RDTRunner_taylor
 from models.rdt_runner import RDTRunner
+from models.rdt_runner_img_p import RDTRunner_img_p
+from models.rdt_runner_taylor_img_p import RDTRunner_taylor_img_p
+
+
+import inspect, sys, importlib, pathlib
+from models.img_token_prune import ensure_pil_list,tensor_list_to_pil
+from pathlib import Path
+from datetime import datetime
+
+from models.project_enums import PruningMode
+from utils.profiler import global_profiler
+
+
 
 
 MANISKILL_INDICES = [
@@ -42,6 +58,7 @@ class RoboticDiffusionTransformerModel(object):
         pretrained_text_encoder_name_or_path=None,
         pretrained_vision_encoder_name_or_path=None,
     ):
+        self.runing_time=[]
         self.args = args
         self.dtype = dtype
         self.image_size = image_size
@@ -49,13 +66,18 @@ class RoboticDiffusionTransformerModel(object):
         self.control_frequency = control_frequency
         self.text_tokenizer, self.text_model = self.get_text_encoder(pretrained_text_encoder_name_or_path)
         self.image_processor, self.vision_model = self.get_vision_encoder(pretrained_vision_encoder_name_or_path)
+        self.vis_count=10
         self.policy = self.get_policy()
 
         self.state_min = torch.tensor(DATA_STAT['state_min']).to(device)
         self.state_max = torch.tensor(DATA_STAT['state_max']).to(device)
         self.action_min = torch.tensor(DATA_STAT['action_min']).to(device)
         self.action_max = torch.tensor(DATA_STAT['action_max']).to(device)
-
+        
+        
+        # 2. 可以给 pruning_mode 一个默认的类型提示和初始值
+        #self.pruning_mode: PruningMode = PruningMode.NO_PRUNING
+        
         self.reset()
 
     def get_policy(self):
@@ -65,7 +87,8 @@ class RoboticDiffusionTransformerModel(object):
                         * self.args["common"]["num_cameras"] 
                         * self.vision_model.num_patches)
         
-        _model = RDTRunner(
+        #flag use rdt or rdt_taylor
+        _model = RDTRunner_taylor_img_p(
             action_dim=self.args["common"]["state_dim"],
             pred_horizon=self.args["common"]["action_chunk_size"],
             config=self.args["model"],
@@ -87,6 +110,16 @@ class RoboticDiffusionTransformerModel(object):
             ],
             dtype=self.dtype,
         )
+        cls = type(_model)                 # 或者直接用 RDTRunner_taylor
+        #print("class =", cls.__qualname__)
+        #print("module =", cls.__module__)  # 先拿到模块全名
+#
+        # 拿到模块对象（若未加载则导入）
+        mod = sys.modules.get(cls.__module__) or importlib.import_module(cls.__module__)
+
+        # ① 精准的源码文件（优先 getsourcefile，找不到再退化到 getfile）
+        src = inspect.getsourcefile(cls) or inspect.getfile(cls)
+        #print("source_file =", pathlib.Path(src).resolve())
 
         return _model
 
@@ -114,6 +147,11 @@ class RoboticDiffusionTransformerModel(object):
         self.policy = self.policy.to(device, dtype=weight_dtype)
         self.text_model = self.text_model.to(device, dtype=weight_dtype)
         self.vision_model = self.vision_model.to(device, dtype=weight_dtype)
+        #print("before reset , runint_time length: ",len(self.runing_time))
+        self.runing_time=[]
+        
+        
+        self.diffusion_process_counter = 0 # <--- 在 reset 时重置计数器
 
     def load_pretrained_weights(self, pretrained=None):
         if pretrained is None:
@@ -205,6 +243,18 @@ class RoboticDiffusionTransformerModel(object):
         Returns:
             action: predicted action
         """
+        
+        global_profiler.start_diffusion_process(process_idx=self.diffusion_process_counter) # <--- 在这里调用
+        self.diffusion_process_counter += 1 # 计数器自增
+        vis_six_img=False
+        
+        if vis_six_img:
+        # 每次迭代都用当前时分秒创建一个子文件夹
+            base_dir = Path("saved_images")
+            ts_dir = datetime.now().strftime("%H%M%S")  # 时分秒命名</span>
+            output_dir = base_dir / ts_dir
+            output_dir.mkdir(parents=True, exist_ok=True)
+        
         device = self.device
         dtype = self.dtype
         
@@ -217,10 +267,17 @@ class RoboticDiffusionTransformerModel(object):
         ) * background_color
         
         image_tensor_list = []
-        for image in images:
+        for idx, image in enumerate(images):
+        #for image in images:
             if image is None:
                 # Replace it with the background image
                 image = Image.fromarray(background_image)
+            #vis
+            # —— 替换完毕的 image 一定是 PIL.Image，直接按序号保存到本次迭代的子文件夹 —— 
+            
+            if vis_six_img:
+                fn = output_dir / f"img_{idx}.png"
+                image.save(fn, format="PNG")
             
             if self.image_size is not None:
                 image = transforms.Resize(self.data_args.image_size)(image)
@@ -249,8 +306,35 @@ class RoboticDiffusionTransformerModel(object):
             image_tensor_list.append(image)
 
         image_tensor = torch.stack(image_tensor_list, dim=0).to(device, dtype=dtype)
+        vis_pil_images = tensor_list_to_pil(
+        tensor_list = image_tensor_list,
+        image_mean   = self.image_processor.image_mean,
+        image_std    = self.image_processor.image_std)
+        
+        
+        # torch.cuda.synchronize()  # 等待当前设备上的所有流完成:contentReference[oaicite:0]{index=0}
+        vision_start = torch.cuda.Event(enable_timing=True)  # 允许计时:contentReference[oaicite:1]{index=1}
+        vision_end   = torch.cuda.Event(enable_timing=True)
+        vision_start.record()
 
+        # ===== 这里放置你的 GPU 代码片段 =====
         image_embeds = self.vision_model(image_tensor).detach()
+        # =====================================
+        # torch.cuda.synchronize()  # 等待流中所有内核和事件完成:contentReference[oaicite:2]{index=2}
+        vision_end.record()
+        # # 再次同步，确保结束事件已被记录
+        torch.cuda.synchronize()
+        vision_time = vision_start.elapsed_time(vision_end)  # 返回单位为 ms:contentReference[oaicite:3]{index=3}
+        # from colorama import init
+        # from termcolor import colored
+        # init()  # 在 Windows 上初始化支持
+        # print(
+        #     f"self.vision_model GPU time: "
+        #     + colored(f"{elapsed_ms:.3f}", "red")
+        #     + " ms"
+        # )
+        
+        
         image_embeds = image_embeds.reshape(-1, self.vision_model.hidden_size).unsqueeze(0)
 
         # history of actions
@@ -261,8 +345,18 @@ class RoboticDiffusionTransformerModel(object):
         ctrl_freqs = torch.tensor([self.control_frequency]).to(device)
         
         text_embeds = text_embeds.to(device, dtype=dtype)
-        
-        trajectory = self.policy.predict_action(
+        # torch.cuda.synchronize()  # 等待当前设备上的所有流完成:contentReference[oaicite:0]{index=0}
+        action_start = torch.cuda.Event(enable_timing=True)  # 允许计时:contentReference[oaicite:1]{index=1}
+        action_end   = torch.cuda.Event(enable_timing=True)
+        action_start.record()
+        # import inspect
+    
+        # # 获取 predict_action 所在的类
+        # cls = self.policy.__class__
+        # print(colored(inspect.getmodule(cls),'blue'))                     # 显示模块对象 :contentReference[oaicite:0]{index=0}
+        # print(colored(inspect.getfile(self.policy.predict_action),'blue')) # 打印 .py 文件路径 :contentReference[oaicite:1]{index=1}
+        # # ===== 这里放置你的 GPU 代码片段 =====
+        trajectory,elapsed_ms = self.policy.predict_action(
             lang_tokens=text_embeds,
             lang_attn_mask=torch.ones(
                 text_embeds.shape[:2], dtype=torch.bool,
@@ -270,8 +364,47 @@ class RoboticDiffusionTransformerModel(object):
             img_tokens=image_embeds,
             state_tokens=states,
             action_mask=state_elem_mask.unsqueeze(1),  
-            ctrl_freqs=ctrl_freqs
+            ctrl_freqs=ctrl_freqs,
+            raw_images=vis_pil_images,
+            alpha=self.alpha,
+            temp=self.temp,
+            keep_img_token_nums=self.keep_img_token_nums,
+            theta=self.cdp_para,
+            pruning_mode=self.pruning_mode,
+            save_vis_doc_name=self.save_vis_doc_name
         )
+        self.runing_time.append(elapsed_ms)
+        # # =====================================
+          
+        action_end.record()
+        torch.cuda.synchronize()
+        # # 再次同步，确保结束事件已被记录
+        #torch.cuda.synchronize()
+        
+        action_time = action_start.elapsed_time(action_end) 
+        # print(
+        #     f"self.policy.predict_action GPU time: "
+        #     + colored(f"{elapsed_ms:.3f}", "red")
+        #     + " ms"
+        # )
+        
+        
+        
         trajectory = self._unformat_action_to_joint(trajectory).to(torch.float32)
 
+        #lzw record time
+        
+        # 将所有计时打包到一个字典中。
+        events_to_log = {
+            'Vision': vision_time,
+            'Action': action_time,
+            'Language': 0.0  # 按您的要求，将 Language 时间设置为 0。
+        }
+        print("Vision time : ",vision_time)
+        print("Action time : ",action_time)
+        # 一次性调用，记录当前 process 的所有事件。
+        global_profiler.record_process_events(events_to_log)
+        
+        
+        
         return trajectory

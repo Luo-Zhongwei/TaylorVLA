@@ -10,6 +10,10 @@ from diffusers.schedulers.scheduling_dpmsolver_multistep import \
 
 from models.hub_mixin import CompatiblePyTorchModelHubMixin
 from models.rdt.model import RDT
+from .project_enums import PruningMode 
+from typing import List, Dict
+from PIL import Image, ImageDraw
+
 
 
 class RDTRunner(
@@ -76,11 +80,11 @@ class RDTRunner(
         self.pred_horizon = pred_horizon
         self.action_dim = action_dim
 
-        print("Diffusion params: %e" % sum(
-            [p.numel() for p in self.model.parameters()] + 
-            [p.numel() for p in self.lang_adaptor.parameters()] + 
-            [p.numel() for p in self.img_adaptor.parameters()] + 
-            [p.numel() for p in self.state_adaptor.parameters()]))
+        # print("Diffusion params: %e" % sum(
+        #     [p.numel() for p in self.model.parameters()] + 
+        #     [p.numel() for p in self.lang_adaptor.parameters()] + 
+        #     [p.numel() for p in self.img_adaptor.parameters()] + 
+        #     [p.numel() for p in self.state_adaptor.parameters()]))
     
     def build_condition_adapter(
         self, projector_type, in_features, out_features):
@@ -138,8 +142,10 @@ class RDTRunner(
         action_mask = action_mask.expand(-1, self.pred_horizon, -1)
     
         # Set step values
-        self.noise_scheduler_sample.set_timesteps(self.num_inference_timesteps)
-        
+        #flag
+        #self.noise_scheduler_sample.set_timesteps(self.num_inference_timesteps)
+        #print("self.num_inference_timesteps: ",self.num_inference_timesteps)
+        self.noise_scheduler_sample.set_timesteps(5)
         for t in self.noise_scheduler_sample.timesteps:
             # Prepare state-action trajectory
             action_traj = torch.cat([noisy_action, action_mask], dim=2)
@@ -218,9 +224,30 @@ class RDTRunner(
         loss = F.mse_loss(pred, target)
         return loss
     
-    # ========= Inference  ============
+    
+    
+    
+    # def predict_action(self, lang_tokens, lang_attn_mask, img_tokens, state_tokens,
+    #                    action_mask, ctrl_freqs,
+    #                    raw_images: List[Image.Image] = None,
+    #                    alpha=0,temp=0,keep_img_token_nums=0,
+    #                    # 2. 修改这里的类型提示，从 str 变为 PruningMode
+    #                    pruning_mode: PruningMode = PruningMode.NO_PRUNING, # 可以给个默认值
+                       
+    #                    save_vis_doc_name=""):
+        
     def predict_action(self, lang_tokens, lang_attn_mask, img_tokens, state_tokens,
-                       action_mask, ctrl_freqs):
+                       action_mask, ctrl_freqs,
+                       raw_images: List[Image.Image] = None,
+                       alpha=0,temp=0,keep_img_token_nums=0,
+                       theta=0,
+                       # 2. 修改这里的类型提示，从 str 变为 PruningMode
+                       pruning_mode: PruningMode = PruningMode.NO_PRUNING, # 可以给个默认值
+                       
+                       save_vis_doc_name=""):
+    # ========= Inference  ============
+    # def predict_action(self, lang_tokens, lang_attn_mask, img_tokens, state_tokens,
+    #                    action_mask, ctrl_freqs):
         '''
         lang_tokens: (batch_size, lang_len, lang_token_dim)
         lang_attn_mask: (batch_size, lang_len), a mask for valid language tokens,
@@ -237,14 +264,36 @@ class RDTRunner(
         state_tokens = torch.cat([state_tokens, action_mask], dim=2)
         lang_cond, img_cond, state_traj = self.adapt_conditions(
             lang_tokens, img_tokens, state_tokens)
-        
-        # Run sampling
+
+        cls = self.__class__
+        print("类对象:", cls)
+        torch.cuda.synchronize()  # 等待当前设备上的所有流完成:contentReference[oaicite:0]{index=0}
+        start = torch.cuda.Event(enable_timing=True)  # 允许计时:contentReference[oaicite:1]{index=1}
+        end   = torch.cuda.Event(enable_timing=True)
+        start.record()
+        import inspect
+        from colorama import init
+        from termcolor import colored
+        print(colored(inspect.getfile(self.conditional_sample),'blue')) # 打印 .py 文件路径 :contentReference[oaicite:1]{index=1}
+        # ===== 这里放置你的 GPU 代码片段 =====
         action_pred = self.conditional_sample(
             lang_cond, lang_attn_mask, img_cond, 
             state_traj, action_mask, ctrl_freqs,
         )
-        
-        return action_pred
+        # =====================================
+        torch.cuda.synchronize()  # 等待流中所有内核和事件完成:contentReference[oaicite:2]{index=2}
+        end.record()
+        # 再次同步，确保结束事件已被记录
+        torch.cuda.synchronize()
+        elapsed_ms = start.elapsed_time(end)  # 返回单位为 ms:contentReference[oaicite:3]{index=3}
+        print(f"self.policy.predict_action GPU time: "
+            + colored(f"{elapsed_ms:.3f}", "red")
+            + " ms")
+        # action_pred = self.conditional_sample(
+        #     lang_cond, lang_attn_mask, img_cond, 
+        #     state_traj, action_mask, ctrl_freqs,
+        # )
+        return action_pred,elapsed_ms
     
     def forward(self, *args, **kwargs) -> torch.Tensor:
         return self.compute_loss(*args, **kwargs)

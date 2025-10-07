@@ -35,7 +35,7 @@ from safetensors.torch import load_model
 from models.ema_model import EMAModel
 from models.multimodal_encoder.siglip_encoder import SiglipVisionTower
 from models.multimodal_encoder.t5_encoder import T5Embedder
-from models.rdt_runner import RDTRunner
+from RoboticsDiffusionTransformer.models.rdt_runner_taylor import RDTRunner
 from train.dataset import DataCollatorForVLAConsumerDataset, VLAConsumerDataset
 from train.sample import log_sample_res
 
